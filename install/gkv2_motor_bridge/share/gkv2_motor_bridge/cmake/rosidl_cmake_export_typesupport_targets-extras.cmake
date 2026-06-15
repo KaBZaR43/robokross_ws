@@ -1,0 +1,1 @@
+/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake

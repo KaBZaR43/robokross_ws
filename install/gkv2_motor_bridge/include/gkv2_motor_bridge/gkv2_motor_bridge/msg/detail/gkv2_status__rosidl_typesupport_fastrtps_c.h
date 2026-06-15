@@ -1,0 +1,1 @@
+/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_fastrtps_c.h

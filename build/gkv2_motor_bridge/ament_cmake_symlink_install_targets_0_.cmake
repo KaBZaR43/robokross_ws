@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_py/gkv2_motor_bridge/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.so" "TARGETS" "gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.12/site-packages/gkv2_motor_bridge")

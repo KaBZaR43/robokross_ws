@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_driver_node" "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/cmd_vel_bridge_node" "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_nav_parser_node" "TARGETS" "gkv2_driver_node" "cmd_vel_bridge_node" "gkv2_nav_parser_node" "DESTINATION" "lib/gkv2_motor_bridge")

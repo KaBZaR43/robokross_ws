@@ -1,0 +1,1 @@
+/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_rs/gkv2_motor_bridge/rust/src/msg/rmw.rs

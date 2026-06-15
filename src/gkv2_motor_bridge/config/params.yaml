@@ -1,0 +1,27 @@
+# Конфигурация системы навигации и управления
+# Для Nvidia Jetson изменить порты на /dev/ttyTHS1, /dev/ttyTHS2 и т.д.
+
+# Параметры узла gkv2_driver_node (входящий канал ПДУ -> БУД)
+gkv2_driver:
+  ros__parameters:
+    uart_port: "/dev/ttyV0"  # На Jetson: /dev/ttyTHS1
+    baudrate: 921600
+    publish_rate_hz: 50  # Частота публикации согласно Protokol_BUD.docx п. 3.1.1
+    qos_depth: 10
+
+# Параметры узла cmd_vel_bridge_node (исходящий канал БУД -> Моторы)
+cmd_vel_bridge:
+  ros__parameters:
+    # Кинематика платформы
+    wheel_base: 0.7  # Ширина колеи, метры (60-80 см)
+    max_speed_ms: 2.78  # Максимальная скорость 10 км/ч
+    
+    # UART для моторов
+    motor_uart_port: "/dev/ttyV1"  # На Jetson: /dev/ttyTHS2
+    motor_baudrate: 115200
+    
+    # Безопасность
+    watchdog_timeout_sec: 0.3  # Таймаут watchdog (300 мс)
+    
+    # Частота отправки команд
+    send_rate_hz: 50  # 50 Гц согласно Protokol_BUD.docx
