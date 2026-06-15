@@ -37,3 +37,19 @@ cmd_vel_bridge:
     
     # Частота отправки команд
     send_rate_hz: 50               # 50 Гц согласно Protokol_BUD.docx
+
+    # Параметры одометра
+odometer:
+  ros__parameters:
+    wheel_base: 0.7
+    wheel_radius: 0.3
+    encoder_ticks_per_rev: 1024.0
+    use_mock: true  # true для тестирования, false для реального одометра
+
+# Параметры слияния навигации
+navigation_fusion:
+  ros__parameters:
+    gnss_timeout_sec: 2.0        # Таймаут потери ГНСС
+    gnss_quality_threshold: 0.7  # Порог качества ГНСС
+    min_satellites: 8            # Минимальное количество спутников
+    require_rtk: true            # Требовать RTK Fixed

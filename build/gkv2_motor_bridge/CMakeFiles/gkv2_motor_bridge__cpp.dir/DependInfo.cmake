@@ -16,6 +16,11 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_status__struct.hpp" "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp"
   "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_status__traits.hpp" "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp"
   "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.hpp" "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp"
+  "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/navigation_status__builder.hpp" "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp"
+  "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/navigation_status__struct.hpp" "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp"
+  "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/navigation_status__traits.hpp" "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp"
+  "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/navigation_status__type_support.hpp" "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp"
+  "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/navigation_status.hpp" "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp"
   "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/rosidl_generator_cpp__visibility_control.hpp" "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp"
   )
 

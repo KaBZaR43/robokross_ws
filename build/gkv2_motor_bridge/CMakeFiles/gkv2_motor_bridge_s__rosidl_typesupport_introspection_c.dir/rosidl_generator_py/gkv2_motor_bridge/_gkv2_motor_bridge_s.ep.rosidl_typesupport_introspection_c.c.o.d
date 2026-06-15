@@ -232,4 +232,7 @@ CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.dir/rosidl_ge
  /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.h \
  /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/rosidl_generator_c__visibility_control.h \
  /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__struct.h \
- /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__functions.h
+ /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__functions.h \
+ /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.h \
+ /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__struct.h \
+ /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.h

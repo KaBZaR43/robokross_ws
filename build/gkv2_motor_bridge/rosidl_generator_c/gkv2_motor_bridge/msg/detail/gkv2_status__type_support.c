@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "gkv2_motor_bridge/msg/detail/gkv2_status__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "gkv2_motor_bridge/msg/detail/gkv2_status__struct.h"
 #include "gkv2_motor_bridge/msg/detail/gkv2_status__type_support.h"
-#include "rosidl_typesupport_interface/macros.h"
+#include "gkv2_motor_bridge/msg/detail/gkv2_status__functions.h"
 
 #ifdef __cplusplus
 extern "C"

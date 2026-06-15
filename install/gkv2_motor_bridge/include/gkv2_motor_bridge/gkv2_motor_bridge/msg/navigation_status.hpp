@@ -1,0 +1,1 @@
+/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_cpp/gkv2_motor_bridge/msg/navigation_status.hpp

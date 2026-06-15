@@ -1,4 +1,0 @@
-source;share/gkv2_motor_bridge/local_setup.bash
-source;share/gkv2_motor_bridge/local_setup.dsv
-source;share/gkv2_motor_bridge/local_setup.sh
-source;share/gkv2_motor_bridge/local_setup.zsh

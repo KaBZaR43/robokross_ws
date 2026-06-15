@@ -1,0 +1,49 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from gkv2_motor_bridge/msg/NavigationStatus.msg
+// generated code does not contain a copyright notice
+
+
+module gkv2_motor_bridge {
+  module msg {
+    module NavigationStatus_Constants {
+      const uint8 MODE_GNSS = 0;
+      const uint8 MODE_ODOMETRY = 1;
+      const uint8 MODE_FUSION = 2;
+    };
+    @verbatim (language="comment", text=
+      "Статус навигационной системы")
+    struct NavigationStatus {
+      @verbatim (language="comment", text=
+        "Текущий режим навигации (0=ГНСС, 1=Одометрия, 2=Слияние)")
+      uint8 current_mode;
+
+      @verbatim (language="comment", text=
+        "ГНСС доступен и имеет хорошее качество")
+      boolean gnss_available;
+
+      @verbatim (language="comment", text=
+        "RTK Fixed (сантиметровая точность)")
+      boolean rtk_fixed;
+
+      @verbatim (language="comment", text=
+        "Количество спутников ГНСС")
+      uint16 gnss_satellites;
+
+      @verbatim (language="comment", text=
+        "Качество ГНСС (0.0-1.0)")
+      float gnss_quality;
+
+      @verbatim (language="comment", text=
+        "Накопленная ошибка одометрии (метры)")
+      float odometry_drift;
+
+      @verbatim (language="comment", text=
+        "Время с последней хорошей ГНСС позиции (секунды)")
+      float time_since_gnss;
+
+      @verbatim (language="comment", text=
+        "Текстовое описание статуса")
+      string status_message;
+    };
+  };
+};

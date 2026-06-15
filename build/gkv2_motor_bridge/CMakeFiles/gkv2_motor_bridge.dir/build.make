@@ -67,6 +67,7 @@ include CMakeFiles/gkv2_motor_bridge.dir/compiler_depend.make
 include CMakeFiles/gkv2_motor_bridge.dir/progress.make
 
 CMakeFiles/gkv2_motor_bridge: /home/nockorn/robokross_ws/src/gkv2_motor_bridge/msg/GKV2Status.msg
+CMakeFiles/gkv2_motor_bridge: /home/nockorn/robokross_ws/src/gkv2_motor_bridge/msg/NavigationStatus.msg
 CMakeFiles/gkv2_motor_bridge: /opt/ros/jazzy/share/std_msgs/msg/Bool.idl
 CMakeFiles/gkv2_motor_bridge: /opt/ros/jazzy/share/std_msgs/msg/Byte.idl
 CMakeFiles/gkv2_motor_bridge: /opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl

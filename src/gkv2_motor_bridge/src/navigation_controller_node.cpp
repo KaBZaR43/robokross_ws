@@ -41,7 +41,7 @@ public:
         // Publishers и Subscribers
         cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
         pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
-            "/nav/pose", 10, std::bind(&NavigationController::pose_callback, this, std::placeholders::_1));
+            "/nav/fused_pose", 10, std::bind(&NavigationController::pose_callback, this, std::placeholders::_1));
 
         // Таймер публикации команд (50 Гц для совместимости с watchdog cmd_vel_bridge)
         control_timer_ = this->create_wall_timer(

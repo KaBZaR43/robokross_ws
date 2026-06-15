@@ -89,6 +89,7 @@ rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h: /opt/ros/jazzy/share/ros
 rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h: /opt/ros/jazzy/share/rosidl_generator_c/resource/srv__type_support.c.em
 rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h: /opt/ros/jazzy/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h: rosidl_adapter/gkv2_motor_bridge/msg/GKV2Status.idl
+rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h: rosidl_adapter/gkv2_motor_bridge/msg/NavigationStatus.idl
 rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h: /opt/ros/jazzy/share/std_msgs/msg/Bool.idl
 rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h: /opt/ros/jazzy/share/std_msgs/msg/Byte.idl
 rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h: /opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl
@@ -133,6 +134,18 @@ rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__struct.h: rosidl_ge
 rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.h: rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.h
 
+rosidl_generator_c/gkv2_motor_bridge/msg/navigation_status.h: rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/gkv2_motor_bridge/msg/navigation_status.h
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.h: rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.h
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__struct.h: rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__struct.h
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.h: rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.h
+
 rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.c: rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.c
 
@@ -141,6 +154,15 @@ rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__functions.c: rosidl
 
 rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c: rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c: rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c: rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c: rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c
 
 CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.c.o: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/flags.make
 CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.c.o: rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.c
@@ -184,11 +206,56 @@ CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_mot
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c -o CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c.s
 
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.o: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/flags.make
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.o: rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.o: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.o -MF CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.o.d -o CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.o -c /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c
+
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c > CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.i
+
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c -o CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.s
+
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.o: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/flags.make
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.o: rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.o: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.o -MF CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.o.d -o CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.o -c /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c
+
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c > CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.i
+
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c -o CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.s
+
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.o: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/flags.make
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.o: rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.o: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.o -MF CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.o.d -o CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.o -c /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c
+
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c > CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.i
+
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c -o CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.s
+
 # Object files for target gkv2_motor_bridge__rosidl_generator_c
 gkv2_motor_bridge__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.c.o" \
 "CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__functions.c.o" \
-"CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c.o"
+"CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c.o" \
+"CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.o" \
+"CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.o" \
+"CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.o"
 
 # External object files for target gkv2_motor_bridge__rosidl_generator_c
 gkv2_motor_bridge__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -196,13 +263,16 @@ gkv2_motor_bridge__rosidl_generator_c_EXTERNAL_OBJECTS =
 libgkv2_motor_bridge__rosidl_generator_c.so: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.c.o
 libgkv2_motor_bridge__rosidl_generator_c.so: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__functions.c.o
 libgkv2_motor_bridge__rosidl_generator_c.so: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c.o
+libgkv2_motor_bridge__rosidl_generator_c.so: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c.o
+libgkv2_motor_bridge__rosidl_generator_c.so: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c.o
+libgkv2_motor_bridge__rosidl_generator_c.so: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.o
 libgkv2_motor_bridge__rosidl_generator_c.so: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/build.make
 libgkv2_motor_bridge__rosidl_generator_c.so: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
 libgkv2_motor_bridge__rosidl_generator_c.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libgkv2_motor_bridge__rosidl_generator_c.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libgkv2_motor_bridge__rosidl_generator_c.so: /opt/ros/jazzy/lib/librcutils.so
 libgkv2_motor_bridge__rosidl_generator_c.so: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libgkv2_motor_bridge__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C shared library libgkv2_motor_bridge__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -219,7 +289,14 @@ CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/depend: rosidl_generator_c/
 CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/depend: rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__struct.h
 CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/depend: rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c
 CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/depend: rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.h
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/depend: rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__description.c
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/depend: rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.c
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/depend: rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__functions.h
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/depend: rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__struct.h
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/depend: rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/depend: rosidl_generator_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.h
 CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/depend: rosidl_generator_c/gkv2_motor_bridge/msg/gkv2_status.h
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/depend: rosidl_generator_c/gkv2_motor_bridge/msg/navigation_status.h
 	cd /home/nockorn/robokross_ws/build/gkv2_motor_bridge && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nockorn/robokross_ws/src/gkv2_motor_bridge /home/nockorn/robokross_ws/src/gkv2_motor_bridge /home/nockorn/robokross_ws/build/gkv2_motor_bridge /home/nockorn/robokross_ws/build/gkv2_motor_bridge /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/depend
 

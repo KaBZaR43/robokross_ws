@@ -1,2 +1,4 @@
 msg/GKV2Status.idl
 msg/GKV2Status.msg
+msg/NavigationStatus.idl
+msg/NavigationStatus.msg

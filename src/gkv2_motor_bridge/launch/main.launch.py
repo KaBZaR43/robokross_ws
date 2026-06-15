@@ -57,11 +57,33 @@ def generate_launch_description():
         parameters=[params_file, waypoints_file, {'use_sim_time': LaunchConfiguration('use_sim_time')}]
     )
 
+    # Узел 5: Эмулятор одометра
+
+    odometer_node = Node(
+        package='gkv2_motor_bridge',
+        executable='odometer_node',
+        name='odometer',
+        output='both',
+        parameters=[params_file]
+    )
+
+    # Узел 6: Слияние навигационных данных
+
+    navigation_fusion_node = Node(
+        package='gkv2_motor_bridge',
+        executable='navigation_fusion_node',
+        name='navigation_fusion',
+        output='both',
+        parameters=[params_file]
+    )
+
     return LaunchDescription([
         set_log_dir,               
         use_sim_time_arg,
         gkv2_driver_node,
         cmd_vel_bridge_node,
         gkv2_nav_parser_node,
+        odometer_node,
+        navigation_fusion_node,
         navigation_controller_node
     ])

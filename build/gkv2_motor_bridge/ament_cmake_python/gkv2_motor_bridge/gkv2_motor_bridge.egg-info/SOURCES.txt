@@ -4,5 +4,3 @@ gkv2_motor_bridge.egg-info/PKG-INFO
 gkv2_motor_bridge.egg-info/SOURCES.txt
 gkv2_motor_bridge.egg-info/dependency_links.txt
 gkv2_motor_bridge.egg-info/top_level.txt
-gkv2_motor_bridge/msg/__init__.py
-gkv2_motor_bridge/msg/_gkv2_status.py

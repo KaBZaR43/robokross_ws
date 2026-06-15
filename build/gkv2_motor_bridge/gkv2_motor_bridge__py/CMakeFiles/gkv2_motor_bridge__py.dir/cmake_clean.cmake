@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_py/gkv2_motor_bridge/msg/__init__.py"
   "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status.py"
   "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status_s.c"
+  "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status.py"
+  "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.c"
   "CMakeFiles/gkv2_motor_bridge__py"
 )
 

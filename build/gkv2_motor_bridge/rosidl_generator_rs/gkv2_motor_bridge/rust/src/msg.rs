@@ -62,3 +62,103 @@ impl rosidl_runtime_rs::Message for GKV2Status {
 }
 
 
+// Corresponds to gkv2_motor_bridge__msg__NavigationStatus
+/// Статус навигационной системы
+
+#[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
+#[derive(Clone, Debug, PartialEq, PartialOrd)]
+pub struct NavigationStatus {
+    /// Текущий режим навигации (0=ГНСС, 1=Одометрия, 2=Слияние)
+    pub current_mode: u8,
+
+    /// ГНСС доступен и имеет хорошее качество
+    pub gnss_available: bool,
+
+    /// RTK Fixed (сантиметровая точность)
+    pub rtk_fixed: bool,
+
+    /// Количество спутников ГНСС
+    pub gnss_satellites: u16,
+
+    /// Качество ГНСС (0.0-1.0)
+    pub gnss_quality: f32,
+
+    /// Накопленная ошибка одометрии (метры)
+    pub odometry_drift: f32,
+
+    /// Время с последней хорошей ГНСС позиции (секунды)
+    pub time_since_gnss: f32,
+
+    /// Текстовое описание статуса
+    pub status_message: std::string::String,
+
+}
+
+impl NavigationStatus {
+
+    // This constant is not documented.
+    #[allow(missing_docs)]
+    pub const MODE_GNSS: u8 = 0;
+
+
+    // This constant is not documented.
+    #[allow(missing_docs)]
+    pub const MODE_ODOMETRY: u8 = 1;
+
+
+    // This constant is not documented.
+    #[allow(missing_docs)]
+    pub const MODE_FUSION: u8 = 2;
+
+}
+
+
+impl Default for NavigationStatus {
+  fn default() -> Self {
+    <Self as rosidl_runtime_rs::Message>::from_rmw_message(super::msg::rmw::NavigationStatus::default())
+  }
+}
+
+impl rosidl_runtime_rs::Message for NavigationStatus {
+  type RmwMsg = super::msg::rmw::NavigationStatus;
+
+  fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> {
+    match msg_cow {
+      std::borrow::Cow::Owned(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+        current_mode: msg.current_mode,
+        gnss_available: msg.gnss_available,
+        rtk_fixed: msg.rtk_fixed,
+        gnss_satellites: msg.gnss_satellites,
+        gnss_quality: msg.gnss_quality,
+        odometry_drift: msg.odometry_drift,
+        time_since_gnss: msg.time_since_gnss,
+        status_message: msg.status_message.as_str().into(),
+      }),
+      std::borrow::Cow::Borrowed(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
+      current_mode: msg.current_mode,
+      gnss_available: msg.gnss_available,
+      rtk_fixed: msg.rtk_fixed,
+      gnss_satellites: msg.gnss_satellites,
+      gnss_quality: msg.gnss_quality,
+      odometry_drift: msg.odometry_drift,
+      time_since_gnss: msg.time_since_gnss,
+        status_message: msg.status_message.as_str().into(),
+      })
+    }
+  }
+
+  fn from_rmw_message(msg: Self::RmwMsg) -> Self {
+    Self {
+      current_mode: msg.current_mode,
+      gnss_available: msg.gnss_available,
+      rtk_fixed: msg.rtk_fixed,
+      gnss_satellites: msg.gnss_satellites,
+      gnss_quality: msg.gnss_quality,
+      odometry_drift: msg.odometry_drift,
+      time_since_gnss: msg.time_since_gnss,
+      status_message: msg.status_message.to_string(),
+    }
+  }
+}
+
+

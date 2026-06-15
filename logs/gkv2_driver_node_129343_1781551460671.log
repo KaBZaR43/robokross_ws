@@ -1,0 +1,3 @@
+[INFO] [1781551460.684635595] [gkv2_driver]: GKV2 Driver Node initialized with Boost.Asio.
+[INFO] [1781551460.685618510] [gkv2_driver]: UART port /dev/ttyV0 opened at 921600 baud.
+[INFO] [1781551480.918123424] [rclcpp]: signal_handler(SIGINT/SIGTERM)

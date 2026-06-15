@@ -85,7 +85,9 @@ rosidl_generator_rs/gkv2_motor_bridge/rust/src/lib.rs: /opt/ros/jazzy/share/rosi
 rosidl_generator_rs/gkv2_motor_bridge/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/templates/srv_idiomatic.rs.em
 rosidl_generator_rs/gkv2_motor_bridge/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/templates/srv_rmw.rs.em
 rosidl_generator_rs/gkv2_motor_bridge/rust/src/lib.rs: rosidl_adapter/gkv2_motor_bridge/msg/GKV2Status.idl
+rosidl_generator_rs/gkv2_motor_bridge/rust/src/lib.rs: rosidl_adapter/gkv2_motor_bridge/msg/NavigationStatus.idl
 rosidl_generator_rs/gkv2_motor_bridge/rust/src/lib.rs: rosidl_adapter/gkv2_motor_bridge/msg/GKV2Status.idl
+rosidl_generator_rs/gkv2_motor_bridge/rust/src/lib.rs: rosidl_adapter/gkv2_motor_bridge/msg/NavigationStatus.idl
 rosidl_generator_rs/gkv2_motor_bridge/rust/src/lib.rs: /opt/ros/jazzy/share/std_msgs/msg/Bool.idl
 rosidl_generator_rs/gkv2_motor_bridge/rust/src/lib.rs: /opt/ros/jazzy/share/std_msgs/msg/Byte.idl
 rosidl_generator_rs/gkv2_motor_bridge/rust/src/lib.rs: /opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl
