@@ -55,6 +55,10 @@ ament_target_dependencies(navigation_fusion_node rclcpp geometry_msgs sensor_msg
 # Линковка кастомных сообщений
 target_link_libraries(navigation_fusion_node "${cpp_typesupport_target}")
 
+# Узел 6: Эмулятор одометра
+add_executable(odometer_node src/odometer_node.cpp)
+ament_target_dependencies(odometer_node rclcpp geometry_msgs nav_msgs)
+
 # 9. Установка исполняемых файлов
 install(TARGETS
   gkv2_driver_node
@@ -62,6 +66,7 @@ install(TARGETS
   gkv2_nav_parser_node
   navigation_controller_node  
   navigation_fusion_node  
+  odometer_node 
   DESTINATION lib/${PROJECT_NAME}
 )
 

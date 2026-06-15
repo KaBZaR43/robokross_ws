@@ -471,6 +471,19 @@ navigation_fusion_node/fast:
 .PHONY : navigation_fusion_node/fast
 
 #=============================================================================
+# Target rules for targets named odometer_node
+
+# Build rule for target.
+odometer_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 odometer_node
+.PHONY : odometer_node
+
+# fast build rule for target.
+odometer_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/odometer_node.dir/build.make CMakeFiles/odometer_node.dir/build
+.PHONY : odometer_node/fast
+
+#=============================================================================
 # Target rules for targets named gkv2_motor_bridge__py
 
 # Build rule for target.
@@ -1168,6 +1181,30 @@ src/navigation_fusion_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_fusion_node.dir/build.make CMakeFiles/navigation_fusion_node.dir/src/navigation_fusion_node.cpp.s
 .PHONY : src/navigation_fusion_node.cpp.s
 
+src/odometer_node.o: src/odometer_node.cpp.o
+.PHONY : src/odometer_node.o
+
+# target to build an object file
+src/odometer_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/odometer_node.dir/build.make CMakeFiles/odometer_node.dir/src/odometer_node.cpp.o
+.PHONY : src/odometer_node.cpp.o
+
+src/odometer_node.i: src/odometer_node.cpp.i
+.PHONY : src/odometer_node.i
+
+# target to preprocess a source file
+src/odometer_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/odometer_node.dir/build.make CMakeFiles/odometer_node.dir/src/odometer_node.cpp.i
+.PHONY : src/odometer_node.cpp.i
+
+src/odometer_node.s: src/odometer_node.cpp.s
+.PHONY : src/odometer_node.s
+
+# target to generate assembly for a file
+src/odometer_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/odometer_node.dir/build.make CMakeFiles/odometer_node.dir/src/odometer_node.cpp.s
+.PHONY : src/odometer_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1206,6 +1243,7 @@ help:
 	@echo "... gkv2_nav_parser_node"
 	@echo "... navigation_controller_node"
 	@echo "... navigation_fusion_node"
+	@echo "... odometer_node"
 	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.o"
 	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.i"
 	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.s"
@@ -1290,6 +1328,9 @@ help:
 	@echo "... src/navigation_fusion_node.o"
 	@echo "... src/navigation_fusion_node.i"
 	@echo "... src/navigation_fusion_node.s"
+	@echo "... src/odometer_node.o"
+	@echo "... src/odometer_node.i"
+	@echo "... src/odometer_node.s"
 .PHONY : help
 
 

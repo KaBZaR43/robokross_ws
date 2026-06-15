@@ -1,0 +1,2 @@
+[ERROR] [1781553886.643376208] [gkv2_nav_parser]: Failed to open UART: open: No such file or directory [system:2 at /usr/include/boost/asio/detail/impl/posix_serial_port_service.ipp:61 in function 'open']
+[INFO] [1781553900.466280797] [rclcpp]: signal_handler(SIGINT/SIGTERM)
