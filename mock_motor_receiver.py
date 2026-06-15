@@ -29,7 +29,7 @@ def decode_flags(flags_byte):
     return f"L:{left_dir}, R:{right_dir}, IGN:{ignition}, B1:{brake1}, B2:{brake2}"
 
 def main():
-    port = '/dev/ttyV0'
+    port = '/dev/ttyV5'
     baudrate = 115200
     
     try:

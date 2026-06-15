@@ -1,0 +1,3 @@
+[INFO] [1781550793.991593232] [gkv2_nav_parser]: UART opened: /dev/ttyV1 @ 921600 baud
+[INFO] [1781550793.991686056] [gkv2_nav_parser]: GKV2 Nav Parser initialized
+[INFO] [1781550807.374948671] [rclcpp]: signal_handler(SIGINT/SIGTERM)

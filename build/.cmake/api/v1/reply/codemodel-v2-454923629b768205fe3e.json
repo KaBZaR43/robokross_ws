@@ -1,0 +1,303 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f29d45efb0507846f847.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23
+					]
+				},
+				{
+					"build" : "gkv2_motor_bridge__py",
+					"jsonFile" : "directory-gkv2_motor_bridge__py-Debug-5820cdf0f2542a4fe97a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/nockorn/robokross_ws/build/gkv2_motor_bridge__py",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "gkv2_motor_bridge__rs",
+					"jsonFile" : "directory-gkv2_motor_bridge__rs-Debug-3545dfc8224d243dfc68.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/nockorn/robokross_ws/build/gkv2_motor_bridge__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "gkv2_motor_bridge",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_gkv2_motor_bridge_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_gkv2_motor_bridge_egg-Debug-8e2a1c22bcacd2b885e3.json",
+					"name" : "ament_cmake_python_build_gkv2_motor_bridge_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_gkv2_motor_bridge::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_gkv2_motor_bridge-Debug-974fed411b735d50cf87.json",
+					"name" : "ament_cmake_python_copy_gkv2_motor_bridge",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cmd_vel_bridge_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cmd_vel_bridge_node-Debug-156bdd5bd9e98f3bca3a.json",
+					"name" : "cmd_vel_bridge_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_driver_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_driver_node-Debug-c2665fd4260f6236f2b3.json",
+					"name" : "gkv2_driver_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge-Debug-0f7e32adc7a28837610d.json",
+					"name" : "gkv2_motor_bridge",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge__cpp-Debug-2db9c911add50de94628.json",
+					"name" : "gkv2_motor_bridge__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gkv2_motor_bridge__py::@e0841b1ee66da3ea92e0",
+					"jsonFile" : "target-gkv2_motor_bridge__py-Debug-b856dfb252699c82dc74.json",
+					"name" : "gkv2_motor_bridge__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge__rosidl_generator_c-Debug-c7a64756f7872b8b05ef.json",
+					"name" : "gkv2_motor_bridge__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge__rosidl_generator_py-Debug-4499997cb7dc9c18e572.json",
+					"name" : "gkv2_motor_bridge__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge__rosidl_generator_type_description-Debug-a41786ce3351e6c21574.json",
+					"name" : "gkv2_motor_bridge__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge__rosidl_typesupport_c-Debug-ce52b6ea084acff5c553.json",
+					"name" : "gkv2_motor_bridge__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge__rosidl_typesupport_cpp-Debug-c1c7cf912012d32d1045.json",
+					"name" : "gkv2_motor_bridge__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge__rosidl_typesupport_fastrtps_c-Debug-42fd7e98fb51215f9683.json",
+					"name" : "gkv2_motor_bridge__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp-Debug-36f057cc1a50ebd48aa5.json",
+					"name" : "gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge__rosidl_typesupport_introspection_c-Debug-e7af6aa146f9d3281c83.json",
+					"name" : "gkv2_motor_bridge__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge__rosidl_typesupport_introspection_cpp-Debug-5e488d11b88a07b4726e.json",
+					"name" : "gkv2_motor_bridge__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "gkv2_motor_bridge__rs::@5b773a945a2d02d37cda",
+					"jsonFile" : "target-gkv2_motor_bridge__rs-Debug-2e0d4ae748833ffb27c6.json",
+					"name" : "gkv2_motor_bridge__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge_s__rosidl_typesupport_c-Debug-0bdf6148d0b63a1839e3.json",
+					"name" : "gkv2_motor_bridge_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c-Debug-35fc75c2b4050c7a740f.json",
+					"name" : "gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge_s__rosidl_typesupport_introspection_c-Debug-9129e800367f3459d02a.json",
+					"name" : "gkv2_motor_bridge_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_motor_bridge_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_motor_bridge_uninstall-Debug-3a57d65c75cc7b1c4b91.json",
+					"name" : "gkv2_motor_bridge_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gkv2_nav_parser_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gkv2_nav_parser_node-Debug-fd8de083269e300c12e2.json",
+					"name" : "gkv2_nav_parser_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "navigation_controller_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-navigation_controller_node-Debug-c5f70a8f72385e3c75e7.json",
+					"name" : "navigation_controller_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-ade5a71fd08d6df31180.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nockorn/robokross_ws/build",
+		"source" : "/home/nockorn/robokross_ws/src/gkv2_motor_bridge"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

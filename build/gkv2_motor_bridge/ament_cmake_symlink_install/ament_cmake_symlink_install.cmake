@@ -378,7 +378,7 @@ ament_cmake_symlink_install_files("/home/nockorn/robokross_ws/src/gkv2_motor_bri
 # install(FILES "/home/nockorn/robokross_ws/src/gkv2_motor_bridge/msg/GKV2Status.msg" "DESTINATION" "share/gkv2_motor_bridge/msg")
 ament_cmake_symlink_install_files("/home/nockorn/robokross_ws/src/gkv2_motor_bridge" FILES "/home/nockorn/robokross_ws/src/gkv2_motor_bridge/msg/GKV2Status.msg" "DESTINATION" "share/gkv2_motor_bridge/msg")
 
-# install("TARGETS" "gkv2_driver_node" "cmd_vel_bridge_node" "gkv2_nav_parser_node" "DESTINATION" "lib/gkv2_motor_bridge")
+# install("TARGETS" "gkv2_driver_node" "cmd_vel_bridge_node" "gkv2_nav_parser_node" "navigation_controller_node" "DESTINATION" "lib/gkv2_motor_bridge")
 include("/home/nockorn/robokross_ws/build/gkv2_motor_bridge/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch/" "DESTINATION" "share/gkv2_motor_bridge/launch")

@@ -49,7 +49,7 @@ def calculate_crc16(data):
     return crc
 
 # Открываем виртуальный порт (второй конец пары socat)
-ser = serial.Serial('/dev/ttyV1', baudrate=921600, timeout=1)
+ser = serial.Serial('/dev/ttyV2', baudrate=921600, timeout=1)
 time.sleep(1)
 
 print("Mock BUD started. Sending packets at 50Hz...")

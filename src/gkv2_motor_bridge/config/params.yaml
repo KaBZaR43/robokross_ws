@@ -1,27 +1,39 @@
+# ============================================================================
 # Конфигурация системы навигации и управления
-# Для Nvidia Jetson изменить порты на /dev/ttyTHS1, /dev/ttyTHS2 и т.д.
+# Для Nvidia Jetson изменить порты на /dev/ttyTHS1, /dev/ttyTHS2, /dev/ttyTHS3
+# ============================================================================
 
 # Параметры узла gkv2_driver_node (входящий канал ПДУ -> БУД)
+# Принимает команды CMD_BUD от пульта дистанционного управления
 gkv2_driver:
   ros__parameters:
-    uart_port: "/dev/ttyV0"  # На Jetson: /dev/ttyTHS1
+    uart_port: "/dev/ttyV0"        # На Jetson: /dev/ttyTHS1
     baudrate: 921600
-    publish_rate_hz: 50  # Частота публикации согласно Protokol_BUD.docx п. 3.1.1
+    publish_rate_hz: 50            # Частота публикации согласно Protokol_BUD.docx п. 3.1.1
+    qos_depth: 10
+
+# Параметры узла gkv2_nav_parser_node (входящий канал ГКВ2 -> Jetson)
+# Принимает навигационные данные (позиция, курс, скорости) от модуля ГКВ2
+gkv2_nav_parser:
+  ros__parameters:
+    uart_port: "/dev/ttyV1"        # На Jetson: /dev/ttyTHS2
+    baudrate: 921600
     qos_depth: 10
 
 # Параметры узла cmd_vel_bridge_node (исходящий канал БУД -> Моторы)
+# Отправляет команды управления на драйверы электродвигателей
 cmd_vel_bridge:
   ros__parameters:
     # Кинематика платформы
-    wheel_base: 0.7  # Ширина колеи, метры (60-80 см)
-    max_speed_ms: 2.78  # Максимальная скорость 10 км/ч
+    wheel_base: 0.7                # Ширина колеи, метры (60-80 см)
+    max_speed_ms: 2.78             # Максимальная скорость 10 км/ч
     
     # UART для моторов
-    motor_uart_port: "/dev/ttyV1"  # На Jetson: /dev/ttyTHS2
+    motor_uart_port: "/dev/ttyV4"  # На Jetson: /dev/ttyTHS3
     motor_baudrate: 115200
     
     # Безопасность
-    watchdog_timeout_sec: 0.3  # Таймаут watchdog (300 мс)
+    watchdog_timeout_sec: 0.3      # Таймаут watchdog (300 мс)
     
     # Частота отправки команд
-    send_rate_hz: 50  # 50 Гц согласно Protokol_BUD.docx
+    send_rate_hz: 50               # 50 Гц согласно Protokol_BUD.docx

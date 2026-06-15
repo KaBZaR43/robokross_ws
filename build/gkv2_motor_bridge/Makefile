@@ -445,6 +445,19 @@ gkv2_nav_parser_node/fast:
 .PHONY : gkv2_nav_parser_node/fast
 
 #=============================================================================
+# Target rules for targets named navigation_controller_node
+
+# Build rule for target.
+navigation_controller_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 navigation_controller_node
+.PHONY : navigation_controller_node
+
+# fast build rule for target.
+navigation_controller_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_controller_node.dir/build.make CMakeFiles/navigation_controller_node.dir/build
+.PHONY : navigation_controller_node/fast
+
+#=============================================================================
 # Target rules for targets named gkv2_motor_bridge__py
 
 # Build rule for target.
@@ -854,6 +867,30 @@ src/gkv2_nav_parser_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_nav_parser_node.dir/build.make CMakeFiles/gkv2_nav_parser_node.dir/src/gkv2_nav_parser_node.cpp.s
 .PHONY : src/gkv2_nav_parser_node.cpp.s
 
+src/navigation_controller_node.o: src/navigation_controller_node.cpp.o
+.PHONY : src/navigation_controller_node.o
+
+# target to build an object file
+src/navigation_controller_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_controller_node.dir/build.make CMakeFiles/navigation_controller_node.dir/src/navigation_controller_node.cpp.o
+.PHONY : src/navigation_controller_node.cpp.o
+
+src/navigation_controller_node.i: src/navigation_controller_node.cpp.i
+.PHONY : src/navigation_controller_node.i
+
+# target to preprocess a source file
+src/navigation_controller_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_controller_node.dir/build.make CMakeFiles/navigation_controller_node.dir/src/navigation_controller_node.cpp.i
+.PHONY : src/navigation_controller_node.cpp.i
+
+src/navigation_controller_node.s: src/navigation_controller_node.cpp.s
+.PHONY : src/navigation_controller_node.s
+
+# target to generate assembly for a file
+src/navigation_controller_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_controller_node.dir/build.make CMakeFiles/navigation_controller_node.dir/src/navigation_controller_node.cpp.s
+.PHONY : src/navigation_controller_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -890,6 +927,7 @@ help:
 	@echo "... gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c"
 	@echo "... gkv2_motor_bridge_s__rosidl_typesupport_introspection_c"
 	@echo "... gkv2_nav_parser_node"
+	@echo "... navigation_controller_node"
 	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.o"
 	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.i"
 	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.s"
@@ -938,6 +976,9 @@ help:
 	@echo "... src/gkv2_nav_parser_node.o"
 	@echo "... src/gkv2_nav_parser_node.i"
 	@echo "... src/gkv2_nav_parser_node.s"
+	@echo "... src/navigation_controller_node.o"
+	@echo "... src/navigation_controller_node.i"
+	@echo "... src/navigation_controller_node.s"
 .PHONY : help
 
 

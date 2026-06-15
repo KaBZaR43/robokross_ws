@@ -70,7 +70,7 @@ public:
         // Параметры кинематики
         this->declare_parameter<double>("wheel_base", 0.7);
         this->declare_parameter<double>("max_speed_ms", 2.78); // 10 км/ч
-        this->declare_parameter<std::string>("motor_uart_port", "/dev/ttyV1");
+        this->declare_parameter<std::string>("motor_uart_port", "/dev/ttyV4");
         this->declare_parameter<int>("motor_baudrate", 115200);
         this->declare_parameter<double>("watchdog_timeout_sec", 0.3);
         

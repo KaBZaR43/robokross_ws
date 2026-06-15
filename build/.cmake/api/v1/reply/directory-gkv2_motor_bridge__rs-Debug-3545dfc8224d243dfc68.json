@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "gkv2_motor_bridge__rs",
+		"source" : "/home/nockorn/robokross_ws/build/gkv2_motor_bridge__rs"
+	}
+}

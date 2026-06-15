@@ -19,6 +19,7 @@
 /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles/gkv2_driver_node.dir
 /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles/cmd_vel_bridge_node.dir
 /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles/gkv2_nav_parser_node.dir
+/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles/navigation_controller_node.dir
 /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles/test.dir
 /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles/edit_cache.dir
 /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles/rebuild_cache.dir

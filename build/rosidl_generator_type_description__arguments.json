@@ -1,0 +1,11 @@
+{
+  "package_name": "gkv2_motor_bridge",
+  "output_dir": "/home/nockorn/robokross_ws/build/rosidl_generator_type_description/gkv2_motor_bridge",
+  "idl_tuples": [
+    "/home/nockorn/robokross_ws/build/rosidl_adapter/gkv2_motor_bridge:msg/GKV2Status.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

@@ -1,0 +1,7 @@
+[01m[K/home/nockorn/robokross_ws/src/gkv2_motor_bridge/src/navigation_controller_node.cpp:[m[K In member function ‘[01m[Kvoid NavigationController::[01;32m[Kcontrol_loop[m[K()[m[K’:
+[01m[K/home/nockorn/robokross_ws/src/gkv2_motor_bridge/src/navigation_controller_node.cpp:100:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klookahead_x[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  100 |         double [01;35m[Klookahead_x[m[K = current_x_ + lookahead_distance_ * std::cos(current_yaw_);
+      |                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/nockorn/robokross_ws/src/gkv2_motor_bridge/src/navigation_controller_node.cpp:101:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klookahead_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  101 |         double [01;35m[Klookahead_y[m[K = current_y_ + lookahead_distance_ * std::sin(current_yaw_);
+      |                [01;35m[K^~~~~~~~~~~[m[K

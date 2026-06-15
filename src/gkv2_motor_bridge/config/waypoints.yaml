@@ -1,0 +1,11 @@
+navigation_controller:
+  ros__parameters:
+    # Параметры контроллера
+    target_velocity: 1.5       # Целевая линейная скорость (м/с)
+    lookahead_distance: 2.0    # Дистанция опережения (м)
+    waypoint_threshold: 0.5    # Радиус достижения точки (м)
+    
+   # Список waypoints в виде плоских массивов (X, Y, Yaw)
+    waypoints_x: [0.0, 10.0, 10.0, 0.0, 0.0]
+    waypoints_y: [0.0, 0.0, 10.0, 10.0, 0.0]
+    waypoints_yaw: [0.0, 0.0, 1.57, 3.14, -1.57]

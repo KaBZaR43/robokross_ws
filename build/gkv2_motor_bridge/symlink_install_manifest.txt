@@ -50,8 +50,10 @@
 /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/gkv2_motor_bridge/gkv2_driver_node
 /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/gkv2_motor_bridge/cmd_vel_bridge_node
 /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/gkv2_motor_bridge/gkv2_nav_parser_node
+/home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/gkv2_motor_bridge/navigation_controller_node
 /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/launch/main.launch.py
 /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/config/params.yaml
+/home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/config/waypoints.yaml
 /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/ament_index/resource_index/package_run_dependencies/gkv2_motor_bridge
 /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/ament_index/resource_index/parent_prefix_path/gkv2_motor_bridge
 /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/ament_prefix_path.sh

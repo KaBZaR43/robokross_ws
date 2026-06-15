@@ -57,7 +57,7 @@ class GKV2NavParser : public rclcpp::Node {
 public:
     GKV2NavParser() : Node("gkv2_nav_parser"), io_context_(), serial_port_(io_context_) {
         // Параметры
-        this->declare_parameter<std::string>("uart_port", "/dev/ttyV0");
+        this->declare_parameter<std::string>("uart_port", "/dev/ttyV1");
         this->declare_parameter<int>("baudrate", 921600);
         this->declare_parameter<int>("qos_depth", 10);
         
@@ -125,7 +125,7 @@ private:
                 continue;
             }
             
-            uint8_t address = buffer_[1];
+            // uint8_t address = buffer_[1];
             uint8_t packet_type = buffer_[2];
             uint8_t data_length = buffer_[3];
             
@@ -216,8 +216,9 @@ private:
         status.rtk_fixed = (gps_state_status & 0x00C00000) == 0x00800000; // Биты 22-23: RTK Fixed
         status_pub_->publish(status);
         
-        RCLCPP_DEBUG(this->get_logger(), "Nav: x=%.2f, y=%.2f, yaw=%.2f, sats=%d, RTK=%s",
-            x, y, yaw, gps_num_satellites, status.rtk_fixed ? "FIXED" : "FLOAT");
+        RCLCPP_DEBUG(this->get_logger(), 
+            "Nav: pos(%.2f, %.2f, %.2f) vel(%.2f, %.2f, %.2f) yaw=%.2f sats=%d RTK=%s",
+            x, y, z, vx, vy, vz, yaw, gps_num_satellites, status.rtk_fixed ? "FIXED" : "FLOAT");
     }
     
     boost::asio::io_context io_context_;

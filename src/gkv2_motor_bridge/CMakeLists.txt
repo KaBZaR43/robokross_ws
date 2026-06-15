@@ -41,6 +41,10 @@ ament_target_dependencies(gkv2_nav_parser_node rclcpp geometry_msgs sensor_msgs 
 target_link_libraries(gkv2_nav_parser_node Boost::system)
 target_include_directories(gkv2_nav_parser_node PUBLIC ${Boost_INCLUDE_DIRS})
 
+#Узел 4: Навигационный контроллер
+add_executable(navigation_controller_node src/navigation_controller_node.cpp)
+ament_target_dependencies(navigation_controller_node rclcpp geometry_msgs)
+
 # Линковка кастомного сообщения для gkv2_nav_parser_node
 rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
 target_link_libraries(gkv2_nav_parser_node "${cpp_typesupport_target}")
@@ -50,6 +54,7 @@ install(TARGETS
   gkv2_driver_node
   cmd_vel_bridge_node
   gkv2_nav_parser_node
+  navigation_controller_node   
   DESTINATION lib/${PROJECT_NAME}
 )
 

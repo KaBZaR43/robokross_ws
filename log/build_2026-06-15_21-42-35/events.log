@@ -1,0 +1,274 @@
+[0.000000] (-) TimerEvent: {}
+[0.000298] (gkv2_motor_bridge) JobQueued: {'identifier': 'gkv2_motor_bridge', 'dependencies': OrderedDict()}
+[0.000525] (gkv2_motor_bridge) JobStarted: {'identifier': 'gkv2_motor_bridge'}
+[0.006067] (gkv2_motor_bridge) JobProgress: {'identifier': 'gkv2_motor_bridge', 'progress': 'cmake'}
+[0.006565] (gkv2_motor_bridge) JobProgress: {'identifier': 'gkv2_motor_bridge', 'progress': 'build'}
+[0.007070] (gkv2_motor_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nockorn/robokross_ws/build/gkv2_motor_bridge', '--', '-j12', '-l12'], 'cwd': '/home/nockorn/robokross_ws/build/gkv2_motor_bridge', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'ru_RU:en', 'USER': 'nockorn', 'LC_TIME': 'en_US.UTF-8', 'FONTCONFIG_PATH': '/etc/fonts', 'GIO_MODULE_DIR': '/home/nockorn/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/247/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nockorn', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'TERM_PROGRAM_VERSION': '1.124.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/247/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/nockorn/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/247/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/247/usr/share/code/code', 'MANAGERPID': '2416', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '28172', 'BUNDLED_DEBUGPY_PATH': '/home/nockorn/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '29448', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/nockorn/robokross_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nockorn', 'JOURNAL_STREAM': '9:76734', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'nockorn', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nockorn/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/nockorn:@/tmp/.ICE-unix/28140,unix/nockorn:/tmp/.ICE-unix/28140', 'GTK_EXE_PREFIX': '/snap/code/247/usr', 'INVOCATION_ID': '414634ca71924fff87863335b77c380d', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LOCPATH': '/snap/code/247/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/nockorn/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-359c764d7b29c43b.txt', 'LANG': 'ru_RU.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/nockorn/.config/Code/User/workspaceStorage/6a86f05918ffc01af4131f37d6ce23ef/ms-python.python/pythonrc.py', 'LC_TELEPHONE': 'en_US.UTF-8', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/nockorn/snap/code/247/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-2beb42d4b4.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/nockorn/snap/code/247/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/nockorn/robokross_ws/install/gkv2_motor_bridge:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nockorn/robokross_ws/build/gkv2_motor_bridge', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/nockorn/snap/code/247/.local/share:/home/nockorn/snap/code/247:/snap/code/247/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/nockorn/robokross_ws/install/gkv2_motor_bridge:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.030519] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.098095] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.099851] (-) TimerEvent: {}
+[0.103722] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.126244] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.133015] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.141224] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.151064] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.197291] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.198240] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.199900] (-) TimerEvent: {}
+[0.246157] (gkv2_motor_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.294287] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.299975] (-) TimerEvent: {}
+[0.318858] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.7 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.347081] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.355356] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.400070] (-) TimerEvent: {}
+[0.500296] (-) TimerEvent: {}
+[0.545445] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[0.600391] (-) TimerEvent: {}
+[0.700629] (-) TimerEvent: {}
+[0.726844] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.795182] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.796428] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[0.800691] (-) TimerEvent: {}
+[0.900865] (-) TimerEvent: {}
+[0.997343] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[1.000903] (-) TimerEvent: {}
+[1.050146] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.062905] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Configuring done (1.0s)\n'}
+[1.100998] (-) TimerEvent: {}
+[1.106546] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.120902] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Build files have been written to: /home/nockorn/robokross_ws/build/gkv2_motor_bridge\n'}
+[1.153645] (gkv2_motor_bridge) StdoutLine: {'line': b'[  2%] Built target gkv2_motor_bridge__rosidl_generator_type_description\n'}
+[1.153920] (gkv2_motor_bridge) StdoutLine: {'line': b'[  4%] Built target gkv2_motor_bridge__rs\n'}
+[1.154272] (gkv2_motor_bridge) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/navigation_controller_node.dir/src/navigation_controller_node.cpp.o\x1b[0m\n'}
+[1.160752] (gkv2_motor_bridge) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_symlink_gkv2_motor_bridge\n'}
+[1.172390] (gkv2_motor_bridge) StdoutLine: {'line': b'[  9%] Built target gkv2_motor_bridge__cpp\n'}
+[1.174168] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 20%] Built target gkv2_motor_bridge__rosidl_generator_c\n'}
+[1.175441] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 25%] Built target gkv2_driver_node\n'}
+[1.184923] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 30%] Built target cmd_vel_bridge_node\n'}
+[1.197288] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 37%] Built target gkv2_motor_bridge__rosidl_typesupport_introspection_c\n'}
+[1.197484] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 44%] Built target gkv2_motor_bridge__rosidl_typesupport_c\n'}
+[1.199011] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 51%] Built target gkv2_motor_bridge__rosidl_typesupport_introspection_cpp\n'}
+[1.199570] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 58%] Built target gkv2_motor_bridge__rosidl_typesupport_cpp\n'}
+[1.199761] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 65%] Built target gkv2_motor_bridge__rosidl_typesupport_fastrtps_c\n'}
+[1.199985] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 72%] Built target gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp\n'}
+[1.201055] (-) TimerEvent: {}
+[1.216548] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 72%] Built target gkv2_motor_bridge\n'}
+[1.234040] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 74%] Built target gkv2_motor_bridge__py\n'}
+[1.239005] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/gkv2_nav_parser_node.dir/src/gkv2_nav_parser_node.cpp.o\x1b[0m\n'}
+[1.255963] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 81%] Built target gkv2_motor_bridge__rosidl_generator_py\n'}
+[1.278369] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 86%] Built target gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c\n'}
+[1.279535] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 90%] Built target gkv2_motor_bridge_s__rosidl_typesupport_introspection_c\n'}
+[1.282572] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 95%] Built target gkv2_motor_bridge_s__rosidl_typesupport_c\n'}
+[1.301148] (-) TimerEvent: {}
+[1.338912] (gkv2_motor_bridge) StdoutLine: {'line': b'running egg_info\n'}
+[1.354403] (gkv2_motor_bridge) StdoutLine: {'line': b'writing gkv2_motor_bridge.egg-info/PKG-INFO\n'}
+[1.354584] (gkv2_motor_bridge) StdoutLine: {'line': b'writing dependency_links to gkv2_motor_bridge.egg-info/dependency_links.txt\n'}
+[1.354751] (gkv2_motor_bridge) StdoutLine: {'line': b'writing top-level names to gkv2_motor_bridge.egg-info/top_level.txt\n'}
+[1.401235] (-) TimerEvent: {}
+[1.401380] (gkv2_motor_bridge) StdoutLine: {'line': b"reading manifest file 'gkv2_motor_bridge.egg-info/SOURCES.txt'\n"}
+[1.401770] (gkv2_motor_bridge) StdoutLine: {'line': b"writing manifest file 'gkv2_motor_bridge.egg-info/SOURCES.txt'\n"}
+[1.423963] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 95%] Built target ament_cmake_python_build_gkv2_motor_bridge_egg\n'}
+[1.501327] (-) TimerEvent: {}
+[1.601552] (-) TimerEvent: {}
+[1.701792] (-) TimerEvent: {}
+[1.802050] (-) TimerEvent: {}
+[1.902306] (-) TimerEvent: {}
+[2.002554] (-) TimerEvent: {}
+[2.102788] (-) TimerEvent: {}
+[2.203032] (-) TimerEvent: {}
+[2.303273] (-) TimerEvent: {}
+[2.403543] (-) TimerEvent: {}
+[2.503802] (-) TimerEvent: {}
+[2.604045] (-) TimerEvent: {}
+[2.704279] (-) TimerEvent: {}
+[2.804522] (-) TimerEvent: {}
+[2.827230] (gkv2_motor_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nockorn/robokross_ws/src/gkv2_motor_bridge/src/navigation_controller_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid NavigationController::\x1b[01;32m\x1b[Kcontrol_loop\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.827475] (gkv2_motor_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nockorn/robokross_ws/src/gkv2_motor_bridge/src/navigation_controller_node.cpp:100:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klookahead_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.827617] (gkv2_motor_bridge) StderrLine: {'line': b'  100 |         double \x1b[01;35m\x1b[Klookahead_x\x1b[m\x1b[K = current_x_ + lookahead_distance_ * std::cos(current_yaw_);\n'}
+[2.827740] (gkv2_motor_bridge) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.827852] (gkv2_motor_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nockorn/robokross_ws/src/gkv2_motor_bridge/src/navigation_controller_node.cpp:101:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klookahead_y\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.827977] (gkv2_motor_bridge) StderrLine: {'line': b'  101 |         double \x1b[01;35m\x1b[Klookahead_y\x1b[m\x1b[K = current_y_ + lookahead_distance_ * std::sin(current_yaw_);\n'}
+[2.828084] (gkv2_motor_bridge) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.904623] (-) TimerEvent: {}
+[3.004895] (-) TimerEvent: {}
+[3.105158] (-) TimerEvent: {}
+[3.205417] (-) TimerEvent: {}
+[3.305676] (-) TimerEvent: {}
+[3.405936] (-) TimerEvent: {}
+[3.506181] (-) TimerEvent: {}
+[3.606411] (-) TimerEvent: {}
+[3.706641] (-) TimerEvent: {}
+[3.806876] (-) TimerEvent: {}
+[3.907119] (-) TimerEvent: {}
+[4.007353] (-) TimerEvent: {}
+[4.107580] (-) TimerEvent: {}
+[4.207815] (-) TimerEvent: {}
+[4.308063] (-) TimerEvent: {}
+[4.408298] (-) TimerEvent: {}
+[4.508535] (-) TimerEvent: {}
+[4.608774] (-) TimerEvent: {}
+[4.709016] (-) TimerEvent: {}
+[4.809263] (-) TimerEvent: {}
+[4.909503] (-) TimerEvent: {}
+[5.009763] (-) TimerEvent: {}
+[5.110020] (-) TimerEvent: {}
+[5.210286] (-) TimerEvent: {}
+[5.310563] (-) TimerEvent: {}
+[5.410797] (-) TimerEvent: {}
+[5.511052] (-) TimerEvent: {}
+[5.611284] (-) TimerEvent: {}
+[5.711521] (-) TimerEvent: {}
+[5.811754] (-) TimerEvent: {}
+[5.912007] (-) TimerEvent: {}
+[6.012229] (-) TimerEvent: {}
+[6.112451] (-) TimerEvent: {}
+[6.212671] (-) TimerEvent: {}
+[6.312904] (-) TimerEvent: {}
+[6.413122] (-) TimerEvent: {}
+[6.513342] (-) TimerEvent: {}
+[6.613564] (-) TimerEvent: {}
+[6.713783] (-) TimerEvent: {}
+[6.814016] (-) TimerEvent: {}
+[6.914244] (-) TimerEvent: {}
+[7.014475] (-) TimerEvent: {}
+[7.114699] (-) TimerEvent: {}
+[7.214930] (-) TimerEvent: {}
+[7.315154] (-) TimerEvent: {}
+[7.415380] (-) TimerEvent: {}
+[7.515616] (-) TimerEvent: {}
+[7.615847] (-) TimerEvent: {}
+[7.716073] (-) TimerEvent: {}
+[7.816297] (-) TimerEvent: {}
+[7.916524] (-) TimerEvent: {}
+[8.016752] (-) TimerEvent: {}
+[8.116944] (-) TimerEvent: {}
+[8.217190] (-) TimerEvent: {}
+[8.317416] (-) TimerEvent: {}
+[8.417644] (-) TimerEvent: {}
+[8.517865] (-) TimerEvent: {}
+[8.618109] (-) TimerEvent: {}
+[8.704799] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable navigation_controller_node\x1b[0m\n'}
+[8.718202] (-) TimerEvent: {}
+[8.818450] (-) TimerEvent: {}
+[8.819218] (gkv2_motor_bridge) StdoutLine: {'line': b'[ 97%] Built target navigation_controller_node\n'}
+[8.918539] (-) TimerEvent: {}
+[8.996456] (gkv2_motor_bridge) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable gkv2_nav_parser_node\x1b[0m\n'}
+[9.018631] (-) TimerEvent: {}
+[9.118707] (gkv2_motor_bridge) StdoutLine: {'line': b'[100%] Built target gkv2_nav_parser_node\n'}
+[9.118913] (-) TimerEvent: {}
+[9.129376] (gkv2_motor_bridge) CommandEnded: {'returncode': 0}
+[9.130064] (gkv2_motor_bridge) JobProgress: {'identifier': 'gkv2_motor_bridge', 'progress': 'install'}
+[9.136977] (gkv2_motor_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nockorn/robokross_ws/build/gkv2_motor_bridge'], 'cwd': '/home/nockorn/robokross_ws/build/gkv2_motor_bridge', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'ru_RU:en', 'USER': 'nockorn', 'LC_TIME': 'en_US.UTF-8', 'FONTCONFIG_PATH': '/etc/fonts', 'GIO_MODULE_DIR': '/home/nockorn/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/247/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nockorn', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'TERM_PROGRAM_VERSION': '1.124.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/247/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/nockorn/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/247/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/247/usr/share/code/code', 'MANAGERPID': '2416', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '28172', 'BUNDLED_DEBUGPY_PATH': '/home/nockorn/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '29448', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/nockorn/robokross_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nockorn', 'JOURNAL_STREAM': '9:76734', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'nockorn', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nockorn/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/nockorn:@/tmp/.ICE-unix/28140,unix/nockorn:/tmp/.ICE-unix/28140', 'GTK_EXE_PREFIX': '/snap/code/247/usr', 'INVOCATION_ID': '414634ca71924fff87863335b77c380d', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LOCPATH': '/snap/code/247/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/nockorn/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-359c764d7b29c43b.txt', 'LANG': 'ru_RU.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/nockorn/.config/Code/User/workspaceStorage/6a86f05918ffc01af4131f37d6ce23ef/ms-python.python/pythonrc.py', 'LC_TELEPHONE': 'en_US.UTF-8', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/nockorn/snap/code/247/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-2beb42d4b4.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/nockorn/snap/code/247/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/nockorn/robokross_ws/install/gkv2_motor_bridge:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nockorn/robokross_ws/build/gkv2_motor_bridge', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/nockorn/snap/code/247/.local/share:/home/nockorn/snap/code/247:/snap/code/247/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/nockorn/robokross_ws/install/gkv2_motor_bridge:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[9.142996] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.143510] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[9.143643] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/ament_index/resource_index/rosidl_interfaces/gkv2_motor_bridge\n'}
+[9.143787] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/msg/GKV2Status.json\n'}
+[9.144161] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__functions.h\n'}
+[9.144290] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__struct.h\n'}
+[9.144379] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.h\n'}
+[9.144472] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/gkv2_status.h\n'}
+[9.144547] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/rosidl_generator_c__visibility_control.h\n'}
+[9.144689] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/library_path.sh\n'}
+[9.144868] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/library_path.dsv\n'}
+[9.145400] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_fastrtps_c.h\n'}
+[9.145532] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[9.145844] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__builder.hpp\n'}
+[9.145953] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__struct.hpp\n'}
+[9.146042] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__traits.hpp\n'}
+[9.146146] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.hpp\n'}
+[9.146256] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/gkv2_status.hpp\n'}
+[9.146377] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[9.146706] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.146865] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[9.147064] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h\n'}
+[9.147182] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[9.147415] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.147571] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/pythonpath.sh\n'}
+[9.147695] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/pythonpath.dsv\n'}
+[9.147864] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge-0.0.1-py3.12.egg-info/PKG-INFO\n'}
+[9.148042] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge-0.0.1-py3.12.egg-info/SOURCES.txt\n'}
+[9.148145] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge-0.0.1-py3.12.egg-info/dependency_links.txt\n'}
+[9.148269] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge-0.0.1-py3.12.egg-info/top_level.txt\n'}
+[9.148716] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/__init__.py\n'}
+[9.148812] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_c.c\n'}
+[9.148914] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[9.149008] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[9.149089] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/gkv2_motor_bridge_s__rosidl_typesupport_c.so\n'}
+[9.149179] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.so\n'}
+[9.149271] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.so\n'}
+[9.149357] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/msg/__init__.py\n'}
+[9.149436] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/msg/_gkv2_status.py\n'}
+[9.149521] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/msg/_gkv2_status_s.c\n'}
+[9.149725] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.so\n'}
+[9.149904] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.so\n'}
+[9.150073] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/gkv2_motor_bridge_s__rosidl_typesupport_c.so\n'}
+[9.150200] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/ament_index/resource_index/rust_packages/gkv2_motor_bridge\n'}
+[9.150493] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/rust/Cargo.toml\n'}
+[9.150583] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/rust/build.rs\n'}
+[9.150683] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/rust/src/lib.rs\n'}
+[9.150772] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/rust/src/msg.rs\n'}
+[9.150876] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/rust/src/msg/rmw.rs\n'}
+[9.150983] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/msg/GKV2Status.idl\n'}
+[9.151094] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/msg/GKV2Status.msg\n'}
+[9.151283] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/gkv2_motor_bridge/gkv2_driver_node\n'}
+[9.151399] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/gkv2_motor_bridge/cmd_vel_bridge_node\n'}
+[9.151500] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/gkv2_motor_bridge/gkv2_nav_parser_node\n'}
+[9.151586] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Symlinking: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/gkv2_motor_bridge/navigation_controller_node\n'}
+[9.158880] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/launch/main.launch.py\n'}
+[9.159143] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/config/params.yaml\n'}
+[9.159243] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Symlinking: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/config/waypoints.yaml\n'}
+[9.166145] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/ament_index/resource_index/package_run_dependencies/gkv2_motor_bridge\n'}
+[9.166327] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/ament_index/resource_index/parent_prefix_path/gkv2_motor_bridge\n'}
+[9.166513] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/ament_prefix_path.sh\n'}
+[9.166673] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/ament_prefix_path.dsv\n'}
+[9.166858] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/path.sh\n'}
+[9.167014] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/path.dsv\n'}
+[9.167142] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/local_setup.bash\n'}
+[9.167266] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/local_setup.sh\n'}
+[9.167398] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/local_setup.zsh\n'}
+[9.167532] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/local_setup.dsv\n'}
+[9.167633] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Symlinking: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/package.dsv\n'}
+[9.175446] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/ament_index/resource_index/packages/gkv2_motor_bridge\n'}
+[9.175579] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/rosidl_cmake-extras.cmake\n'}
+[9.175726] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.175902] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.176050] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.176194] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.176395] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[9.176612] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[9.176965] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridgeConfig.cmake\n'}
+[9.177147] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridgeConfig-version.cmake\n'}
+[9.177354] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/package.xml\n'}
+[9.177576] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_generator_c.so\n'}
+[9.177869] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_typesupport_fastrtps_c.so\n'}
+[9.178172] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.so\n'}
+[9.178448] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_typesupport_introspection_c.so\n'}
+[9.178752] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_typesupport_c.so\n'}
+[9.179042] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_typesupport_introspection_cpp.so\n'}
+[9.179297] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_typesupport_cpp.so\n'}
+[9.205362] (gkv2_motor_bridge) StdoutLine: {'line': b"Listing '/home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge'...\n"}
+[9.205549] (gkv2_motor_bridge) StdoutLine: {'line': b"Compiling '/home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/__init__.py'...\n"}
+[9.205644] (gkv2_motor_bridge) StdoutLine: {'line': b"Listing '/home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/msg'...\n"}
+[9.209222] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_generator_py.so\n'}
+[9.209507] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_generator_cExport.cmake\n'}
+[9.209644] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_generator_cExport-noconfig.cmake\n'}
+[9.209791] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[9.209934] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[9.210096] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_generator_cppExport.cmake\n'}
+[9.210265] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[9.210420] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[9.210568] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_introspection_cExport.cmake\n'}
+[9.210682] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[9.210791] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_cExport.cmake\n'}
+[9.210910] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[9.210986] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[9.211059] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[9.211130] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_cppExport.cmake\n'}
+[9.211199] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[9.211267] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_generator_pyExport.cmake\n'}
+[9.211334] (gkv2_motor_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_generator_pyExport-noconfig.cmake\n'}
+[9.212478] (gkv2_motor_bridge) CommandEnded: {'returncode': 0}
+[9.219103] (-) TimerEvent: {}
+[9.231406] (gkv2_motor_bridge) JobEnded: {'identifier': 'gkv2_motor_bridge', 'rc': 0}
+[9.231926] (-) EventReactorShutdown: {}

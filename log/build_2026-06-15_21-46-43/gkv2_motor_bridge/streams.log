@@ -1,0 +1,141 @@
+[0.008s] Invoking command in '/home/nockorn/robokross_ws/build/gkv2_motor_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nockorn/robokross_ws/build/gkv2_motor_bridge -- -j12 -l12
+[0.053s] [  2%] Built target gkv2_motor_bridge__rosidl_generator_type_description
+[0.054s] [  4%] Built target gkv2_motor_bridge__rs
+[0.058s] [  4%] Built target ament_cmake_python_symlink_gkv2_motor_bridge
+[0.064s] [  6%] [32mBuilding CXX object CMakeFiles/navigation_controller_node.dir/src/navigation_controller_node.cpp.o[0m
+[0.066s] [ 11%] Built target cmd_vel_bridge_node
+[0.067s] [ 16%] Built target gkv2_driver_node
+[0.068s] [ 18%] Built target gkv2_motor_bridge__cpp
+[0.070s] [ 30%] Built target gkv2_motor_bridge__rosidl_generator_c
+[0.090s] [ 51%] Built target gkv2_motor_bridge__rosidl_typesupport_c
+[0.091s] [ 51%] Built target gkv2_motor_bridge__rosidl_typesupport_fastrtps_c
+[0.091s] [ 51%] Built target gkv2_motor_bridge__rosidl_typesupport_introspection_c
+[0.092s] [ 58%] Built target gkv2_motor_bridge__rosidl_typesupport_cpp
+[0.092s] [ 65%] Built target gkv2_motor_bridge__rosidl_typesupport_introspection_cpp
+[0.093s] [ 72%] Built target gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp
+[0.111s] [ 72%] Built target gkv2_motor_bridge
+[0.129s] [ 74%] Built target gkv2_motor_bridge__py
+[0.135s] [ 79%] Built target gkv2_nav_parser_node
+[0.150s] [ 83%] Built target gkv2_motor_bridge__rosidl_generator_py
+[0.169s] [ 88%] Built target gkv2_motor_bridge_s__rosidl_typesupport_c
+[0.169s] [ 93%] Built target gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c
+[0.170s] [ 97%] Built target gkv2_motor_bridge_s__rosidl_typesupport_introspection_c
+[0.241s] running egg_info
+[0.259s] writing gkv2_motor_bridge.egg-info/PKG-INFO
+[0.259s] writing dependency_links to gkv2_motor_bridge.egg-info/dependency_links.txt
+[0.259s] writing top-level names to gkv2_motor_bridge.egg-info/top_level.txt
+[0.309s] reading manifest file 'gkv2_motor_bridge.egg-info/SOURCES.txt'
+[0.310s] writing manifest file 'gkv2_motor_bridge.egg-info/SOURCES.txt'
+[0.337s] [ 97%] Built target ament_cmake_python_build_gkv2_motor_bridge_egg
+[7.612s] [100%] [32m[1mLinking CXX executable navigation_controller_node[0m
+[7.745s] [100%] Built target navigation_controller_node
+[7.756s] Invoked command in '/home/nockorn/robokross_ws/build/gkv2_motor_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nockorn/robokross_ws/build/gkv2_motor_bridge -- -j12 -l12
+[7.766s] Invoking command in '/home/nockorn/robokross_ws/build/gkv2_motor_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nockorn/robokross_ws/build/gkv2_motor_bridge
+[7.773s] -- Install configuration: ""
+[7.773s] -- Execute custom install script
+[7.773s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/ament_index/resource_index/rosidl_interfaces/gkv2_motor_bridge
+[7.774s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/msg/GKV2Status.json
+[7.774s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__functions.h
+[7.774s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__struct.h
+[7.774s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.h
+[7.774s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/gkv2_status.h
+[7.774s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/rosidl_generator_c__visibility_control.h
+[7.775s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/library_path.sh
+[7.775s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/library_path.dsv
+[7.775s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_fastrtps_c.h
+[7.775s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[7.775s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__builder.hpp
+[7.775s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__struct.hpp
+[7.776s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__traits.hpp
+[7.776s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.hpp
+[7.776s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/gkv2_status.hpp
+[7.776s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/rosidl_generator_cpp__visibility_control.hpp
+[7.776s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_fastrtps_cpp.hpp
+[7.776s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.777s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h
+[7.777s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[7.777s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/include/gkv2_motor_bridge/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_cpp.hpp
+[7.777s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/pythonpath.sh
+[7.777s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/pythonpath.dsv
+[7.778s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge-0.0.1-py3.12.egg-info/PKG-INFO
+[7.778s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge-0.0.1-py3.12.egg-info/SOURCES.txt
+[7.778s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge-0.0.1-py3.12.egg-info/dependency_links.txt
+[7.778s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge-0.0.1-py3.12.egg-info/top_level.txt
+[7.779s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/__init__.py
+[7.779s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_c.c
+[7.779s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c
+[7.779s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_introspection_c.c
+[7.779s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/gkv2_motor_bridge_s__rosidl_typesupport_c.so
+[7.779s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.so
+[7.779s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.so
+[7.779s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/msg/__init__.py
+[7.780s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/msg/_gkv2_status.py
+[7.780s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/msg/_gkv2_status_s.c
+[7.780s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.so
+[7.780s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.so
+[7.780s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/gkv2_motor_bridge_s__rosidl_typesupport_c.so
+[7.780s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/ament_index/resource_index/rust_packages/gkv2_motor_bridge
+[7.781s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/rust/Cargo.toml
+[7.781s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/rust/build.rs
+[7.781s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/rust/src/lib.rs
+[7.781s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/rust/src/msg.rs
+[7.781s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/rust/src/msg/rmw.rs
+[7.781s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/msg/GKV2Status.idl
+[7.781s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/msg/GKV2Status.msg
+[7.782s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/gkv2_motor_bridge/gkv2_driver_node
+[7.782s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/gkv2_motor_bridge/cmd_vel_bridge_node
+[7.782s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/gkv2_motor_bridge/gkv2_nav_parser_node
+[7.782s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/gkv2_motor_bridge/navigation_controller_node
+[7.782s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/launch/main.launch.py
+[7.782s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/config/params.yaml
+[7.782s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/config/waypoints.yaml
+[7.783s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/ament_index/resource_index/package_run_dependencies/gkv2_motor_bridge
+[7.783s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/ament_index/resource_index/parent_prefix_path/gkv2_motor_bridge
+[7.783s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/ament_prefix_path.sh
+[7.783s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/ament_prefix_path.dsv
+[7.783s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/path.sh
+[7.783s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/environment/path.dsv
+[7.783s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/local_setup.bash
+[7.783s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/local_setup.sh
+[7.784s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/local_setup.zsh
+[7.784s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/local_setup.dsv
+[7.784s] -- Symlinking: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/package.dsv
+[7.792s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/ament_index/resource_index/packages/gkv2_motor_bridge
+[7.792s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/rosidl_cmake-extras.cmake
+[7.792s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.792s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.792s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/ament_cmake_export_libraries-extras.cmake
+[7.792s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/ament_cmake_export_targets-extras.cmake
+[7.792s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.793s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.793s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridgeConfig.cmake
+[7.793s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridgeConfig-version.cmake
+[7.793s] -- Up-to-date symlink: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/package.xml
+[7.794s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_generator_c.so
+[7.794s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_typesupport_fastrtps_c.so
+[7.794s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.so
+[7.794s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_typesupport_introspection_c.so
+[7.795s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_typesupport_c.so
+[7.795s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_typesupport_introspection_cpp.so
+[7.795s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_typesupport_cpp.so
+[7.822s] Listing '/home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge'...
+[7.822s] Listing '/home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/python3.12/site-packages/gkv2_motor_bridge/msg'...
+[7.826s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/lib/libgkv2_motor_bridge__rosidl_generator_py.so
+[7.826s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_generator_cExport.cmake
+[7.826s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_generator_cExport-noconfig.cmake
+[7.826s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_typesupport_fastrtps_cExport.cmake
+[7.826s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[7.826s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_generator_cppExport.cmake
+[7.826s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_typesupport_fastrtps_cppExport.cmake
+[7.826s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[7.827s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_introspection_cExport.cmake
+[7.827s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.827s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_cExport.cmake
+[7.827s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_cExport-noconfig.cmake
+[7.827s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_introspection_cppExport.cmake
+[7.827s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.827s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_cppExport.cmake
+[7.827s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/gkv2_motor_bridge__rosidl_typesupport_cppExport-noconfig.cmake
+[7.827s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_generator_pyExport.cmake
+[7.827s] -- Up-to-date: /home/nockorn/robokross_ws/install/gkv2_motor_bridge/share/gkv2_motor_bridge/cmake/export_gkv2_motor_bridge__rosidl_generator_pyExport-noconfig.cmake
+[7.830s] Invoked command in '/home/nockorn/robokross_ws/build/gkv2_motor_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nockorn/robokross_ws/build/gkv2_motor_bridge

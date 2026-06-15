@@ -44,7 +44,7 @@ def calculate_crc32(data):
         crc = crc32_tab[(crc ^ byte) & 0xFF] ^ (crc >> 8)
     return crc ^ 0xFFFFFFFF
 
-ser = serial.Serial('/dev/ttyV1', baudrate=921600, timeout=1)
+ser = serial.Serial('/dev/ttyV3', baudrate=921600, timeout=1)
 time.sleep(1)
 
 print("Mock GKV2 Nav started. Sending at 50Hz...")
