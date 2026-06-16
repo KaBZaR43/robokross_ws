@@ -1,0 +1,3 @@
+[INFO] [1781612758.019220038] [gkv2_driver]: GKV2 Driver Node initialized with Boost.Asio.
+[ERROR] [1781612758.020663264] [gkv2_driver]: Failed to open UART port: open: No such file or directory [system:2 at /usr/include/boost/asio/detail/impl/posix_serial_port_service.ipp:61 in function 'open']
+[INFO] [1781612789.439403111] [rclcpp]: signal_handler(SIGINT/SIGTERM)

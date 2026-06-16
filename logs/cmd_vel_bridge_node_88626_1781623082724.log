@@ -1,0 +1,6 @@
+[INFO] [1781623082.743871846] [cmd_vel_bridge]: Motor UART opened: /dev/ttyV4 @ 115200 baud
+[INFO] [1781623082.745219028] [cmd_vel_bridge]: CmdVelBridge initialized. Mode: PAUSE
+[INFO] [1781623082.745231832] [cmd_vel_bridge]: Wheel base: 0.70 m, Max speed: 2.78 m/s
+[WARN] [1781623082.765215655] [cmd_vel_bridge]: Received cmd_vel but not in DRIVE mode. Ignoring.
+[ERROR] [1781623094.953737023] [cmd_vel_bridge]: UART write error: Interrupted system call
+[INFO] [1781623094.953738907] [rclcpp]: signal_handler(SIGINT/SIGTERM)

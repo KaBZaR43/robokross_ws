@@ -1,0 +1,29 @@
+[INFO] [1781616801.871513992] [gkv2_nav_parser]: Loaded 30 parameter IDs from config
+[INFO] [1781616801.873770337] [gkv2_nav_parser]: UART opened: /dev/ttyV1 @ 921600 baud
+[INFO] [1781616801.873817846] [gkv2_nav_parser]: GKV2 Nav Parser initialized
+[INFO] [1781616801.873823446] [gkv2_nav_parser]: Expected packet size: 128 bytes (header 4 + data 120 + CRC 4)
+[INFO] [1781616801.873895181] [gkv2_nav_parser]: Packets: 0 | CRC errors: 0 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781616801.874381942] [gkv2_nav_parser]: Packets: 100 | CRC errors: 0 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[WARN] [1781616801.874647550] [gkv2_nav_parser]: New subscription discovered on topic '/nav/pose', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[WARN] [1781616801.875019667] [gkv2_nav_parser]: New subscription discovered on topic '/gkv2/status', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[WARN] [1781616807.664587220] [gkv2_nav_parser]: CRC32 mismatch: recv=0xFF692D37, calc=0x69692D37 (total errors: 1)
+[INFO] [1781616808.428279244] [gkv2_nav_parser]: Packets: 200 | CRC errors: 39 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781616809.433070145] [gkv2_nav_parser]: Packets: 300 | CRC errors: 89 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781616810.438195588] [gkv2_nav_parser]: Packets: 400 | CRC errors: 139 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781616811.443355552] [gkv2_nav_parser]: Packets: 500 | CRC errors: 189 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781616812.448850320] [gkv2_nav_parser]: Packets: 600 | CRC errors: 239 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[WARN] [1781616812.669970804] [gkv2_nav_parser]: CRC32 mismatch: recv=0xFF692D37, calc=0x69692D37 (total errors: 250)
+[INFO] [1781616813.453903046] [gkv2_nav_parser]: Packets: 700 | CRC errors: 289 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781616814.458782823] [gkv2_nav_parser]: Packets: 800 | CRC errors: 339 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781616815.463880202] [gkv2_nav_parser]: Packets: 900 | CRC errors: 389 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781616816.468902758] [gkv2_nav_parser]: Packets: 1000 | CRC errors: 439 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781616817.474073517] [gkv2_nav_parser]: Packets: 1100 | CRC errors: 489 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[WARN] [1781616817.675038708] [gkv2_nav_parser]: CRC32 mismatch: recv=0xFF692D37, calc=0x69692D37 (total errors: 499)
+[INFO] [1781616818.478832702] [gkv2_nav_parser]: Packets: 1200 | CRC errors: 539 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781616819.483816083] [gkv2_nav_parser]: Packets: 1300 | CRC errors: 589 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781616820.488619852] [gkv2_nav_parser]: Packets: 1400 | CRC errors: 639 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781616821.493537961] [gkv2_nav_parser]: Packets: 1500 | CRC errors: 689 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781616822.498416111] [gkv2_nav_parser]: Packets: 1600 | CRC errors: 739 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[WARN] [1781616822.679302167] [gkv2_nav_parser]: CRC32 mismatch: recv=0xFF692D37, calc=0x69692D37 (total errors: 748)
+[INFO] [1781616823.503441244] [gkv2_nav_parser]: Packets: 1700 | CRC errors: 789 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:N | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781616825.228054670] [rclcpp]: signal_handler(SIGINT/SIGTERM)

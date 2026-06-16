@@ -79,6 +79,7 @@ rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__ros
 rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h: /opt/ros/jazzy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h: rosidl_adapter/gkv2_motor_bridge/msg/GKV2Status.idl
 rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h: rosidl_adapter/gkv2_motor_bridge/msg/NavigationStatus.idl
+rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h: rosidl_adapter/gkv2_motor_bridge/msg/GKV2ConfigStatus.idl
 rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h: /opt/ros/jazzy/share/std_msgs/msg/Bool.idl
 rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h: /opt/ros/jazzy/share/std_msgs/msg/Byte.idl
 rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h: /opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl
@@ -117,11 +118,17 @@ rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__ros
 rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c
 
 rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c
+
+rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c
 
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c.o: CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c.o: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c
@@ -151,16 +158,32 @@ CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_type
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c -o CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.s
 
+CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o: CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c
+CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o: CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o -MF CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o.d -o CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o -c /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c
+
+CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c > CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.i
+
+CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c -o CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.s
+
 # Object files for target gkv2_motor_bridge__rosidl_typesupport_introspection_c
 gkv2_motor_bridge__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c.o" \
-"CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.o"
+"CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.o" \
+"CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o"
 
 # External object files for target gkv2_motor_bridge__rosidl_typesupport_introspection_c
 gkv2_motor_bridge__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libgkv2_motor_bridge__rosidl_typesupport_introspection_c.so: CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c.o
 libgkv2_motor_bridge__rosidl_typesupport_introspection_c.so: CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.o
+libgkv2_motor_bridge__rosidl_typesupport_introspection_c.so: CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o
 libgkv2_motor_bridge__rosidl_typesupport_introspection_c.so: CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/build.make
 libgkv2_motor_bridge__rosidl_typesupport_introspection_c.so: libgkv2_motor_bridge__rosidl_generator_c.so
 libgkv2_motor_bridge__rosidl_typesupport_introspection_c.so: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
@@ -171,7 +194,7 @@ libgkv2_motor_bridge__rosidl_typesupport_introspection_c.so: /opt/ros/jazzy/lib/
 libgkv2_motor_bridge__rosidl_typesupport_introspection_c.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libgkv2_motor_bridge__rosidl_typesupport_introspection_c.so: /opt/ros/jazzy/lib/librcutils.so
 libgkv2_motor_bridge__rosidl_typesupport_introspection_c.so: CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libgkv2_motor_bridge__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libgkv2_motor_bridge__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -182,6 +205,8 @@ CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/clean
 
+CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__rosidl_typesupport_introspection_c.h
+CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__rosidl_typesupport_introspection_c.h
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__rosidl_typesupport_introspection_c.h

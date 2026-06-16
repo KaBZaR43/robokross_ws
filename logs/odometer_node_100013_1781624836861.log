@@ -1,0 +1,2 @@
+[INFO] [1781624836.879133501] [odometer]: Odometer node initialized (mock mode: ON)
+[INFO] [1781624839.422796821] [rclcpp]: signal_handler(SIGINT/SIGTERM)

@@ -1,0 +1,4 @@
+[INFO] [1781621595.518278259] [gkv2_config]: UART opened: /dev/ttyV1 @ 921600 baud
+[INFO] [1781621595.518321060] [gkv2_config]: Starting GKV2 configuration check...
+[ERROR] [1781621595.518905260] [gkv2_config]: No valid packet found in response
+[ERROR] [1781621595.518945115] [gkv2_config]: Connection failed: no response from GKV2

@@ -1,0 +1,71 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from gkv2_motor_bridge/msg/GKV2ConfigStatus.msg
+// generated code does not contain a copyright notice
+
+
+module gkv2_motor_bridge {
+  module msg {
+    @verbatim (language="comment", text=
+      "Статус конфигурации ГКВ2")
+    struct GKV2ConfigStatus {
+      @verbatim (language="comment", text=
+        "Общая информация" "\n"
+        "Название изделия")
+      string device_name;
+
+      @verbatim (language="comment", text=
+        "Серийный номер")
+      string serial_number;
+
+      @verbatim (language="comment", text=
+        "Версия прошивки")
+      uint16 firmware_version;
+
+      @verbatim (language="comment", text=
+        "Текущий алгоритм (9 = навигация)")
+      uint8 algorithm_mode;
+
+      @verbatim (language="comment", text=
+        "Статус соединения" "\n"
+        "Соединение с ГКВ2 установлено")
+      boolean connection_ok;
+
+      @verbatim (language="comment", text=
+        "Данные готовы (бит 11 статуса)")
+      boolean data_ready;
+
+      @verbatim (language="comment", text=
+        "Переполнение очереди АЦП (бит 1)")
+      boolean adc_overflow;
+
+      @verbatim (language="comment", text=
+        "Пропуск данных АЦП (бит 2)")
+      boolean adc_skip;
+
+      @verbatim (language="comment", text=
+        "Отказ гироскопа (бит 4)")
+      boolean gyroscope_fail;
+
+      @verbatim (language="comment", text=
+        "Отказ акселерометра (бит 5)")
+      boolean accelerometer_fail;
+
+      @verbatim (language="comment", text=
+        "Конфигурация наборного пакета" "\n"
+        "Количество параметров в наборном пакете")
+      uint8 packet_param_count;
+
+      @verbatim (language="comment", text=
+        "ID параметров в наборном пакете")
+      sequence<int32> packet_param_ids;
+
+      @verbatim (language="comment", text=
+        "Структура пакета соответствует ожидаемой")
+      boolean packet_structure_match;
+
+      @verbatim (language="comment", text=
+        "Текстовое описание статуса")
+      string status_message;
+    };
+  };
+};

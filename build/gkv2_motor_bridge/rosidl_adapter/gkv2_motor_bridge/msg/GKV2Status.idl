@@ -6,23 +6,155 @@
 module gkv2_motor_bridge {
   module msg {
     @verbatim (language="comment", text=
-      "Статус навигационного решения ГКВ2")
+      "Статус навигационного решения ГКВ2" "\n"
+      "Согласно ЛМАП.402131.009Д1 п. 7.7.8.3 (ZED-F9P) и п. 7.5 (alg_state_status)")
     struct GKV2Status {
       @verbatim (language="comment", text=
-        "Слово состояния ГНСС приёмника (битовое поле)")
+        "Слово состояния ГНСС приёмника (gps_state_status, ID 72)")
       uint32 gps_state_status;
 
       @verbatim (language="comment", text=
-        "Количество спутников в решении")
+        "Бит 0: годность даты")
+      boolean gnss_date_valid;
+
+      @verbatim (language="comment", text=
+        "Бит 1: годность времени")
+      boolean gnss_time_valid;
+
+      @verbatim (language="comment", text=
+        "Бит 2: временная неоднозначность решена")
+      boolean gnss_ambiguity_resolved;
+
+      @verbatim (language="comment", text=
+        "Бит 16: годность координат, DOP и оценок точности")
+      boolean gnss_coords_valid;
+
+      @verbatim (language="comment", text=
+        "Бит 17: применяются дифференциальные поправки")
+      boolean gnss_diff_corrections;
+
+      @verbatim (language="comment", text=
+        "Биты 8-15: 0=нет, 2=2D, 3=3D, 5=time")
+      uint8 gnss_fix_type;
+
+      @verbatim (language="comment", text=
+        "Биты 22-23: 0=нет, 1=float, 2=fixed")
+      uint8 rtk_status;
+
+      @verbatim (language="comment", text=
+        "Слово состояния ровера (gps_rel_status, ID 29) — для двух антенн")
+      uint32 gps_rel_status;
+
+      @verbatim (language="comment", text=
+        "Бит 0: годность навигационного решения")
+      boolean rel_nav_valid;
+
+      @verbatim (language="comment", text=
+        "Бит 1: диф. поправки применены")
+      boolean rel_diff_applied;
+
+      @verbatim (language="comment", text=
+        "Бит 2: годность точности относительных координат")
+      boolean rel_coords_valid;
+
+      @verbatim (language="comment", text=
+        "Биты 3-4: 0=не решена, 1=diff, 2=fixed")
+      uint8 rel_ambiguity_status;
+
+      @verbatim (language="comment", text=
+        "Бит 5: режим вычисления курса по двум антеннам")
+      boolean rel_heading_mode;
+
+      @verbatim (language="comment", text=
+        "Бит 8: годность вычисления курса")
+      boolean rel_heading_valid;
+
+      @verbatim (language="comment", text=
+        "Состояние навигационного алгоритма (alg_state_status, ID 96)")
+      uint32 alg_state_status;
+
+      @verbatim (language="comment", text=
+        "Биты 7-0: этап (0=сброс, 1-2=поиск, 10=ожидание курса, 30=преднавигация, 50=полная навигация)")
+      uint8 alg_stage;
+
+      @verbatim (language="comment", text=
+        "Биты 15-8: тип коррекции (0=нет, 1=по скорости ГНСС, 3=по положению и скорости, 18=по курсу ГНСС)")
+      uint8 alg_correction;
+
+      @verbatim (language="comment", text=
+        "Биты 31-16: ошибки алгоритма")
+      uint16 alg_fails;
+
+      @verbatim (language="comment", text=
+        "stage == 50 && fails == 0")
+      boolean alg_navigation_ready;
+
+      @verbatim (language="comment", text=
+        "Количество спутников (ID 79)")
       uint16 gps_num_satellites;
 
       @verbatim (language="comment", text=
-        "Состояние навигационного алгоритма (0-50: сброс, поиск, навигация)")
-      float alg_state_status;
+        "СКО координат от ГНСС (ID 85-87), метры" "\n"
+        "СКО по оси X (север)")
+      float gnss_sig_lat;
 
       @verbatim (language="comment", text=
-        "RTK Fixed (сантиметровая точность)")
-      boolean rtk_fixed;
+        "СКО по оси Y (восток)")
+      float gnss_sig_lon;
+
+      @verbatim (language="comment", text=
+        "СКО по оси Z (вниз)")
+      float gnss_sig_alt;
+
+      @verbatim (language="comment", text=
+        "Дисперсии ошибки навигационного алгоритма (ID 98-106)" "\n"
+        "Дисперсия ошибки положения X, м²")
+      float alg_var_x;
+
+      @verbatim (language="comment", text=
+        "Дисперсия ошибки положения Y, м²")
+      float alg_var_y;
+
+      @verbatim (language="comment", text=
+        "Дисперсия ошибки положения Z, м²")
+      float alg_var_z;
+
+      @verbatim (language="comment", text=
+        "Дисперсия ошибки скорости X, (м/с)²")
+      float alg_var_vx;
+
+      @verbatim (language="comment", text=
+        "Дисперсия ошибки скорости Y, (м/с)²")
+      float alg_var_vy;
+
+      @verbatim (language="comment", text=
+        "Дисперсия ошибки скорости Z, (м/с)²")
+      float alg_var_vz;
+
+      @verbatim (language="comment", text=
+        "Дисперсия ошибки курса, рад²")
+      float alg_var_psi;
+
+      @verbatim (language="comment", text=
+        "Дисперсия ошибки тангажа, рад²")
+      float alg_var_theta;
+
+      @verbatim (language="comment", text=
+        "Дисперсия ошибки крена, рад²")
+      float alg_var_phi;
+
+      @verbatim (language="comment", text=
+        "Двухантенное решение (ID 13-14)" "\n"
+        "Курс между антеннами, рад")
+      float gps_rel_heading;
+
+      @verbatim (language="comment", text=
+        "Расстояние между антеннами, м")
+      float gps_rel_length;
+
+      @verbatim (language="comment", text=
+        "rel_heading_valid && rel_heading_mode")
+      boolean heading_from_dual_antenna;
     };
   };
 };

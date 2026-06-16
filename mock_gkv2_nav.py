@@ -48,35 +48,74 @@ ser = serial.Serial('/dev/ttyV3', baudrate=921600, timeout=1)
 time.sleep(1)
 
 print("Mock GKV2 Nav started. Sending at 50Hz...")
+print("Parameter order: [43,44,45,36,37,38,46,47,48,64,65,66,72,79,29,13,14,85,86,87,96,98,99,100,101,102,103,104,105,106]")
+
+# Порядок ID должен совпадать с packet_parameter_ids в params.yaml
+parameter_ids = [43, 44, 45, 36, 37, 38, 46, 47, 48, 64, 65, 66, 72, 79, 29, 13, 14, 85, 86, 87, 96, 98, 99, 100, 101, 102, 103, 104, 105, 106]
 
 try:
     while True:
-        # Параметры: x, y, z, pitch, roll, yaw, vx, vy, vz, lax, lay, laz, gps_state_status, gps_num_ss
+        # Значения параметров в порядке ID
+        # ID 43-45: позиция NED (x=North, y=East, z=Down)
+        # ID 36-38: pitch, roll, yaw (радианы)
+        # ID 46-48: vx, vy, vz (м/с)
+        # ID 64-66: lax, lay, laz (м/с²)
+        # ID 72: gps_state_status (uint32 как float) — RTK Fixed = 0x00800000
+        # ID 79: gps_num_satellites (uint16 как float)
+        # ID 29: gps_rel_status (uint32 как float) — dual antenna heading valid
+        # ID 13-14: gps_rel_heading, gps_rel_length
+        # ID 85-87: gnss_sig_lat/lon/alt (СКО)
+        # ID 96: alg_state_status (uint32 как float) — stage 50 = полная навигация
+        # ID 98-106: дисперсии ошибки
+        
         params = [
-            10.0, 5.0, 0.0,      # x, y, z (метры)
-            0.0, 0.0, 1.57,      # pitch, roll, yaw (радианы)
-            1.5, 0.3, 0.0,       # vx, vy, vz (м/с)
-            0.1, 0.0, 9.81,      # lax, lay, laz (м/с²)
-            0x00800000,          # gps_state_status (RTK Fixed)
-            15                   # gps_num_ss (uint16)
+            10.0,       # 43: x (North)
+            5.0,        # 44: y (East)
+            0.0,        # 45: z (Down)
+            0.0,        # 36: pitch
+            0.0,        # 37: roll
+            1.57,       # 38: yaw (≈90°)
+            1.5,        # 46: vx
+            0.3,        # 47: vy
+            0.0,        # 48: vz
+            0.1,        # 64: lax
+            0.0,        # 65: lay
+            9.81,       # 66: laz
+            float(0x00830003),  # 72: gps_state_status (RTK Fixed, coords valid, time valid)
+            15.0,       # 79: gps_num_satellites
+            float(0x00000137),  # 29: gps_rel_status (bits 0,1,2,5,8 set — heading valid, dual antenna mode)
+            1.57,       # 13: gps_rel_heading
+            0.7,        # 14: gps_rel_length
+            0.02,       # 85: gnss_sig_lat
+            0.02,       # 86: gnss_sig_lon
+            0.05,       # 87: gnss_sig_alt
+            float(50),  # 96: alg_state_status (stage=50, полная навигация)
+            0.01,       # 98: alg_var_x
+            0.01,       # 99: alg_var_y
+            0.02,       # 100: alg_var_z
+            0.001,      # 101: alg_var_vx
+            0.001,      # 102: alg_var_vy
+            0.002,      # 103: alg_var_vz
+            0.0001,     # 104: alg_var_psi
+            0.0001,     # 105: alg_var_theta
+            0.0001,     # 106: alg_var_phi
         ]
         
+        # Упаковка в little-endian float32
         data = b''
-        for i, p in enumerate(params):
-            if i < 12:
-                data += struct.pack('<f', p)
-            elif i == 12:
-                data += struct.pack('<I', int(p))
-            else:
-                data += struct.pack('<H', int(p))
+        for p in params:
+            data += struct.pack('<f', p)
         
+        # Заголовок: 0xFF, адрес=1, тип=0x13, длина
         header = bytes([0xFF, 0x01, 0x13, len(data)])
+        
+        # CRC32
         crc = calculate_crc32(header + data)
         crc_bytes = struct.pack('<I', crc)
         
         packet = header + data + crc_bytes
         ser.write(packet)
-        time.sleep(0.02)
+        time.sleep(0.02)  # 50 Гц
         
 except KeyboardInterrupt:
     print("Mock stopped.")

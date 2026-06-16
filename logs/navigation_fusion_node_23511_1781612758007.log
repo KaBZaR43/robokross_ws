@@ -1,0 +1,11 @@
+[INFO] [1781612758.028589406] [navigation_fusion]: Navigation fusion node initialized
+[INFO] [1781612758.028626105] [navigation_fusion]: GNSS timeout: 2.0 sec, Min satellites: 8
+[WARN] [1781612758.048663727] [navigation_fusion]: GNSS lost! Switching to odometry mode (time: 0.0 sec)
+[INFO] [1781612758.048729009] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 0.0% | Sats: 0 | Drift: 0.00 m | Time: 0.0 sec
+[INFO] [1781612763.068692493] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 0.0% | Sats: 0 | Drift: 2.47 m | Time: 5.0 sec
+[INFO] [1781612768.088677701] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 0.0% | Sats: 0 | Drift: 4.98 m | Time: 10.1 sec
+[INFO] [1781612773.088683662] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 0.0% | Sats: 0 | Drift: 7.48 m | Time: 15.1 sec
+[INFO] [1781612778.108671431] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 0.0% | Sats: 0 | Drift: 9.99 m | Time: 20.1 sec
+[INFO] [1781612783.128678811] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 0.0% | Sats: 0 | Drift: 12.50 m | Time: 25.1 sec
+[INFO] [1781612788.128680120] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 0.0% | Sats: 0 | Drift: 15.00 m | Time: 30.1 sec
+[INFO] [1781612789.439392631] [rclcpp]: signal_handler(SIGINT/SIGTERM)

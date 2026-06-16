@@ -3,7 +3,8 @@
   "output_dir": "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_type_description/gkv2_motor_bridge",
   "idl_tuples": [
     "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge:msg/GKV2Status.idl",
-    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge:msg/NavigationStatus.idl"
+    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge:msg/NavigationStatus.idl",
+    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge:msg/GKV2ConfigStatus.idl"
   ],
   "include_paths": [
     "std_msgs:/opt/ros/jazzy/share/std_msgs",

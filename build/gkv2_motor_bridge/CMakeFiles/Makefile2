@@ -82,6 +82,7 @@ all: CMakeFiles/gkv2_nav_parser_node.dir/all
 all: CMakeFiles/navigation_controller_node.dir/all
 all: CMakeFiles/navigation_fusion_node.dir/all
 all: CMakeFiles/odometer_node.dir/all
+all: CMakeFiles/gkv2_config_node.dir/all
 all: gkv2_motor_bridge__py/all
 all: gkv2_motor_bridge__rs/all
 .PHONY : all
@@ -116,6 +117,7 @@ clean: CMakeFiles/gkv2_nav_parser_node.dir/clean
 clean: CMakeFiles/navigation_controller_node.dir/clean
 clean: CMakeFiles/navigation_fusion_node.dir/clean
 clean: CMakeFiles/odometer_node.dir/clean
+clean: CMakeFiles/gkv2_config_node.dir/clean
 clean: gkv2_motor_bridge__py/clean
 clean: gkv2_motor_bridge__rs/clean
 .PHONY : clean
@@ -223,7 +225,7 @@ CMakeFiles/gkv2_motor_bridge.dir/all: gkv2_motor_bridge__rs/CMakeFiles/gkv2_moto
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gkv2_motor_bridge.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 44
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gkv2_motor_bridge.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/gkv2_motor_bridge.dir/rule
@@ -244,7 +246,7 @@ CMakeFiles/gkv2_motor_bridge.dir/clean:
 CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=18 "Built target gkv2_motor_bridge__rosidl_generator_type_description"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=24 "Built target gkv2_motor_bridge__rosidl_generator_type_description"
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description.dir/all
 
 # Build rule for subdir invocation for target.
@@ -270,12 +272,12 @@ CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description.dir/clean:
 CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/all: CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=7,8,9,10,11,12,13,14 "Built target gkv2_motor_bridge__rosidl_generator_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17,18,19 "Built target gkv2_motor_bridge__rosidl_generator_c"
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rule
@@ -296,12 +298,12 @@ CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/clean:
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=27,28,29,30 "Built target gkv2_motor_bridge__rosidl_typesupport_fastrtps_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=35,36,37,38,39 "Built target gkv2_motor_bridge__rosidl_typesupport_fastrtps_c"
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/rule
@@ -322,7 +324,7 @@ CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/clean:
 CMakeFiles/gkv2_motor_bridge__cpp.dir/all: CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=5 "Built target gkv2_motor_bridge__cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=7 "Built target gkv2_motor_bridge__cpp"
 .PHONY : CMakeFiles/gkv2_motor_bridge__cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -349,12 +351,12 @@ CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/all: CMakeFile
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/all: CMakeFiles/gkv2_motor_bridge__cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=31,32,33,34 "Built target gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=40,41,42,43,44 "Built target gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp"
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/rule
@@ -375,12 +377,12 @@ CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/clean:
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=35,36,37,38 "Built target gkv2_motor_bridge__rosidl_typesupport_introspection_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=45,46,47,48,49 "Built target gkv2_motor_bridge__rosidl_typesupport_introspection_c"
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rule
@@ -401,12 +403,12 @@ CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/clean:
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/all: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=19,20,21,22 "Built target gkv2_motor_bridge__rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=25,26,27,28,29 "Built target gkv2_motor_bridge__rosidl_typesupport_c"
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/rule
@@ -428,12 +430,12 @@ CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/all: CMak
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/all: CMakeFiles/gkv2_motor_bridge__cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=39,40,41,42 "Built target gkv2_motor_bridge__rosidl_typesupport_introspection_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=50,51,52,53,54 "Built target gkv2_motor_bridge__rosidl_typesupport_introspection_cpp"
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/rule
@@ -455,12 +457,12 @@ CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/all: CMakeFiles/gkv2_mo
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/all: CMakeFiles/gkv2_motor_bridge__cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=23,24,25,26 "Built target gkv2_motor_bridge__rosidl_typesupport_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=30,31,32,33,34 "Built target gkv2_motor_bridge__rosidl_typesupport_cpp"
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/rule
@@ -535,12 +537,12 @@ CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/all: CMakeFiles/gkv2_motor
 CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/all: gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=15,16,17 "Built target gkv2_motor_bridge__rosidl_generator_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=20,21,22,23 "Built target gkv2_motor_bridge__rosidl_generator_py"
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 49
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rule
@@ -565,12 +567,12 @@ CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.dir/all: CMakeFile
 CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.dir/all: gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=46,47 "Built target gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=58,59 "Built target gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c"
 .PHONY : CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 51
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c.dir/rule
@@ -595,12 +597,12 @@ CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.dir/all: CMak
 CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.dir/all: gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=48,49 "Built target gkv2_motor_bridge_s__rosidl_typesupport_introspection_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=60,61 "Built target gkv2_motor_bridge_s__rosidl_typesupport_introspection_c"
 .PHONY : CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 51
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.dir/rule
@@ -624,12 +626,12 @@ CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_c.dir/all: CMakeFiles/gkv2_mo
 CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_c.dir/all: gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_c.dir/build.make CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_c.dir/build.make CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=44,45 "Built target gkv2_motor_bridge_s__rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=56,57 "Built target gkv2_motor_bridge_s__rosidl_typesupport_c"
 .PHONY : CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 51
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_c.dir/rule
@@ -650,7 +652,7 @@ CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_c.dir/clean:
 CMakeFiles/gkv2_driver_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_driver_node.dir/build.make CMakeFiles/gkv2_driver_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_driver_node.dir/build.make CMakeFiles/gkv2_driver_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=3,4 "Built target gkv2_driver_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=5,6 "Built target gkv2_driver_node"
 .PHONY : CMakeFiles/gkv2_driver_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -704,12 +706,12 @@ CMakeFiles/gkv2_nav_parser_node.dir/all: CMakeFiles/gkv2_motor_bridge__cpp.dir/a
 CMakeFiles/gkv2_nav_parser_node.dir/all: CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_nav_parser_node.dir/build.make CMakeFiles/gkv2_nav_parser_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_nav_parser_node.dir/build.make CMakeFiles/gkv2_nav_parser_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=50,51 "Built target gkv2_nav_parser_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=62,63 "Built target gkv2_nav_parser_node"
 .PHONY : CMakeFiles/gkv2_nav_parser_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gkv2_nav_parser_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gkv2_nav_parser_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/gkv2_nav_parser_node.dir/rule
@@ -730,7 +732,7 @@ CMakeFiles/gkv2_nav_parser_node.dir/clean:
 CMakeFiles/navigation_controller_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_controller_node.dir/build.make CMakeFiles/navigation_controller_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_controller_node.dir/build.make CMakeFiles/navigation_controller_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=52,53 "Built target navigation_controller_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=64,65 "Built target navigation_controller_node"
 .PHONY : CMakeFiles/navigation_controller_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -758,12 +760,12 @@ CMakeFiles/navigation_fusion_node.dir/all: CMakeFiles/gkv2_motor_bridge__cpp.dir
 CMakeFiles/navigation_fusion_node.dir/all: CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_fusion_node.dir/build.make CMakeFiles/navigation_fusion_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_fusion_node.dir/build.make CMakeFiles/navigation_fusion_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=54,55 "Built target navigation_fusion_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=66,67 "Built target navigation_fusion_node"
 .PHONY : CMakeFiles/navigation_fusion_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/navigation_fusion_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/navigation_fusion_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : CMakeFiles/navigation_fusion_node.dir/rule
@@ -784,7 +786,7 @@ CMakeFiles/navigation_fusion_node.dir/clean:
 CMakeFiles/odometer_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/odometer_node.dir/build.make CMakeFiles/odometer_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/odometer_node.dir/build.make CMakeFiles/odometer_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=56,57 "Built target odometer_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=68,69 "Built target odometer_node"
 .PHONY : CMakeFiles/odometer_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -804,18 +806,46 @@ CMakeFiles/odometer_node.dir/clean:
 .PHONY : CMakeFiles/odometer_node.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/gkv2_config_node.dir
+
+# All Build rule for target.
+CMakeFiles/gkv2_config_node.dir/all: CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/all
+CMakeFiles/gkv2_config_node.dir/all: CMakeFiles/gkv2_motor_bridge__cpp.dir/all
+CMakeFiles/gkv2_config_node.dir/all: CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_config_node.dir/build.make CMakeFiles/gkv2_config_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_config_node.dir/build.make CMakeFiles/gkv2_config_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=3,4 "Built target gkv2_config_node"
+.PHONY : CMakeFiles/gkv2_config_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/gkv2_config_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 20
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gkv2_config_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
+.PHONY : CMakeFiles/gkv2_config_node.dir/rule
+
+# Convenience name for target.
+gkv2_config_node: CMakeFiles/gkv2_config_node.dir/rule
+.PHONY : gkv2_config_node
+
+# clean rule for target.
+CMakeFiles/gkv2_config_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_config_node.dir/build.make CMakeFiles/gkv2_config_node.dir/clean
+.PHONY : CMakeFiles/gkv2_config_node.dir/clean
+
+#=============================================================================
 # Target rules for target /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir
 
 # All Build rule for target.
 gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir/all: CMakeFiles/gkv2_motor_bridge.dir/all
 	$(MAKE) $(MAKESILENT) -f /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir/build.make /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir/depend
 	$(MAKE) $(MAKESILENT) -f /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir/build.make /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=6 "Built target gkv2_motor_bridge__py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=8 "Built target gkv2_motor_bridge__py"
 .PHONY : gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir/all
 
 # Build rule for subdir invocation for target.
 gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 45
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles 0
 .PHONY : gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir/rule
@@ -836,7 +866,7 @@ gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py.dir/clean:
 gkv2_motor_bridge__rs/CMakeFiles/gkv2_motor_bridge__rs.dir/all:
 	$(MAKE) $(MAKESILENT) -f /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__rs/CMakeFiles/gkv2_motor_bridge__rs.dir/build.make /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__rs/CMakeFiles/gkv2_motor_bridge__rs.dir/depend
 	$(MAKE) $(MAKESILENT) -f /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__rs/CMakeFiles/gkv2_motor_bridge__rs.dir/build.make /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__rs/CMakeFiles/gkv2_motor_bridge__rs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=43 "Built target gkv2_motor_bridge__rs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=55 "Built target gkv2_motor_bridge__rs"
 .PHONY : gkv2_motor_bridge__rs/CMakeFiles/gkv2_motor_bridge__rs.dir/all
 
 # Build rule for subdir invocation for target.

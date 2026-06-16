@@ -18,11 +18,14 @@ find_package(std_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(Boost REQUIRED COMPONENTS system)
 find_package(rosidl_default_generators REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(tf2 REQUIRED)
 
 # 2. Генерация кастомных сообщений
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GKV2Status.msg"
   "msg/NavigationStatus.msg"
+  "msg/GKV2ConfigStatus.msg" 
   DEPENDENCIES std_msgs
 )
 
@@ -51,7 +54,7 @@ ament_target_dependencies(navigation_controller_node rclcpp geometry_msgs)
 
 # 8. Узел 5: Слияние навигационных данных (использует GKV2Status.msg и NavigationStatus.msg)
 add_executable(navigation_fusion_node src/navigation_fusion_node.cpp)
-ament_target_dependencies(navigation_fusion_node rclcpp geometry_msgs sensor_msgs nav_msgs std_msgs)
+ament_target_dependencies(navigation_fusion_node rclcpp geometry_msgs sensor_msgs nav_msgs std_msgs tf2_ros tf2) 
 # Линковка кастомных сообщений
 target_link_libraries(navigation_fusion_node "${cpp_typesupport_target}")
 
@@ -59,11 +62,17 @@ target_link_libraries(navigation_fusion_node "${cpp_typesupport_target}")
 add_executable(odometer_node src/odometer_node.cpp)
 ament_target_dependencies(odometer_node rclcpp geometry_msgs nav_msgs)
 
+# Узел 7: Конфигурация ГКВ2
+add_executable(gkv2_config_node src/gkv2_config_node.cpp)
+ament_target_dependencies(gkv2_config_node rclcpp)
+target_link_libraries(gkv2_config_node "${cpp_typesupport_target}")
+
 # 9. Установка исполняемых файлов
 install(TARGETS
   gkv2_driver_node
   cmd_vel_bridge_node
   gkv2_nav_parser_node
+  gkv2_config_node
   navigation_controller_node  
   navigation_fusion_node  
   odometer_node 

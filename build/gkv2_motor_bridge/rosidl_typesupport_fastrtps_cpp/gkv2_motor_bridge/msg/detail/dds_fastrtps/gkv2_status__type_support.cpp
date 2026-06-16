@@ -39,14 +39,110 @@ cdr_serialize(
   // Member: gps_state_status
   cdr << ros_message.gps_state_status;
 
-  // Member: gps_num_satellites
-  cdr << ros_message.gps_num_satellites;
+  // Member: gnss_date_valid
+  cdr << (ros_message.gnss_date_valid ? true : false);
+
+  // Member: gnss_time_valid
+  cdr << (ros_message.gnss_time_valid ? true : false);
+
+  // Member: gnss_ambiguity_resolved
+  cdr << (ros_message.gnss_ambiguity_resolved ? true : false);
+
+  // Member: gnss_coords_valid
+  cdr << (ros_message.gnss_coords_valid ? true : false);
+
+  // Member: gnss_diff_corrections
+  cdr << (ros_message.gnss_diff_corrections ? true : false);
+
+  // Member: gnss_fix_type
+  cdr << ros_message.gnss_fix_type;
+
+  // Member: rtk_status
+  cdr << ros_message.rtk_status;
+
+  // Member: gps_rel_status
+  cdr << ros_message.gps_rel_status;
+
+  // Member: rel_nav_valid
+  cdr << (ros_message.rel_nav_valid ? true : false);
+
+  // Member: rel_diff_applied
+  cdr << (ros_message.rel_diff_applied ? true : false);
+
+  // Member: rel_coords_valid
+  cdr << (ros_message.rel_coords_valid ? true : false);
+
+  // Member: rel_ambiguity_status
+  cdr << ros_message.rel_ambiguity_status;
+
+  // Member: rel_heading_mode
+  cdr << (ros_message.rel_heading_mode ? true : false);
+
+  // Member: rel_heading_valid
+  cdr << (ros_message.rel_heading_valid ? true : false);
 
   // Member: alg_state_status
   cdr << ros_message.alg_state_status;
 
-  // Member: rtk_fixed
-  cdr << (ros_message.rtk_fixed ? true : false);
+  // Member: alg_stage
+  cdr << ros_message.alg_stage;
+
+  // Member: alg_correction
+  cdr << ros_message.alg_correction;
+
+  // Member: alg_fails
+  cdr << ros_message.alg_fails;
+
+  // Member: alg_navigation_ready
+  cdr << (ros_message.alg_navigation_ready ? true : false);
+
+  // Member: gps_num_satellites
+  cdr << ros_message.gps_num_satellites;
+
+  // Member: gnss_sig_lat
+  cdr << ros_message.gnss_sig_lat;
+
+  // Member: gnss_sig_lon
+  cdr << ros_message.gnss_sig_lon;
+
+  // Member: gnss_sig_alt
+  cdr << ros_message.gnss_sig_alt;
+
+  // Member: alg_var_x
+  cdr << ros_message.alg_var_x;
+
+  // Member: alg_var_y
+  cdr << ros_message.alg_var_y;
+
+  // Member: alg_var_z
+  cdr << ros_message.alg_var_z;
+
+  // Member: alg_var_vx
+  cdr << ros_message.alg_var_vx;
+
+  // Member: alg_var_vy
+  cdr << ros_message.alg_var_vy;
+
+  // Member: alg_var_vz
+  cdr << ros_message.alg_var_vz;
+
+  // Member: alg_var_psi
+  cdr << ros_message.alg_var_psi;
+
+  // Member: alg_var_theta
+  cdr << ros_message.alg_var_theta;
+
+  // Member: alg_var_phi
+  cdr << ros_message.alg_var_phi;
+
+  // Member: gps_rel_heading
+  cdr << ros_message.gps_rel_heading;
+
+  // Member: gps_rel_length
+  cdr << ros_message.gps_rel_length;
+
+  // Member: heading_from_dual_antenna
+  cdr << (ros_message.heading_from_dual_antenna ? true : false);
 
   return true;
 }
@@ -60,17 +156,157 @@ cdr_deserialize(
   // Member: gps_state_status
   cdr >> ros_message.gps_state_status;
 
-  // Member: gps_num_satellites
-  cdr >> ros_message.gps_num_satellites;
+  // Member: gnss_date_valid
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.gnss_date_valid = tmp ? true : false;
+  }
+
+  // Member: gnss_time_valid
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.gnss_time_valid = tmp ? true : false;
+  }
+
+  // Member: gnss_ambiguity_resolved
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.gnss_ambiguity_resolved = tmp ? true : false;
+  }
+
+  // Member: gnss_coords_valid
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.gnss_coords_valid = tmp ? true : false;
+  }
+
+  // Member: gnss_diff_corrections
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.gnss_diff_corrections = tmp ? true : false;
+  }
+
+  // Member: gnss_fix_type
+  cdr >> ros_message.gnss_fix_type;
+
+  // Member: rtk_status
+  cdr >> ros_message.rtk_status;
+
+  // Member: gps_rel_status
+  cdr >> ros_message.gps_rel_status;
+
+  // Member: rel_nav_valid
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.rel_nav_valid = tmp ? true : false;
+  }
+
+  // Member: rel_diff_applied
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.rel_diff_applied = tmp ? true : false;
+  }
+
+  // Member: rel_coords_valid
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.rel_coords_valid = tmp ? true : false;
+  }
+
+  // Member: rel_ambiguity_status
+  cdr >> ros_message.rel_ambiguity_status;
+
+  // Member: rel_heading_mode
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.rel_heading_mode = tmp ? true : false;
+  }
+
+  // Member: rel_heading_valid
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.rel_heading_valid = tmp ? true : false;
+  }
 
   // Member: alg_state_status
   cdr >> ros_message.alg_state_status;
 
-  // Member: rtk_fixed
+  // Member: alg_stage
+  cdr >> ros_message.alg_stage;
+
+  // Member: alg_correction
+  cdr >> ros_message.alg_correction;
+
+  // Member: alg_fails
+  cdr >> ros_message.alg_fails;
+
+  // Member: alg_navigation_ready
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message.rtk_fixed = tmp ? true : false;
+    ros_message.alg_navigation_ready = tmp ? true : false;
+  }
+
+  // Member: gps_num_satellites
+  cdr >> ros_message.gps_num_satellites;
+
+  // Member: gnss_sig_lat
+  cdr >> ros_message.gnss_sig_lat;
+
+  // Member: gnss_sig_lon
+  cdr >> ros_message.gnss_sig_lon;
+
+  // Member: gnss_sig_alt
+  cdr >> ros_message.gnss_sig_alt;
+
+  // Member: alg_var_x
+  cdr >> ros_message.alg_var_x;
+
+  // Member: alg_var_y
+  cdr >> ros_message.alg_var_y;
+
+  // Member: alg_var_z
+  cdr >> ros_message.alg_var_z;
+
+  // Member: alg_var_vx
+  cdr >> ros_message.alg_var_vx;
+
+  // Member: alg_var_vy
+  cdr >> ros_message.alg_var_vy;
+
+  // Member: alg_var_vz
+  cdr >> ros_message.alg_var_vz;
+
+  // Member: alg_var_psi
+  cdr >> ros_message.alg_var_psi;
+
+  // Member: alg_var_theta
+  cdr >> ros_message.alg_var_theta;
+
+  // Member: alg_var_phi
+  cdr >> ros_message.alg_var_phi;
+
+  // Member: gps_rel_heading
+  cdr >> ros_message.gps_rel_heading;
+
+  // Member: gps_rel_length
+  cdr >> ros_message.gps_rel_length;
+
+  // Member: heading_from_dual_antenna
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.heading_from_dual_antenna = tmp ? true : false;
   }
 
   return true;
@@ -97,9 +333,100 @@ get_serialized_size(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Member: gps_num_satellites
+  // Member: gnss_date_valid
   {
-    size_t item_size = sizeof(ros_message.gps_num_satellites);
+    size_t item_size = sizeof(ros_message.gnss_date_valid);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_time_valid
+  {
+    size_t item_size = sizeof(ros_message.gnss_time_valid);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_ambiguity_resolved
+  {
+    size_t item_size = sizeof(ros_message.gnss_ambiguity_resolved);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_coords_valid
+  {
+    size_t item_size = sizeof(ros_message.gnss_coords_valid);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_diff_corrections
+  {
+    size_t item_size = sizeof(ros_message.gnss_diff_corrections);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_fix_type
+  {
+    size_t item_size = sizeof(ros_message.gnss_fix_type);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: rtk_status
+  {
+    size_t item_size = sizeof(ros_message.rtk_status);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gps_rel_status
+  {
+    size_t item_size = sizeof(ros_message.gps_rel_status);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: rel_nav_valid
+  {
+    size_t item_size = sizeof(ros_message.rel_nav_valid);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: rel_diff_applied
+  {
+    size_t item_size = sizeof(ros_message.rel_diff_applied);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: rel_coords_valid
+  {
+    size_t item_size = sizeof(ros_message.rel_coords_valid);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: rel_ambiguity_status
+  {
+    size_t item_size = sizeof(ros_message.rel_ambiguity_status);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: rel_heading_mode
+  {
+    size_t item_size = sizeof(ros_message.rel_heading_mode);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: rel_heading_valid
+  {
+    size_t item_size = sizeof(ros_message.rel_heading_valid);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -111,9 +438,142 @@ get_serialized_size(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Member: rtk_fixed
+  // Member: alg_stage
   {
-    size_t item_size = sizeof(ros_message.rtk_fixed);
+    size_t item_size = sizeof(ros_message.alg_stage);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_correction
+  {
+    size_t item_size = sizeof(ros_message.alg_correction);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_fails
+  {
+    size_t item_size = sizeof(ros_message.alg_fails);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_navigation_ready
+  {
+    size_t item_size = sizeof(ros_message.alg_navigation_ready);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gps_num_satellites
+  {
+    size_t item_size = sizeof(ros_message.gps_num_satellites);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_sig_lat
+  {
+    size_t item_size = sizeof(ros_message.gnss_sig_lat);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_sig_lon
+  {
+    size_t item_size = sizeof(ros_message.gnss_sig_lon);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_sig_alt
+  {
+    size_t item_size = sizeof(ros_message.gnss_sig_alt);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_x
+  {
+    size_t item_size = sizeof(ros_message.alg_var_x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_y
+  {
+    size_t item_size = sizeof(ros_message.alg_var_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_z
+  {
+    size_t item_size = sizeof(ros_message.alg_var_z);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_vx
+  {
+    size_t item_size = sizeof(ros_message.alg_var_vx);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_vy
+  {
+    size_t item_size = sizeof(ros_message.alg_var_vy);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_vz
+  {
+    size_t item_size = sizeof(ros_message.alg_var_vz);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_psi
+  {
+    size_t item_size = sizeof(ros_message.alg_var_psi);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_theta
+  {
+    size_t item_size = sizeof(ros_message.alg_var_theta);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_phi
+  {
+    size_t item_size = sizeof(ros_message.alg_var_phi);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gps_rel_heading
+  {
+    size_t item_size = sizeof(ros_message.gps_rel_heading);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gps_rel_length
+  {
+    size_t item_size = sizeof(ros_message.gps_rel_length);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: heading_from_dual_antenna
+  {
+    size_t item_size = sizeof(ros_message.heading_from_dual_antenna);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -148,12 +608,90 @@ max_serialized_size_GKV2Status(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // Member: gps_num_satellites
+  // Member: gnss_date_valid
   {
     size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint16_t);
-    current_alignment += array_size * sizeof(uint16_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: gnss_time_valid
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: gnss_ambiguity_resolved
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: gnss_coords_valid
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: gnss_diff_corrections
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: gnss_fix_type
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: rtk_status
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: gps_rel_status
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: rel_nav_valid
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: rel_diff_applied
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: rel_coords_valid
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: rel_ambiguity_status
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: rel_heading_mode
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: rel_heading_valid
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
   // Member: alg_state_status
   {
@@ -162,7 +700,137 @@ max_serialized_size_GKV2Status(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // Member: rtk_fixed
+  // Member: alg_stage
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: alg_correction
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: alg_fails
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+  // Member: alg_navigation_ready
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // Member: gps_num_satellites
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+  // Member: gnss_sig_lat
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: gnss_sig_lon
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: gnss_sig_alt
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: alg_var_x
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: alg_var_y
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: alg_var_z
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: alg_var_vx
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: alg_var_vy
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: alg_var_vz
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: alg_var_psi
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: alg_var_theta
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: alg_var_phi
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: gps_rel_heading
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: gps_rel_length
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: heading_from_dual_antenna
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint8_t);
@@ -177,7 +845,7 @@ max_serialized_size_GKV2Status(
     using DataType = gkv2_motor_bridge::msg::GKV2Status;
     is_plain =
       (
-      offsetof(DataType, rtk_fixed) +
+      offsetof(DataType, heading_from_dual_antenna) +
       last_member_size
       ) == ret_val;
   }
@@ -194,14 +862,110 @@ cdr_serialize_key(
   // Member: gps_state_status
   cdr << ros_message.gps_state_status;
 
-  // Member: gps_num_satellites
-  cdr << ros_message.gps_num_satellites;
+  // Member: gnss_date_valid
+  cdr << (ros_message.gnss_date_valid ? true : false);
+
+  // Member: gnss_time_valid
+  cdr << (ros_message.gnss_time_valid ? true : false);
+
+  // Member: gnss_ambiguity_resolved
+  cdr << (ros_message.gnss_ambiguity_resolved ? true : false);
+
+  // Member: gnss_coords_valid
+  cdr << (ros_message.gnss_coords_valid ? true : false);
+
+  // Member: gnss_diff_corrections
+  cdr << (ros_message.gnss_diff_corrections ? true : false);
+
+  // Member: gnss_fix_type
+  cdr << ros_message.gnss_fix_type;
+
+  // Member: rtk_status
+  cdr << ros_message.rtk_status;
+
+  // Member: gps_rel_status
+  cdr << ros_message.gps_rel_status;
+
+  // Member: rel_nav_valid
+  cdr << (ros_message.rel_nav_valid ? true : false);
+
+  // Member: rel_diff_applied
+  cdr << (ros_message.rel_diff_applied ? true : false);
+
+  // Member: rel_coords_valid
+  cdr << (ros_message.rel_coords_valid ? true : false);
+
+  // Member: rel_ambiguity_status
+  cdr << ros_message.rel_ambiguity_status;
+
+  // Member: rel_heading_mode
+  cdr << (ros_message.rel_heading_mode ? true : false);
+
+  // Member: rel_heading_valid
+  cdr << (ros_message.rel_heading_valid ? true : false);
 
   // Member: alg_state_status
   cdr << ros_message.alg_state_status;
 
-  // Member: rtk_fixed
-  cdr << (ros_message.rtk_fixed ? true : false);
+  // Member: alg_stage
+  cdr << ros_message.alg_stage;
+
+  // Member: alg_correction
+  cdr << ros_message.alg_correction;
+
+  // Member: alg_fails
+  cdr << ros_message.alg_fails;
+
+  // Member: alg_navigation_ready
+  cdr << (ros_message.alg_navigation_ready ? true : false);
+
+  // Member: gps_num_satellites
+  cdr << ros_message.gps_num_satellites;
+
+  // Member: gnss_sig_lat
+  cdr << ros_message.gnss_sig_lat;
+
+  // Member: gnss_sig_lon
+  cdr << ros_message.gnss_sig_lon;
+
+  // Member: gnss_sig_alt
+  cdr << ros_message.gnss_sig_alt;
+
+  // Member: alg_var_x
+  cdr << ros_message.alg_var_x;
+
+  // Member: alg_var_y
+  cdr << ros_message.alg_var_y;
+
+  // Member: alg_var_z
+  cdr << ros_message.alg_var_z;
+
+  // Member: alg_var_vx
+  cdr << ros_message.alg_var_vx;
+
+  // Member: alg_var_vy
+  cdr << ros_message.alg_var_vy;
+
+  // Member: alg_var_vz
+  cdr << ros_message.alg_var_vz;
+
+  // Member: alg_var_psi
+  cdr << ros_message.alg_var_psi;
+
+  // Member: alg_var_theta
+  cdr << ros_message.alg_var_theta;
+
+  // Member: alg_var_phi
+  cdr << ros_message.alg_var_phi;
+
+  // Member: gps_rel_heading
+  cdr << ros_message.gps_rel_heading;
+
+  // Member: gps_rel_length
+  cdr << ros_message.gps_rel_length;
+
+  // Member: heading_from_dual_antenna
+  cdr << (ros_message.heading_from_dual_antenna ? true : false);
 
   return true;
 }
@@ -226,9 +990,100 @@ get_serialized_size_key(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Member: gps_num_satellites
+  // Member: gnss_date_valid
   {
-    size_t item_size = sizeof(ros_message.gps_num_satellites);
+    size_t item_size = sizeof(ros_message.gnss_date_valid);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_time_valid
+  {
+    size_t item_size = sizeof(ros_message.gnss_time_valid);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_ambiguity_resolved
+  {
+    size_t item_size = sizeof(ros_message.gnss_ambiguity_resolved);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_coords_valid
+  {
+    size_t item_size = sizeof(ros_message.gnss_coords_valid);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_diff_corrections
+  {
+    size_t item_size = sizeof(ros_message.gnss_diff_corrections);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_fix_type
+  {
+    size_t item_size = sizeof(ros_message.gnss_fix_type);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: rtk_status
+  {
+    size_t item_size = sizeof(ros_message.rtk_status);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gps_rel_status
+  {
+    size_t item_size = sizeof(ros_message.gps_rel_status);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: rel_nav_valid
+  {
+    size_t item_size = sizeof(ros_message.rel_nav_valid);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: rel_diff_applied
+  {
+    size_t item_size = sizeof(ros_message.rel_diff_applied);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: rel_coords_valid
+  {
+    size_t item_size = sizeof(ros_message.rel_coords_valid);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: rel_ambiguity_status
+  {
+    size_t item_size = sizeof(ros_message.rel_ambiguity_status);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: rel_heading_mode
+  {
+    size_t item_size = sizeof(ros_message.rel_heading_mode);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: rel_heading_valid
+  {
+    size_t item_size = sizeof(ros_message.rel_heading_valid);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -240,9 +1095,142 @@ get_serialized_size_key(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Member: rtk_fixed
+  // Member: alg_stage
   {
-    size_t item_size = sizeof(ros_message.rtk_fixed);
+    size_t item_size = sizeof(ros_message.alg_stage);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_correction
+  {
+    size_t item_size = sizeof(ros_message.alg_correction);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_fails
+  {
+    size_t item_size = sizeof(ros_message.alg_fails);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_navigation_ready
+  {
+    size_t item_size = sizeof(ros_message.alg_navigation_ready);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gps_num_satellites
+  {
+    size_t item_size = sizeof(ros_message.gps_num_satellites);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_sig_lat
+  {
+    size_t item_size = sizeof(ros_message.gnss_sig_lat);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_sig_lon
+  {
+    size_t item_size = sizeof(ros_message.gnss_sig_lon);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gnss_sig_alt
+  {
+    size_t item_size = sizeof(ros_message.gnss_sig_alt);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_x
+  {
+    size_t item_size = sizeof(ros_message.alg_var_x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_y
+  {
+    size_t item_size = sizeof(ros_message.alg_var_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_z
+  {
+    size_t item_size = sizeof(ros_message.alg_var_z);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_vx
+  {
+    size_t item_size = sizeof(ros_message.alg_var_vx);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_vy
+  {
+    size_t item_size = sizeof(ros_message.alg_var_vy);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_vz
+  {
+    size_t item_size = sizeof(ros_message.alg_var_vz);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_psi
+  {
+    size_t item_size = sizeof(ros_message.alg_var_psi);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_theta
+  {
+    size_t item_size = sizeof(ros_message.alg_var_theta);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: alg_var_phi
+  {
+    size_t item_size = sizeof(ros_message.alg_var_phi);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gps_rel_heading
+  {
+    size_t item_size = sizeof(ros_message.gps_rel_heading);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: gps_rel_length
+  {
+    size_t item_size = sizeof(ros_message.gps_rel_length);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: heading_from_dual_antenna
+  {
+    size_t item_size = sizeof(ros_message.heading_from_dual_antenna);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -277,12 +1265,103 @@ max_serialized_size_key_GKV2Status(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: gps_num_satellites
+  // Member: gnss_date_valid
   {
     size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint16_t);
-    current_alignment += array_size * sizeof(uint16_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: gnss_time_valid
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: gnss_ambiguity_resolved
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: gnss_coords_valid
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: gnss_diff_corrections
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: gnss_fix_type
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: rtk_status
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: gps_rel_status
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: rel_nav_valid
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: rel_diff_applied
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: rel_coords_valid
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: rel_ambiguity_status
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: rel_heading_mode
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: rel_heading_valid
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   // Member: alg_state_status
@@ -293,7 +1372,156 @@ max_serialized_size_key_GKV2Status(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: rtk_fixed
+  // Member: alg_stage
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: alg_correction
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: alg_fails
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+
+  // Member: alg_navigation_ready
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: gps_num_satellites
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+
+  // Member: gnss_sig_lat
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: gnss_sig_lon
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: gnss_sig_alt
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: alg_var_x
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: alg_var_y
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: alg_var_z
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: alg_var_vx
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: alg_var_vy
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: alg_var_vz
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: alg_var_psi
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: alg_var_theta
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: alg_var_phi
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: gps_rel_heading
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: gps_rel_length
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: heading_from_dual_antenna
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint8_t);
@@ -308,7 +1536,7 @@ max_serialized_size_key_GKV2Status(
     using DataType = gkv2_motor_bridge::msg::GKV2Status;
     is_plain =
       (
-      offsetof(DataType, rtk_fixed) +
+      offsetof(DataType, heading_from_dual_antenna) +
       last_member_size
       ) == ret_val;
   }

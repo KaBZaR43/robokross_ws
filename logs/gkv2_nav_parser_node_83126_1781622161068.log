@@ -1,0 +1,8 @@
+[INFO] [1781622161.086222114] [gkv2_nav_parser]: Loaded 30 parameter IDs from config
+[INFO] [1781622161.090230908] [gkv2_nav_parser]: UART opened: /dev/ttyV1 @ 921600 baud
+[INFO] [1781622161.090289899] [gkv2_nav_parser]: GKV2 Nav Parser initialized
+[INFO] [1781622161.090295930] [gkv2_nav_parser]: Expected packet size: 128 bytes (header 4 + data 120 + CRC 4)
+[INFO] [1781622165.826345520] [gkv2_nav_parser]: Packets: 0 | CRC errors: 0 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:Y | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781622167.835717590] [gkv2_nav_parser]: Packets: 100 | CRC errors: 0 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:Y | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781622169.845082732] [gkv2_nav_parser]: Packets: 200 | CRC errors: 0 | Pos(10.00,5.00,0.00) | Yaw:1.57 | Sats:15 | RTK:FIXED | CoordsValid:Y | Stage:50 | Fails:0x0000 | DualAnt:N
+[INFO] [1781622171.732045199] [rclcpp]: signal_handler(SIGINT/SIGTERM)

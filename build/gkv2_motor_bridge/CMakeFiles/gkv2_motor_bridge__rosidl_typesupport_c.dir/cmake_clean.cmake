@@ -1,10 +1,13 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.o"
+  "CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.o.d"
   "CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_status__type_support.cpp.o"
   "CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_status__type_support.cpp.o.d"
   "CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkv2_motor_bridge/msg/navigation_status__type_support.cpp.o"
   "CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkv2_motor_bridge/msg/navigation_status__type_support.cpp.o.d"
   "libgkv2_motor_bridge__rosidl_typesupport_c.pdb"
   "libgkv2_motor_bridge__rosidl_typesupport_c.so"
+  "rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp"
   "rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_status__type_support.cpp"
   "rosidl_typesupport_c/gkv2_motor_bridge/msg/navigation_status__type_support.cpp"
 )

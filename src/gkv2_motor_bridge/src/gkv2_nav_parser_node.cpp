@@ -8,8 +8,12 @@
 #include <cstdint>
 #include <cstring>
 #include <cmath>
+#include <unordered_map>
+#include <algorithm>
 
-// Таблица CRC32 из приложения А протокола ЛМАП.402131.009Д1
+// ============================================================================
+// CRC32 из приложения А протокола ЛМАП.402131.009Д1
+// ============================================================================
 static const uint32_t crc32_tab[256] = {
     0x00000000, 0x77073096, 0xee0e612c, 0x990951ba, 0x076dc419, 0x706af48f, 0xe963a535, 0x9e6495a3,
     0x0edb8832, 0x79dcb8a4, 0xe0d5e91e, 0x97d2d988, 0x09b64c2b, 0x7eb17cbd, 0xe7b82d07, 0x90bf1d91,
@@ -53,6 +57,53 @@ uint32_t calculate_crc32(const uint8_t* data, size_t length) {
     return crc ^ 0xFFFFFFFF;
 }
 
+// ============================================================================
+// Структура навигационных данных
+// ============================================================================
+struct NavData {
+    // Позиция NED (ID 43-45), метры
+    float x = 0.0f, y = 0.0f, z = 0.0f;
+    // Ориентация (ID 36-38), радианы
+    float pitch = 0.0f, roll = 0.0f, yaw = 0.0f;
+    // Скорости (ID 46-48), м/с
+    float vx = 0.0f, vy = 0.0f, vz = 0.0f;
+    // Линейные ускорения (ID 64-66), м/с²
+    float lax = 0.0f, lay = 0.0f, laz = 0.0f;
+    
+    // Статусы
+    uint32_t gps_state_status = 0;   // ID 72
+    uint16_t gps_num_satellites = 0; // ID 79
+    uint32_t gps_rel_status = 0;     // ID 29
+    uint32_t alg_state_status = 0;   // ID 96
+    
+    // Двухантенное решение (ID 13-14)
+    float gps_rel_heading = 0.0f;
+    float gps_rel_length = 0.0f;
+    
+    // СКО координат (ID 85-87), метры
+    float gnss_sig_lat = 0.0f, gnss_sig_lon = 0.0f, gnss_sig_alt = 0.0f;
+    
+    // Дисперсии ошибки алгоритма (ID 98-106)
+    float alg_var_x = 0.0f, alg_var_y = 0.0f, alg_var_z = 0.0f;
+    float alg_var_vx = 0.0f, alg_var_vy = 0.0f, alg_var_vz = 0.0f;
+    float alg_var_psi = 0.0f, alg_var_theta = 0.0f, alg_var_phi = 0.0f;
+    
+    // Флаги валидности
+    bool has_position = false;
+    bool has_orientation = false;
+    bool has_velocity = false;
+    bool has_acceleration = false;
+    bool has_gnss_status = false;
+    bool has_alg_status = false;
+    bool has_rel_status = false;
+    bool has_dual_antenna = false;
+    bool has_sigmas = false;
+    bool has_variances = false;
+};
+
+// ============================================================================
+// УЗЕЛ ПАРСЕРА НАВИГАЦИИ ГКВ2
+// ============================================================================
 class GKV2NavParser : public rclcpp::Node {
 public:
     GKV2NavParser() : Node("gkv2_nav_parser"), io_context_(), serial_port_(io_context_) {
@@ -60,16 +111,34 @@ public:
         this->declare_parameter<std::string>("uart_port", "/dev/ttyV1");
         this->declare_parameter<int>("baudrate", 921600);
         this->declare_parameter<int>("qos_depth", 10);
+        this->declare_parameter<std::vector<int64_t>>("packet_parameter_ids", 
+            std::vector<int64_t>{43, 44, 45, 36, 37, 38, 46, 47, 48, 64, 65, 66, 72, 79, 29, 13, 14, 85, 86, 87, 96, 98, 99, 100, 101, 102, 103, 104, 105, 106});
         
         std::string port_name = this->get_parameter("uart_port").as_string();
         int baudrate = this->get_parameter("baudrate").as_int();
         int qos_depth = this->get_parameter("qos_depth").as_int();
-
-        // Создание QoS профиля (auto + фигурные скобки для избежания Most Vexing Parse)
+        
+        // Чтение порядка ID параметров из YAML
+        auto ids_param = this->get_parameter("packet_parameter_ids").as_integer_array();
+        for (auto id : ids_param) {
+            if (id < 0 || id > 255) {
+                RCLCPP_ERROR(this->get_logger(), "Invalid parameter ID: %ld", id);
+                continue;
+            }
+            packet_ids_.push_back(static_cast<uint8_t>(id));
+        }
+        
+        if (packet_ids_.empty()) {
+            RCLCPP_FATAL(this->get_logger(), "No parameter IDs configured! Check 'packet_parameter_ids' in YAML.");
+            return;
+        }
+        
+        RCLCPP_INFO(this->get_logger(), "Loaded %zu parameter IDs from config", packet_ids_.size());
+        
+        // Publishers
         auto qos = rclcpp::QoS{rclcpp::KeepLast(qos_depth)};
-        qos.reliability(rclcpp::ReliabilityPolicy::Reliable);
-
-        // Создание издателей
+        qos.reliability(rclcpp::ReliabilityPolicy::BestEffort);  // BEST_EFFORT для высокочастотных данных
+        
         pose_pub_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("/nav/pose", qos);
         imu_pub_ = this->create_publisher<sensor_msgs::msg::Imu>("/nav/imu", qos);
         status_pub_ = this->create_publisher<gkv2_motor_bridge::msg::GKV2Status>("/gkv2/status", qos);
@@ -88,10 +157,17 @@ public:
             return;
         }
         
+        // Статистика
+        packets_received_ = 0;
+        crc_errors_ = 0;
+        short_packets_ = 0;
+        
         start_async_read();
         io_thread_ = std::make_unique<std::thread>([this]() { io_context_.run(); });
         
         RCLCPP_INFO(this->get_logger(), "GKV2 Nav Parser initialized");
+        RCLCPP_INFO(this->get_logger(), "Expected packet size: %zu bytes (header 4 + data %zu + CRC 4)", 
+                    4 + packet_ids_.size() * 4 + 4, packet_ids_.size() * 4);
     }
     
     ~GKV2NavParser() {
@@ -101,9 +177,12 @@ public:
     }
 
 private:
+    // ========================================================================
+    // АСИНХРОННОЕ ЧТЕНИЕ UART
+    // ========================================================================
     void start_async_read() {
         serial_port_.async_read_some(
-            boost::asio::buffer(read_buffer_, 256),
+            boost::asio::buffer(read_buffer_, 512),
             [this](const boost::system::error_code& error, std::size_t /*bytes_transferred*/) {
                 if (!error) {
                     process_buffer();
@@ -115,121 +194,302 @@ private:
         );
     }
     
+    // ========================================================================
+    // ОБРАБОТКА БУФЕРА: ПОИСК ПАКЕТА 0x13
+    // ========================================================================
     void process_buffer() {
         buffer_.insert(buffer_.end(), read_buffer_.begin(), read_buffer_.end());
         
-        // Поиск заголовка 0xFF
-        while (buffer_.size() >= 4) {
+        // Ожидаемый размер пакета: 4 (заголовок) + N*4 (данные) + 4 (CRC32)
+        const size_t expected_size = 4 + packet_ids_.size() * 4 + 4;
+        
+        while (buffer_.size() >= expected_size) {
+            // Поиск заголовка 0xFF
             if (buffer_[0] != 0xFF) {
                 buffer_.erase(buffer_.begin());
                 continue;
             }
             
-            // uint8_t address = buffer_[1];
-            uint8_t packet_type = buffer_[2];
-            uint8_t data_length = buffer_[3];
-            
-            // Ожидание полного пакета: 4 (заголовок) + data_length + 4 (CRC32)
-            size_t packet_size = 4 + data_length + 4;
-            if (buffer_.size() < packet_size) break;
-            
-            // Проверка типа пакета (0x13 - наборный пакет)
-            if (packet_type == 0x13) {
-                // Проверка CRC32
-                uint32_t recv_crc = *reinterpret_cast<uint32_t*>(&buffer_[4 + data_length]);
-                uint32_t calc_crc = calculate_crc32(buffer_.data(), 4 + data_length);
-                
-                if (recv_crc == calc_crc) {
-                    parse_nav_packet(&buffer_[4], data_length);
-                } else {
-                    RCLCPP_WARN(this->get_logger(), "CRC32 mismatch: recv=0x%08X, calc=0x%08X", recv_crc, calc_crc);
-                }
+            // Проверка типа пакета
+            if (buffer_[2] != 0x13) {
+                // Не наборный пакет — пропускаем байт
+                buffer_.erase(buffer_.begin());
+                continue;
             }
             
-            buffer_.erase(buffer_.begin(), buffer_.begin() + packet_size);
+            // Проверка длины поля данных
+            uint8_t data_length = buffer_[3];
+            size_t actual_packet_size = 4 + data_length + 4;
+            
+            if (buffer_.size() < actual_packet_size) {
+                break;  // Ждем остальных байтов
+            }
+            
+            // Проверка CRC32
+            uint32_t recv_crc = *reinterpret_cast<uint32_t*>(&buffer_[4 + data_length]);
+            uint32_t calc_crc = calculate_crc32(buffer_.data(), 4 + data_length);
+            
+            if (recv_crc != calc_crc) {
+                crc_errors_++;
+                RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 5000,
+                    "CRC32 mismatch: recv=0x%08X, calc=0x%08X (total errors: %lu)", 
+                    recv_crc, calc_crc, crc_errors_);
+                buffer_.erase(buffer_.begin(), buffer_.begin() + actual_packet_size);
+                continue;
+            }
+            
+            // Парсинг данных
+            if (data_length == packet_ids_.size() * 4) {
+                parse_nav_packet(&buffer_[4], data_length);
+                packets_received_++;
+            } else {
+                short_packets_++;
+                RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 5000,
+                    "Unexpected data length: %d (expected %zu)", 
+                    data_length, packet_ids_.size() * 4);
+            }
+            
+            buffer_.erase(buffer_.begin(), buffer_.begin() + actual_packet_size);
+        }
+        
+        // Ограничение размера буфера (защита от переполнения)
+        if (buffer_.size() > 4096) {
+            RCLCPP_WARN(this->get_logger(), "Buffer overflow, clearing %zu bytes", buffer_.size());
+            buffer_.clear();
         }
     }
     
+    // ========================================================================
+    // ПАРСИНГ НАБОРНОГО ПАКЕТА ПО ID ПАРАМЕТРОВ
+    // ========================================================================
     void parse_nav_packet(const uint8_t* data, uint8_t length) {
-        // Параметры наборного пакета (float32, little-endian)
-        // 43: x, 44: y, 45: z, 36: pitch, 37: roll, 38: yaw
-        // 46: vx, 47: vy, 48: vz, 64: lax, 65: lay, 66: laz
-        // 72: gps_state_status (uint32), 79: gps_num_ss (uint16)
+        NavData nav;
         
-        if (length < 54) {
-            RCLCPP_WARN(this->get_logger(), "Packet too short: %d bytes", length);
-            return;
+        // Идем по порядку ID из конфигурации
+        for (size_t i = 0; i < packet_ids_.size(); i++) {
+            uint8_t id = packet_ids_[i];
+            size_t offset = i * 4;
+            
+            if (offset + 4 > length) break;
+            
+            float value = *reinterpret_cast<const float*>(&data[offset]);
+            
+            switch (id) {
+                // Позиция NED
+                case 43: nav.x = value; nav.has_position = true; break;
+                case 44: nav.y = value; break;
+                case 45: nav.z = value; break;
+                
+                // Ориентация
+                case 36: nav.pitch = value; nav.has_orientation = true; break;
+                case 37: nav.roll = value; break;
+                case 38: nav.yaw = value; break;
+                
+                // Скорости
+                case 46: nav.vx = value; nav.has_velocity = true; break;
+                case 47: nav.vy = value; break;
+                case 48: nav.vz = value; break;
+                
+                // Линейные ускорения
+                case 64: nav.lax = value; nav.has_acceleration = true; break;
+                case 65: nav.lay = value; break;
+                case 66: nav.laz = value; break;
+                
+                // Статусы (целочисленные, но передаются как float32 в наборном пакете)
+                case 72: nav.gps_state_status = static_cast<uint32_t>(value); nav.has_gnss_status = true; break;
+                case 79: nav.gps_num_satellites = static_cast<uint16_t>(value); break;
+                case 29: nav.gps_rel_status = static_cast<uint32_t>(value); nav.has_rel_status = true; break;
+                case 96: nav.alg_state_status = static_cast<uint32_t>(value); nav.has_alg_status = true; break;
+                
+                // Двухантенное решение
+                case 13: nav.gps_rel_heading = value; nav.has_dual_antenna = true; break;
+                case 14: nav.gps_rel_length = value; break;
+                
+                // СКО координат
+                case 85: nav.gnss_sig_lat = value; nav.has_sigmas = true; break;
+                case 86: nav.gnss_sig_lon = value; break;
+                case 87: nav.gnss_sig_alt = value; break;
+                
+                // Дисперсии ошибки алгоритма
+                case 98:  nav.alg_var_x = value; nav.has_variances = true; break;
+                case 99:  nav.alg_var_y = value; break;
+                case 100: nav.alg_var_z = value; break;
+                case 101: nav.alg_var_vx = value; break;
+                case 102: nav.alg_var_vy = value; break;
+                case 103: nav.alg_var_vz = value; break;
+                case 104: nav.alg_var_psi = value; break;
+                case 105: nav.alg_var_theta = value; break;
+                case 106: nav.alg_var_phi = value; break;
+                
+                default:
+                    RCLCPP_DEBUG(this->get_logger(), "Unknown parameter ID: %d", id);
+                    break;
+            }
         }
         
-        float x = *reinterpret_cast<const float*>(&data[0]);
-        float y = *reinterpret_cast<const float*>(&data[4]);
-        float z = *reinterpret_cast<const float*>(&data[8]);
-        float pitch = *reinterpret_cast<const float*>(&data[12]);
-        float roll = *reinterpret_cast<const float*>(&data[16]);
-        float yaw = *reinterpret_cast<const float*>(&data[20]);
-        float vx = *reinterpret_cast<const float*>(&data[24]);
-        float vy = *reinterpret_cast<const float*>(&data[28]);
-        float vz = *reinterpret_cast<const float*>(&data[32]);
-        float lax = *reinterpret_cast<const float*>(&data[36]);
-        float lay = *reinterpret_cast<const float*>(&data[40]);
-        float laz = *reinterpret_cast<const float*>(&data[44]);
-        uint32_t gps_state_status = *reinterpret_cast<const uint32_t*>(&data[48]);
-        uint16_t gps_num_satellites = *reinterpret_cast<const uint16_t*>(&data[52]);
-        
-        // Публикация PoseStamped
-        geometry_msgs::msg::PoseStamped pose;
-        pose.header.stamp = this->now();
-        pose.header.frame_id = "map";
-        pose.pose.position.x = x;
-        pose.pose.position.y = y;
-        pose.pose.position.z = z;
-        
-        // Преобразование Euler (yaw, pitch, roll) в кватернион
-        float cy = cos(yaw * 0.5f);
-        float sy = sin(yaw * 0.5f);
-        float cp = cos(pitch * 0.5f);
-        float sp = sin(pitch * 0.5f);
-        float cr = cos(roll * 0.5f);
-        float sr = sin(roll * 0.5f);
-        
-        pose.pose.orientation.w = cy * cp * cr + sy * sp * sr;
-        pose.pose.orientation.x = cy * cp * sr - sy * sp * cr;
-        pose.pose.orientation.y = sy * cp * sr + cy * sp * cr;
-        pose.pose.orientation.z = sy * cp * cr - cy * sp * sr;
-        
-        pose_pub_->publish(pose);
+        // Публикация PoseStamped (NED → ENU для ROS)
+        if (nav.has_position && nav.has_orientation) {
+            geometry_msgs::msg::PoseStamped pose;
+            pose.header.stamp = this->now();
+            pose.header.frame_id = "map";
+            
+            // NED → ENU: X_ros = Y_ned (East), Y_ros = X_ned (North), Z_ros = -Z_ned (Up)
+            pose.pose.position.x = nav.y;   // East
+            pose.pose.position.y = nav.x;   // North
+            pose.pose.position.z = -nav.z;  // Up
+            
+            // Преобразование Euler NED → кватернион ENU
+            // yaw_ned: от North к East (по часовой)
+            // В ROS (ENU): yaw_ros = yaw_ned - π/2, roll_ros = -roll_ned
+            double yaw_ros = nav.yaw - M_PI / 2.0;
+            double pitch_ros = nav.pitch;
+            double roll_ros = -nav.roll;
+            
+            double cy = std::cos(yaw_ros * 0.5);
+            double sy = std::sin(yaw_ros * 0.5);
+            double cp = std::cos(pitch_ros * 0.5);
+            double sp = std::sin(pitch_ros * 0.5);
+            double cr = std::cos(roll_ros * 0.5);
+            double sr = std::sin(roll_ros * 0.5);
+            
+            pose.pose.orientation.w = cr * cp * cy + sr * sp * sy;
+            pose.pose.orientation.x = sr * cp * cy - cr * sp * sy;
+            pose.pose.orientation.y = cr * sp * cy + sr * cp * sy;
+            pose.pose.orientation.z = cr * cp * sy - sr * sp * cy;
+            
+            pose_pub_->publish(pose);
+        }
         
         // Публикация Imu
-        sensor_msgs::msg::Imu imu;
-        imu.header.stamp = this->now();
-        imu.header.frame_id = "base_link";
-        imu.linear_acceleration.x = lax;
-        imu.linear_acceleration.y = lay;
-        imu.linear_acceleration.z = laz;
-        imu_pub_->publish(imu);
+        if (nav.has_acceleration) {
+            sensor_msgs::msg::Imu imu;
+            imu.header.stamp = this->now();
+            imu.header.frame_id = "base_link";
+            
+            // NED → ENU для ускорений
+            imu.linear_acceleration.x = nav.lay;   // East
+            imu.linear_acceleration.y = nav.lax;   // North
+            imu.linear_acceleration.z = -nav.laz;  // Up
+            
+            // Заполняем covariance нулями (ГКВ2 не выдает covariance напрямую)
+            // Но можем использовать дисперсии из alg_var_* если доступны
+            if (nav.has_variances) {
+                imu.linear_acceleration_covariance[0] = nav.alg_var_vx;
+                imu.linear_acceleration_covariance[4] = nav.alg_var_vy;
+                imu.linear_acceleration_covariance[8] = nav.alg_var_vz;
+            }
+            
+            imu_pub_->publish(imu);
+        }
         
         // Публикация статуса
-        gkv2_motor_bridge::msg::GKV2Status status;
-        status.gps_state_status = gps_state_status;
-        status.gps_num_satellites = gps_num_satellites;
-        status.alg_state_status = 50.0f; // Полная навигация (этап 50)
-        status.rtk_fixed = (gps_state_status & 0x00C00000) == 0x00800000; // Биты 22-23: RTK Fixed
-        status_pub_->publish(status);
+        if (nav.has_gnss_status || nav.has_alg_status) {
+            gkv2_motor_bridge::msg::GKV2Status status;
+            
+            // gps_state_status (ID 72, ZED-F9P)
+            status.gps_state_status = nav.gps_state_status;
+            status.gnss_date_valid = (nav.gps_state_status & 0x00000001) != 0;          // Бит 0
+            status.gnss_time_valid = (nav.gps_state_status & 0x00000002) != 0;          // Бит 1
+            status.gnss_ambiguity_resolved = (nav.gps_state_status & 0x00000004) != 0;  // Бит 2
+            status.gnss_coords_valid = (nav.gps_state_status & 0x00010000) != 0;        // Бит 16
+            status.gnss_diff_corrections = (nav.gps_state_status & 0x00020000) != 0;    // Бит 17
+            status.gnss_fix_type = (nav.gps_state_status >> 8) & 0xFF;                  // Биты 8-15
+            status.rtk_status = (nav.gps_state_status >> 22) & 0x03;                    // Биты 22-23
+            
+            // gps_rel_status (ID 29, ZED-F9P ровер)
+            status.gps_rel_status = nav.gps_rel_status;
+            status.rel_nav_valid = (nav.gps_rel_status & 0x00000001) != 0;              // Бит 0
+            status.rel_diff_applied = (nav.gps_rel_status & 0x00000002) != 0;           // Бит 1
+            status.rel_coords_valid = (nav.gps_rel_status & 0x00000004) != 0;           // Бит 2
+            status.rel_ambiguity_status = (nav.gps_rel_status >> 3) & 0x03;             // Биты 3-4
+            status.rel_heading_mode = (nav.gps_rel_status & 0x00000020) != 0;           // Бит 5
+            status.rel_heading_valid = (nav.gps_rel_status & 0x00000100) != 0;          // Бит 8
+            
+            // alg_state_status (ID 96)
+            status.alg_state_status = nav.alg_state_status;
+            status.alg_stage = nav.alg_state_status & 0xFF;                             // Биты 7-0
+            status.alg_correction = (nav.alg_state_status >> 8) & 0xFF;                 // Биты 15-8
+            status.alg_fails = (nav.alg_state_status >> 16) & 0xFFFF;                   // Биты 31-16
+            status.alg_navigation_ready = (status.alg_stage == 50) && (status.alg_fails == 0);
+            
+            // Спутники
+            status.gps_num_satellites = nav.gps_num_satellites;
+            
+            // СКО координат
+            status.gnss_sig_lat = nav.gnss_sig_lat;
+            status.gnss_sig_lon = nav.gnss_sig_lon;
+            status.gnss_sig_alt = nav.gnss_sig_alt;
+            
+            // Дисперсии
+            status.alg_var_x = nav.alg_var_x;
+            status.alg_var_y = nav.alg_var_y;
+            status.alg_var_z = nav.alg_var_z;
+            status.alg_var_vx = nav.alg_var_vx;
+            status.alg_var_vy = nav.alg_var_vy;
+            status.alg_var_vz = nav.alg_var_vz;
+            status.alg_var_psi = nav.alg_var_psi;
+            status.alg_var_theta = nav.alg_var_theta;
+            status.alg_var_phi = nav.alg_var_phi;
+            
+            // Двухантенное решение
+            status.gps_rel_heading = nav.gps_rel_heading;
+            status.gps_rel_length = nav.gps_rel_length;
+            status.heading_from_dual_antenna = status.rel_heading_valid && status.rel_heading_mode;
+            
+            status_pub_->publish(status);
+        }
         
-        RCLCPP_DEBUG(this->get_logger(), 
-            "Nav: pos(%.2f, %.2f, %.2f) vel(%.2f, %.2f, %.2f) yaw=%.2f sats=%d RTK=%s",
-            x, y, z, vx, vy, vz, yaw, gps_num_satellites, status.rtk_fixed ? "FIXED" : "FLOAT");
+        // Отладочный лог каждые 100 пакетов
+        if (packets_received_ % 100 == 0) {
+            bool rtk_fixed = (nav.gps_state_status & 0x00C00000) == 0x00800000;
+            bool coords_valid = (nav.gps_state_status & 0x00010000) != 0;
+            uint8_t stage = nav.alg_state_status & 0xFF;
+            uint16_t fails = (nav.alg_state_status >> 16) & 0xFFFF;
+            
+            RCLCPP_INFO(this->get_logger(), 
+                "Packets: %lu | CRC errors: %lu | Pos(%.2f,%.2f,%.2f) | Yaw:%.2f | Sats:%d | "
+                "RTK:%s | CoordsValid:%s | Stage:%d | Fails:0x%04X | DualAnt:%s",
+                packets_received_, crc_errors_,
+                nav.x, nav.y, nav.z, nav.yaw, nav.gps_num_satellites,
+                rtk_fixed ? "FIXED" : (rtk_status_str(nav.gps_state_status)),
+                coords_valid ? "Y" : "N",
+                stage, fails,
+                status.rel_heading_valid && status.rel_heading_mode ? "Y" : "N");
+        }
     }
+    
+    const char* rtk_status_str(uint32_t gps_state_status) {
+        uint8_t rtk = (gps_state_status >> 22) & 0x03;
+        switch (rtk) {
+            case 0: return "NONE";
+            case 1: return "FLOAT";
+            case 2: return "FIXED";
+            default: return "RSV";
+        }
+    }
+    
+    // ========================================================================
+    // ПАРАМЕТРЫ И СОСТОЯНИЕ
+    // ========================================================================
+    std::vector<uint8_t> packet_ids_;  // Порядок ID параметров в наборном пакете
     
     boost::asio::io_context io_context_;
     boost::asio::serial_port serial_port_;
-    std::array<uint8_t, 256> read_buffer_;
+    std::array<uint8_t, 512> read_buffer_;
     std::vector<uint8_t> buffer_;
     std::unique_ptr<std::thread> io_thread_;
     
     rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr pose_pub_;
     rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr imu_pub_;
     rclcpp::Publisher<gkv2_motor_bridge::msg::GKV2Status>::SharedPtr status_pub_;
+    
+    // Статистика
+    uint64_t packets_received_;
+    uint64_t crc_errors_;
+    uint64_t short_packets_;
+    
+    // Для логов
+    gkv2_motor_bridge::msg::GKV2Status status;
 };
 
 int main(int argc, char** argv) {

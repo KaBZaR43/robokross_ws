@@ -4,11 +4,13 @@
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_rs/cmake/../resource",
   "idl_tuples": [
     "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge:msg/GKV2Status.idl",
-    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge:msg/NavigationStatus.idl"
+    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge:msg/NavigationStatus.idl",
+    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge:msg/GKV2ConfigStatus.idl"
   ],
   "ros_interface_files": [
     "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge/msg/GKV2Status.idl",
-    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge/msg/NavigationStatus.idl"
+    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge/msg/NavigationStatus.idl",
+    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge/msg/GKV2ConfigStatus.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
@@ -59,8 +61,10 @@
     "/opt/ros/jazzy/share/rosidl_generator_rs/cmake/../resource/templates/srv_rmw.rs.em",
     "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge/msg/GKV2Status.idl",
     "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge/msg/NavigationStatus.idl",
+    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge/msg/GKV2ConfigStatus.idl",
     "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge/msg/GKV2Status.idl",
     "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge/msg/NavigationStatus.idl",
+    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge/msg/GKV2ConfigStatus.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Byte.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl",

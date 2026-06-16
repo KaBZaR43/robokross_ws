@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o"
+  "CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o.d"
   "CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status_s.c.o"
   "CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status_s.c.o.d"
   "CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.c.o"

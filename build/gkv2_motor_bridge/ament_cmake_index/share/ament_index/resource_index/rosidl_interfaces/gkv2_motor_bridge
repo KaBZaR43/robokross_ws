@@ -1,3 +1,5 @@
+msg/GKV2ConfigStatus.idl
+msg/GKV2ConfigStatus.msg
 msg/GKV2Status.idl
 msg/GKV2Status.msg
 msg/NavigationStatus.idl

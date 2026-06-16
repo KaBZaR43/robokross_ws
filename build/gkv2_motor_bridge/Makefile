@@ -484,6 +484,19 @@ odometer_node/fast:
 .PHONY : odometer_node/fast
 
 #=============================================================================
+# Target rules for targets named gkv2_config_node
+
+# Build rule for target.
+gkv2_config_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gkv2_config_node
+.PHONY : gkv2_config_node
+
+# fast build rule for target.
+gkv2_config_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_config_node.dir/build.make CMakeFiles/gkv2_config_node.dir/build
+.PHONY : gkv2_config_node/fast
+
+#=============================================================================
 # Target rules for targets named gkv2_motor_bridge__py
 
 # Build rule for target.
@@ -508,6 +521,78 @@ gkv2_motor_bridge__rs: cmake_check_build_system
 gkv2_motor_bridge__rs/fast:
 	$(MAKE) $(MAKESILENT) -f /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__rs/CMakeFiles/gkv2_motor_bridge__rs.dir/build.make /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__rs/CMakeFiles/gkv2_motor_bridge__rs.dir/build
 .PHONY : gkv2_motor_bridge__rs/fast
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.o: rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.c.o
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.o
+
+# target to build an object file
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.c.o
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.c.o
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.i: rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.c.i
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.i
+
+# target to preprocess a source file
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.c.i
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.c.i
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.s: rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.c.s
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.s
+
+# target to generate assembly for a file
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.c.s
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.c.s
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.o: rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.c.o
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.o
+
+# target to build an object file
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.c.o
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.c.o
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.i: rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.c.i
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.c.i
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.c.i
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.s: rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.c.s
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.c.s
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.c.s
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.o: rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.o
+
+# target to build an object file
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.i: rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.i
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.i
+
+# target to preprocess a source file
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.i
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.i
+
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.s: rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.s
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_c.dir/rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.s
+.PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.s
 
 rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.o: rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.c.o
 .PHONY : rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.o
@@ -725,6 +810,30 @@ rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/gkv2_motor_bridge_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_introspection_c.c.s
 .PHONY : rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_introspection_c.c.s
 
+rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.o: rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o
+.PHONY : rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.o
+
+# target to build an object file
+rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o
+.PHONY : rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o
+
+rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.i: rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.i
+.PHONY : rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.i
+.PHONY : rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.i
+
+rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.s: rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.s
+.PHONY : rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.s
+.PHONY : rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.s
+
 rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status_s.o: rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status_s.c.o
 .PHONY : rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status_s.o
 
@@ -772,6 +881,30 @@ rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.s: rosidl_generat
 rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.c.s
 .PHONY : rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.c.s
+
+rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.o: rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.o
+
+rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.i: rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.i
+
+rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.s: rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.s
 
 rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_status__type_support.o: rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_status__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_status__type_support.o
@@ -821,6 +954,30 @@ rosidl_typesupport_c/gkv2_motor_bridge/msg/navigation_status__type_support.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkv2_motor_bridge/msg/navigation_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/gkv2_motor_bridge/msg/navigation_status__type_support.cpp.s
 
+rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.o: rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.o
+
+rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.i: rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.i
+
+rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.s: rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.cpp.s
+
 rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_status__type_support.o: rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_status__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_status__type_support.o
 
@@ -868,6 +1025,30 @@ rosidl_typesupport_cpp/gkv2_motor_bridge/msg/navigation_status__type_support.s: 
 rosidl_typesupport_cpp/gkv2_motor_bridge/msg/navigation_status__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gkv2_motor_bridge/msg/navigation_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/gkv2_motor_bridge/msg/navigation_status__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.o: rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.i: rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.s: rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support_c.o: rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support_c.o
@@ -917,6 +1098,30 @@ rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/navigation_status__ty
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.o: rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.i: rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.s: rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_status__type_support.o: rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_status__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_status__type_support.o
 
@@ -965,6 +1170,30 @@ rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/naviga
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/navigation_status__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/navigation_status__type_support.cpp.s
 
+rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.o: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.o
+
+rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.i: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.i
+
+rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.s: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.c.s
+
 rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.o: rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.o
 
@@ -1012,6 +1241,30 @@ rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_statu
 rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.c.s
+
+rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.o: rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.i: rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.s: rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/gkv2_motor_bridge__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.o: rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.o
@@ -1084,6 +1337,30 @@ src/cmd_vel_bridge_node.s: src/cmd_vel_bridge_node.cpp.s
 src/cmd_vel_bridge_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmd_vel_bridge_node.dir/build.make CMakeFiles/cmd_vel_bridge_node.dir/src/cmd_vel_bridge_node.cpp.s
 .PHONY : src/cmd_vel_bridge_node.cpp.s
+
+src/gkv2_config_node.o: src/gkv2_config_node.cpp.o
+.PHONY : src/gkv2_config_node.o
+
+# target to build an object file
+src/gkv2_config_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_config_node.dir/build.make CMakeFiles/gkv2_config_node.dir/src/gkv2_config_node.cpp.o
+.PHONY : src/gkv2_config_node.cpp.o
+
+src/gkv2_config_node.i: src/gkv2_config_node.cpp.i
+.PHONY : src/gkv2_config_node.i
+
+# target to preprocess a source file
+src/gkv2_config_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_config_node.dir/build.make CMakeFiles/gkv2_config_node.dir/src/gkv2_config_node.cpp.i
+.PHONY : src/gkv2_config_node.cpp.i
+
+src/gkv2_config_node.s: src/gkv2_config_node.cpp.s
+.PHONY : src/gkv2_config_node.s
+
+# target to generate assembly for a file
+src/gkv2_config_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gkv2_config_node.dir/build.make CMakeFiles/gkv2_config_node.dir/src/gkv2_config_node.cpp.s
+.PHONY : src/gkv2_config_node.cpp.s
 
 src/gkv2_driver_node.o: src/gkv2_driver_node.cpp.o
 .PHONY : src/gkv2_driver_node.o
@@ -1228,6 +1505,7 @@ help:
 	@echo "... gkv2_motor_bridge_uninstall"
 	@echo "... uninstall"
 	@echo "... cmd_vel_bridge_node"
+	@echo "... gkv2_config_node"
 	@echo "... gkv2_driver_node"
 	@echo "... gkv2_motor_bridge__rosidl_generator_c"
 	@echo "... gkv2_motor_bridge__rosidl_generator_py"
@@ -1244,6 +1522,15 @@ help:
 	@echo "... navigation_controller_node"
 	@echo "... navigation_fusion_node"
 	@echo "... odometer_node"
+	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.o"
+	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.i"
+	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__description.s"
+	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.o"
+	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.i"
+	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__functions.s"
+	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.o"
+	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.i"
+	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.s"
 	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.o"
 	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.i"
 	@echo "... rosidl_generator_c/gkv2_motor_bridge/msg/detail/gkv2_status__description.s"
@@ -1271,42 +1558,63 @@ help:
 	@echo "... rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_introspection_c.o"
 	@echo "... rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_introspection_c.i"
 	@echo "... rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_introspection_c.s"
+	@echo "... rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.o"
+	@echo "... rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.i"
+	@echo "... rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.s"
 	@echo "... rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status_s.o"
 	@echo "... rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status_s.i"
 	@echo "... rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status_s.s"
 	@echo "... rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.o"
 	@echo "... rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.i"
 	@echo "... rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.s"
+	@echo "... rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.o"
+	@echo "... rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.i"
+	@echo "... rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_config_status__type_support.s"
 	@echo "... rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_status__type_support.o"
 	@echo "... rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_status__type_support.i"
 	@echo "... rosidl_typesupport_c/gkv2_motor_bridge/msg/gkv2_status__type_support.s"
 	@echo "... rosidl_typesupport_c/gkv2_motor_bridge/msg/navigation_status__type_support.o"
 	@echo "... rosidl_typesupport_c/gkv2_motor_bridge/msg/navigation_status__type_support.i"
 	@echo "... rosidl_typesupport_c/gkv2_motor_bridge/msg/navigation_status__type_support.s"
+	@echo "... rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.o"
+	@echo "... rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.i"
+	@echo "... rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_config_status__type_support.s"
 	@echo "... rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_status__type_support.o"
 	@echo "... rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_status__type_support.i"
 	@echo "... rosidl_typesupport_cpp/gkv2_motor_bridge/msg/gkv2_status__type_support.s"
 	@echo "... rosidl_typesupport_cpp/gkv2_motor_bridge/msg/navigation_status__type_support.o"
 	@echo "... rosidl_typesupport_cpp/gkv2_motor_bridge/msg/navigation_status__type_support.i"
 	@echo "... rosidl_typesupport_cpp/gkv2_motor_bridge/msg/navigation_status__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_config_status__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_status__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_status__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/gkv2_status__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/navigation_status__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/navigation_status__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/gkv2_motor_bridge/msg/detail/dds_fastrtps/navigation_status__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/gkv2_motor_bridge/msg/detail/navigation_status__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/gkv2_motor_bridge/msg/detail/gkv2_status__type_support.s"
@@ -1316,6 +1624,9 @@ help:
 	@echo "... src/cmd_vel_bridge_node.o"
 	@echo "... src/cmd_vel_bridge_node.i"
 	@echo "... src/cmd_vel_bridge_node.s"
+	@echo "... src/gkv2_config_node.o"
+	@echo "... src/gkv2_config_node.i"
+	@echo "... src/gkv2_config_node.s"
 	@echo "... src/gkv2_driver_node.o"
 	@echo "... src/gkv2_driver_node.i"
 	@echo "... src/gkv2_driver_node.s"

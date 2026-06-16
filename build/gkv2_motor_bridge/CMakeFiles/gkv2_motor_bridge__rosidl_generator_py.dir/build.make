@@ -97,16 +97,32 @@ CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_m
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.c -o CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.c.s
 
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o: CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/flags.make
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o: rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o: CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o -MF CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o.d -o CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o -c /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c
+
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c > CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.i
+
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c -o CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.s
+
 # Object files for target gkv2_motor_bridge__rosidl_generator_py
 gkv2_motor_bridge__rosidl_generator_py_OBJECTS = \
 "CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status_s.c.o" \
-"CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.c.o"
+"CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.c.o" \
+"CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o"
 
 # External object files for target gkv2_motor_bridge__rosidl_generator_py
 gkv2_motor_bridge__rosidl_generator_py_EXTERNAL_OBJECTS =
 
 libgkv2_motor_bridge__rosidl_generator_py.so: CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status_s.c.o
 libgkv2_motor_bridge__rosidl_generator_py.so: CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.c.o
+libgkv2_motor_bridge__rosidl_generator_py.so: CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c.o
 libgkv2_motor_bridge__rosidl_generator_py.so: CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/build.make
 libgkv2_motor_bridge__rosidl_generator_py.so: libgkv2_motor_bridge__rosidl_typesupport_c.so
 libgkv2_motor_bridge__rosidl_generator_py.so: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
@@ -137,7 +153,7 @@ libgkv2_motor_bridge__rosidl_generator_py.so: /opt/ros/jazzy/lib/libbuiltin_inte
 libgkv2_motor_bridge__rosidl_generator_py.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libgkv2_motor_bridge__rosidl_generator_py.so: /opt/ros/jazzy/lib/librcutils.so
 libgkv2_motor_bridge__rosidl_generator_py.so: CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libgkv2_motor_bridge__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libgkv2_motor_bridge__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gkv2_motor_bridge__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

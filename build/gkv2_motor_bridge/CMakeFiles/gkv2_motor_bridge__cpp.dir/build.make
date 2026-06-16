@@ -76,6 +76,11 @@ CMakeFiles/gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/de
 CMakeFiles/gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/navigation_status__struct.hpp
 CMakeFiles/gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/navigation_status__traits.hpp
 CMakeFiles/gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/navigation_status__type_support.hpp
+CMakeFiles/gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_config_status.hpp
+CMakeFiles/gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__builder.hpp
+CMakeFiles/gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__struct.hpp
+CMakeFiles/gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__traits.hpp
+CMakeFiles/gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.hpp
 CMakeFiles/gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp: /opt/ros/jazzy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -99,6 +104,7 @@ rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp: /opt/ros/jazzy/share
 rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp: /opt/ros/jazzy/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
 rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp: rosidl_adapter/gkv2_motor_bridge/msg/GKV2Status.idl
 rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp: rosidl_adapter/gkv2_motor_bridge/msg/NavigationStatus.idl
+rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp: rosidl_adapter/gkv2_motor_bridge/msg/GKV2ConfigStatus.idl
 rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp: /opt/ros/jazzy/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp: /opt/ros/jazzy/share/std_msgs/msg/Byte.idl
 rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp: /opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl
@@ -161,10 +167,29 @@ rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/navigation_status__traits.hpp:
 rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/navigation_status__type_support.hpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/navigation_status__type_support.hpp
 
+rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_config_status.hpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_config_status.hpp
+
+rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__builder.hpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__builder.hpp
+
+rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__struct.hpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__struct.hpp
+
+rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__traits.hpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__traits.hpp
+
+rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.hpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.hpp
+
 rosidl_generator_cpp/gkv2_motor_bridge/msg/rosidl_generator_cpp__visibility_control.hpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/gkv2_motor_bridge/msg/rosidl_generator_cpp__visibility_control.hpp
 
 gkv2_motor_bridge__cpp: CMakeFiles/gkv2_motor_bridge__cpp
+gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__builder.hpp
+gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__struct.hpp
+gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__traits.hpp
+gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_config_status__type_support.hpp
 gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_status__builder.hpp
 gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_status__struct.hpp
 gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/gkv2_status__traits.hpp
@@ -173,6 +198,7 @@ gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/naviga
 gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/navigation_status__struct.hpp
 gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/navigation_status__traits.hpp
 gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/detail/navigation_status__type_support.hpp
+gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_config_status.hpp
 gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/gkv2_status.hpp
 gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/navigation_status.hpp
 gkv2_motor_bridge__cpp: rosidl_generator_cpp/gkv2_motor_bridge/msg/rosidl_generator_cpp__visibility_control.hpp

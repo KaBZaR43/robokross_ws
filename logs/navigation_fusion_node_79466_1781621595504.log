@@ -1,0 +1,7 @@
+[INFO] [1781621595.526336558] [navigation_fusion]: Navigation fusion node initialized
+[INFO] [1781621595.526380170] [navigation_fusion]: GNSS timeout: 2.0 sec, Min satellites: 8
+[WARN] [1781621595.545433885] [navigation_fusion]: GNSS lost! Switching to odometry mode (time: 0.0 sec)
+[INFO] [1781621595.545539013] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 0.0% | Sats: 0 | Drift: 0.00 m | Time: 0.0 sec
+[WARN] [1781621595.714811009] [navigation_fusion]: New publisher discovered on topic '/nav/pose', offering incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[WARN] [1781621595.714851906] [navigation_fusion]: New publisher discovered on topic '/gkv2/status', offering incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[INFO] [1781621597.444046649] [rclcpp]: signal_handler(SIGINT/SIGTERM)

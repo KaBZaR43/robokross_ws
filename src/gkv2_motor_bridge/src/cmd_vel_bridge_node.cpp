@@ -8,6 +8,9 @@
 #include <memory>
 #include <thread>
 #include <mutex>
+#include <unistd.h>   // Для ::write()
+#include <cerrno>     // Для errno
+#include <cstring>    // Для strerror()
 
 // ============================================================================
 // АБСТРАКТНЫЙ ИНТЕРФЕЙС ПРОТОКОЛА ДРАЙВЕРОВ МОТОРОВ
@@ -125,6 +128,17 @@ public:
         RCLCPP_INFO(this->get_logger(), "Wheel base: %.2f m, Max speed: %.2f m/s", wheel_base_, max_speed_);
     }
 
+    // ДЕСТРУКТОР: закрывает порт при завершении узла
+    ~CmdVelBridge() {
+        if (serial_port_.is_open()) {
+            try {
+                serial_port_.close();
+            } catch (const boost::system::system_error&) {
+                // Игнорируем ошибки при закрытии
+            }
+        }
+    }
+
 private:
     // ========================================================================
     // ОБРАБОТЧИК /cmd_vel
@@ -223,18 +237,30 @@ private:
     // ОТПРАВКА КОМАНД НА МОТОРЫ (50 Гц)
     // ========================================================================
     void send_callback() {
+        // 1. Проверка завершения узла
+        if (!rclcpp::ok()) return;
         if (!serial_port_.is_open()) return;
-        
-        // Упаковка пакета через абстрактный интерфейс
-        std::vector<uint8_t> packet = protocol_->pack(target_left_pct_, target_right_pct_, current_flags_);
-        
-        // Асинхронная отправка
-        boost::system::error_code ec;
-        boost::asio::write(serial_port_, boost::asio::buffer(packet), ec);
-        
-        if (ec) {
+
+        // 2. Упаковка пакета
+        std::vector<uint8_t> packet = protocol_->pack(
+            target_left_pct_, target_right_pct_, current_flags_);
+
+        // 3. Прямой системный вызов write (без внутренних повторов Boost.Asio)
+        int fd = serial_port_.native_handle();
+        ssize_t bytes_written = ::write(fd, packet.data(), packet.size());
+
+        if (bytes_written < 0) {
+            // Обработка прерывания сигналом (SIGINT/SIGTERM)
+            if (errno == EINTR) {
+                RCLCPP_INFO(this->get_logger(), "UART write interrupted by signal, stopping...");
+                return;
+            }
+            // Другие ошибки
             RCLCPP_ERROR_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
-                "UART write error: %s", ec.message().c_str());
+                "UART write error: %s", strerror(errno));
+        } else if (bytes_written != static_cast<ssize_t>(packet.size())) {
+            RCLCPP_WARN(this->get_logger(), "Partial write: %zd / %zu bytes", 
+                        bytes_written, packet.size());
         }
     }
     

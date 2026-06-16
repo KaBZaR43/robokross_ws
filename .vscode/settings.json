@@ -1,3 +1,5 @@
 {
-    "cmake.sourceDirectory": "/home/nockorn/robokross_ws/src/gkv2_motor_bridge"
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.sourceDirectory": "${workspaceFolder}/src/gkv2_motor_bridge",
+    "cmake.configureOnOpen": false
 }

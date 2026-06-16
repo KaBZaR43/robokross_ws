@@ -1,0 +1,5 @@
+[INFO] [1781624836.428183980] [gkv2_config]: UART opened: /dev/ttyV1 @ 921600 baud
+[INFO] [1781624836.628327392] [gkv2_config]: Starting GKV2 configuration check...
+[ERROR] [1781624836.728388308] [gkv2_config]: Timeout waiting for response type 0x00
+[ERROR] [1781624836.728476604] [gkv2_config]: Connection failed: no response from GKV2
+[INFO] [1781624836.728514696] [gkv2_config]: Configuration check completed. Exiting.

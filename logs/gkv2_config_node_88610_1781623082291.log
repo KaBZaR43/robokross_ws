@@ -1,0 +1,4 @@
+[INFO] [1781623082.300574299] [gkv2_config]: UART opened: /dev/ttyV1 @ 921600 baud
+[INFO] [1781623082.500723015] [gkv2_config]: Starting GKV2 configuration check...
+[ERROR] [1781623082.500776004] [gkv2_config]: Connection failed: no response from GKV2
+[INFO] [1781623082.500833943] [gkv2_config]: Configuration check completed. Exiting.

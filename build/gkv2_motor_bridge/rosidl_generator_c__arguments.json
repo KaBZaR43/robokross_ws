@@ -4,11 +4,13 @@
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
     "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge:msg/GKV2Status.idl",
-    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge:msg/NavigationStatus.idl"
+    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge:msg/NavigationStatus.idl",
+    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge:msg/GKV2ConfigStatus.idl"
   ],
   "ros_interface_files": [
     "/home/nockorn/robokross_ws/src/gkv2_motor_bridge/msg/GKV2Status.msg",
-    "/home/nockorn/robokross_ws/src/gkv2_motor_bridge/msg/NavigationStatus.msg"
+    "/home/nockorn/robokross_ws/src/gkv2_motor_bridge/msg/NavigationStatus.msg",
+    "/home/nockorn/robokross_ws/src/gkv2_motor_bridge/msg/GKV2ConfigStatus.msg"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
@@ -66,6 +68,7 @@
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
     "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge/msg/GKV2Status.idl",
     "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge/msg/NavigationStatus.idl",
+    "/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_adapter/gkv2_motor_bridge/msg/GKV2ConfigStatus.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Byte.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl",
@@ -101,6 +104,7 @@
   ],
   "type_description_tuples": [
     "msg/GKV2Status.idl:/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2Status.json",
-    "msg/NavigationStatus.idl:/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_type_description/gkv2_motor_bridge/msg/NavigationStatus.json"
+    "msg/NavigationStatus.idl:/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_type_description/gkv2_motor_bridge/msg/NavigationStatus.json",
+    "msg/GKV2ConfigStatus.idl:/home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2ConfigStatus.json"
   ]
 }

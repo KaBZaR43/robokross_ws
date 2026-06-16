@@ -2,6 +2,8 @@
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <nav_msgs/msg/odometry.hpp>
 #include <sensor_msgs/msg/imu.hpp>
+#include <tf2_ros/transform_broadcaster.h>
+#include <geometry_msgs/msg/transform_stamped.hpp>
 #include "gkv2_motor_bridge/msg/gkv2_status.hpp"
 #include "gkv2_motor_bridge/msg/navigation_status.hpp"
 #include <cmath>
@@ -27,18 +29,24 @@ public:
         status_pub_ = this->create_publisher<gkv2_motor_bridge::msg::NavigationStatus>("/nav/status", 10);
         
         // Subscribers
+        auto qos = rclcpp::QoS{rclcpp::KeepLast(10)};
+        qos.reliability(rclcpp::ReliabilityPolicy::BestEffort);
+
         gnss_pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
-            "/nav/pose", 10, std::bind(&NavigationFusionNode::gnss_pose_callback, this, std::placeholders::_1));
-        
+            "/nav/pose", qos, std::bind(&NavigationFusionNode::gnss_pose_callback, this, std::placeholders::_1));
+
         gnss_status_sub_ = this->create_subscription<gkv2_motor_bridge::msg::GKV2Status>(
-            "/gkv2/status", 10, std::bind(&NavigationFusionNode::gnss_status_callback, this, std::placeholders::_1));
-        
+            "/gkv2/status", qos, std::bind(&NavigationFusionNode::gnss_status_callback, this, std::placeholders::_1));
+
         odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
-            "/odom/raw", 10, std::bind(&NavigationFusionNode::odometry_callback, this, std::placeholders::_1));
+            "/odom/raw", qos, std::bind(&NavigationFusionNode::odometry_callback, this, std::placeholders::_1));
         
         // Таймер слияния (50 Гц)
         fusion_timer_ = this->create_wall_timer(
             std::chrono::milliseconds(20), std::bind(&NavigationFusionNode::fusion_loop, this));
+        
+        
+        tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);    
         
         // Инициализация состояния
         current_mode_ = MODE_GNSS;
@@ -77,31 +85,31 @@ private:
     
     double calculate_gnss_quality(const gkv2_motor_bridge::msg::GKV2Status::SharedPtr status) {
         double quality = 0.0;
-        
-        // RTK Fixed дает максимальное качество
-        if (status->rtk_fixed) {
+    
+        // RTK Fixed (rtk_status == 2 согласно п. 7.7.8.3 протокола)
+        if (status->rtk_status == 2) {
             quality += 0.5;
         }
         
         // Количество спутников (максимум 20)
         quality += 0.3 * std::min(status->gps_num_satellites / 20.0, 1.0);
         
-        // Состояние алгоритма (50 = полная навигация)
-        if (status->alg_state_status >= 50.0) {
+        // Состояние алгоритма: alg_navigation_ready = (alg_stage == 50 && alg_fails == 0)
+        if (status->alg_navigation_ready) {
             quality += 0.2;
         }
         
         return quality;
-    }
+}
     
     void fusion_loop() {
         // Проверка доступности ГНСС
         double time_since_gnss = (this->now() - last_gnss_time_).seconds();
         bool gnss_good = gnss_pose_received_ && 
-                         gnss_quality_ >= gnss_quality_threshold_ &&
-                         gnss_status_.gps_num_satellites >= min_satellites_ &&
-                         (!require_rtk_ || gnss_status_.rtk_fixed) &&
-                         time_since_gnss < gnss_timeout_;
+                 gnss_quality_ >= gnss_quality_threshold_ &&
+                 gnss_status_.gps_num_satellites >= min_satellites_ &&
+                 (!require_rtk_ || gnss_status_.rtk_status == 2) &&
+                 time_since_gnss < gnss_timeout_;
         
         // Переключение режимов
         if (gnss_good && current_mode_ != MODE_GNSS) {
@@ -160,6 +168,19 @@ private:
         fused_odom.header.frame_id = "map";
         fused_odom.child_frame_id = "base_link";
         fused_odom.pose.pose = fused_pose.pose;
+
+        // Публикация tf2 transform (map -> base_link)
+        geometry_msgs::msg::TransformStamped transform_stamped;
+        transform_stamped.header.stamp = this->now();
+        transform_stamped.header.frame_id = "map";
+        transform_stamped.child_frame_id = "base_link";
+        
+        transform_stamped.transform.translation.x = fused_pose.pose.position.x;
+        transform_stamped.transform.translation.y = fused_pose.pose.position.y;
+        transform_stamped.transform.translation.z = fused_pose.pose.position.z;
+        transform_stamped.transform.rotation = fused_pose.pose.orientation;
+        
+        tf_broadcaster_->sendTransform(transform_stamped);
         
         if (odom_received_) {
             fused_odom.twist.twist = last_odom_.twist.twist;
@@ -171,7 +192,7 @@ private:
         gkv2_motor_bridge::msg::NavigationStatus status;
         status.current_mode = current_mode_;
         status.gnss_available = gnss_available_;
-        status.rtk_fixed = gnss_status_.rtk_fixed;
+        status.rtk_fixed = (gnss_status_.rtk_status == 2);
         status.gnss_satellites = gnss_status_.gps_num_satellites;
         status.gnss_quality = gnss_quality_;
         status.odometry_drift = odometry_drift_;
@@ -233,6 +254,7 @@ private:
     rclcpp::Subscription<gkv2_motor_bridge::msg::GKV2Status>::SharedPtr gnss_status_sub_;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
     rclcpp::TimerBase::SharedPtr fusion_timer_;
+    std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
 };
 
 int main(int argc, char** argv) {

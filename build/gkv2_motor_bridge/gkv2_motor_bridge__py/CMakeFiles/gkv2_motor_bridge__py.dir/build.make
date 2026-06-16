@@ -71,9 +71,11 @@ include /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py
 /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_c.c
 /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status.py
 /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status.py
+/home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status.py
 /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/msg/__init__.py
 /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status_s.c
 /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.c
+/home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c
 
 rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/__init__.py
@@ -90,6 +92,7 @@ rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport
 rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/gkv2_motor_bridge/msg/GKV2Status.idl
 rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/gkv2_motor_bridge/msg/NavigationStatus.idl
+rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/gkv2_motor_bridge/msg/GKV2ConfigStatus.idl
 rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/std_msgs/msg/Bool.idl
 rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/std_msgs/msg/Byte.idl
 rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl
@@ -137,6 +140,9 @@ rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status.py: rosidl_generator_py/g
 rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status.py: rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status.py
 
+rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status.py: rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status.py
+
 rosidl_generator_py/gkv2_motor_bridge/msg/__init__.py: rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/gkv2_motor_bridge/msg/__init__.py
 
@@ -146,11 +152,16 @@ rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status_s.c: rosidl_generator_py/
 rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.c: rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status_s.c
 
+rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c: rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c
+
 gkv2_motor_bridge__py: /home/nockorn/robokross_ws/build/gkv2_motor_bridge/gkv2_motor_bridge__py/CMakeFiles/gkv2_motor_bridge__py
 gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_c.c
 gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_fastrtps_c.c
 gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/_gkv2_motor_bridge_s.ep.rosidl_typesupport_introspection_c.c
 gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/msg/__init__.py
+gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status.py
+gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_config_status_s.c
 gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status.py
 gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/msg/_gkv2_status_s.c
 gkv2_motor_bridge__py: rosidl_generator_py/gkv2_motor_bridge/msg/_navigation_status.py

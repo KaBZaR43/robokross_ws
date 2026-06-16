@@ -68,18 +68,24 @@ include CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description.dir/prog
 
 CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description: rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2Status.json
 CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description: rosidl_generator_type_description/gkv2_motor_bridge/msg/NavigationStatus.json
+CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description: rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2ConfigStatus.json
 
 rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2Status.json: /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description
 rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2Status.json: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py
 rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2Status.json: rosidl_adapter/gkv2_motor_bridge/msg/GKV2Status.idl
 rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2Status.json: rosidl_adapter/gkv2_motor_bridge/msg/NavigationStatus.idl
+rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2Status.json: rosidl_adapter/gkv2_motor_bridge/msg/GKV2ConfigStatus.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/nockorn/robokross_ws/build/gkv2_motor_bridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
 	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/nockorn/robokross_ws/build/gkv2_motor_bridge/rosidl_generator_type_description__arguments.json
 
 rosidl_generator_type_description/gkv2_motor_bridge/msg/NavigationStatus.json: rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2Status.json
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/gkv2_motor_bridge/msg/NavigationStatus.json
 
+rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2ConfigStatus.json: rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2Status.json
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2ConfigStatus.json
+
 gkv2_motor_bridge__rosidl_generator_type_description: CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description
+gkv2_motor_bridge__rosidl_generator_type_description: rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2ConfigStatus.json
 gkv2_motor_bridge__rosidl_generator_type_description: rosidl_generator_type_description/gkv2_motor_bridge/msg/GKV2Status.json
 gkv2_motor_bridge__rosidl_generator_type_description: rosidl_generator_type_description/gkv2_motor_bridge/msg/NavigationStatus.json
 gkv2_motor_bridge__rosidl_generator_type_description: CMakeFiles/gkv2_motor_bridge__rosidl_generator_type_description.dir/build.make

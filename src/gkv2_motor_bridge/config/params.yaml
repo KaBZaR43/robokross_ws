@@ -14,11 +14,19 @@ gkv2_driver:
 
 # Параметры узла gkv2_nav_parser_node (входящий канал ГКВ2 -> Jetson)
 # Принимает навигационные данные (позиция, курс, скорости) от модуля ГКВ2
+# Параметры узла gkv2_nav_parser_node (исходящий канал ГКВ2 -> Jetson)
 gkv2_nav_parser:
   ros__parameters:
-    uart_port: "/dev/ttyV1"        # На Jetson: /dev/ttyTHS2
+    uart_port: "/dev/ttyV1"
     baudrate: 921600
     qos_depth: 10
+    
+    # Порядок ID параметров в наборном пакете (тип 0x13)
+    # Должен соответствовать настройке ГКВ2 через пакет 0x27
+    # Каждый ID занимает 4 байта (float32), кроме *_int_* (int32) и статусных (uint32/uint16)
+    packet_parameter_ids: [43, 44, 45, 36, 37, 38, 46, 47, 48, 
+            64, 65, 66, 72, 79, 29, 13, 14, 85, 86, 87, 
+            96, 98, 99, 100, 101, 102, 103, 104, 105, 106]
 
 # Параметры узла cmd_vel_bridge_node (исходящий канал БУД -> Моторы)
 # Отправляет команды управления на драйверы электродвигателей
@@ -53,3 +61,16 @@ navigation_fusion:
     gnss_quality_threshold: 0.7  # Порог качества ГНСС
     min_satellites: 8            # Минимальное количество спутников
     require_rtk: true            # Требовать RTK Fixed
+
+# Параметры узла gkv2_config_node
+gkv2_config:
+  ros__parameters:
+    uart_port: "/dev/ttyV1"        # Тот же порт, что и у парсера
+    baudrate: 921600
+    device_address: 1
+    timeout_sec: 5
+    
+    # Ожидаемые ID параметров в наборном пакете (должны совпадать с gkv2_nav_parser)
+    expected_packet_ids: [43, 44, 45, 36, 37, 38, 46, 47, 48, 
+           64, 65, 66, 72, 79, 29, 13,
+           14, 85, 86, 87, 96, 98, 99, 100, 101, 102, 103, 104, 105, 106]

@@ -2,6 +2,7 @@
   "package_name": "gkv2_motor_bridge",
   "non_idl_tuples": [
     "/home/nockorn/robokross_ws/src/gkv2_motor_bridge:msg/GKV2Status.msg",
-    "/home/nockorn/robokross_ws/src/gkv2_motor_bridge:msg/NavigationStatus.msg"
+    "/home/nockorn/robokross_ws/src/gkv2_motor_bridge:msg/NavigationStatus.msg",
+    "/home/nockorn/robokross_ws/src/gkv2_motor_bridge:msg/GKV2ConfigStatus.msg"
   ]
 }
