@@ -1,0 +1,5 @@
+[INFO] [1781630620.863449591] [gkv2_nav_parser]: Loaded 30 parameter IDs from config
+[INFO] [1781630620.866105135] [gkv2_nav_parser]: UART opened: /dev/ttyV1 @ 921600 baud
+[INFO] [1781630620.866166040] [gkv2_nav_parser]: GKV2 Nav Parser initialized
+[INFO] [1781630620.866177441] [gkv2_nav_parser]: Expected packet size: 128 bytes (header 4 + data 120 + CRC 4)
+[INFO] [1781630652.400161793] [rclcpp]: signal_handler(SIGINT/SIGTERM)

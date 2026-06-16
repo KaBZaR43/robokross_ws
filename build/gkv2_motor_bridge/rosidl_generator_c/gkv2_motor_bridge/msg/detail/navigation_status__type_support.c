@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
 #include "gkv2_motor_bridge/msg/detail/navigation_status__struct.h"
 #include "gkv2_motor_bridge/msg/detail/navigation_status__functions.h"
 #include "gkv2_motor_bridge/msg/detail/navigation_status__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

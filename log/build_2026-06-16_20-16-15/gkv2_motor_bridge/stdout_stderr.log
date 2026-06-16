@@ -1,0 +1,39 @@
+[  1%] Built target gkv2_motor_bridge__rosidl_generator_type_description
+[  2%] Built target gkv2_motor_bridge__rs
+[  5%] Built target odometer_node
+[  5%] Built target ament_cmake_python_symlink_gkv2_motor_bridge
+[  8%] Built target navigation_controller_node
+[ 11%] Built target gkv2_driver_node
+[ 15%] Built target gkv2_motor_bridge__cpp
+[ 15%] Built target cmd_vel_bridge_node
+[ 31%] Built target gkv2_motor_bridge__rosidl_generator_c
+[ 46%] Built target gkv2_motor_bridge__rosidl_typesupport_c
+[ 46%] Built target gkv2_motor_bridge__rosidl_typesupport_introspection_c
+[ 53%] Built target gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp
+[ 68%] Built target gkv2_motor_bridge__rosidl_typesupport_fastrtps_c
+[ 68%] Built target gkv2_motor_bridge__rosidl_typesupport_introspection_cpp
+[ 75%] Built target gkv2_motor_bridge__rosidl_typesupport_cpp
+[ 75%] Built target gkv2_motor_bridge
+[ 76%] [32mBuilding CXX object CMakeFiles/navigation_fusion_node.dir/src/navigation_fusion_node.cpp.o[0m
+[ 79%] Built target gkv2_config_node
+[ 82%] Built target gkv2_nav_parser_node
+[ 84%] Built target gkv2_motor_bridge__py
+[ 89%] Built target gkv2_motor_bridge__rosidl_generator_py
+[ 98%] Built target gkv2_motor_bridge_s__rosidl_typesupport_introspection_c
+[ 98%] Built target gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c
+[ 98%] Built target gkv2_motor_bridge_s__rosidl_typesupport_c
+running egg_info
+writing gkv2_motor_bridge.egg-info/PKG-INFO
+writing dependency_links to gkv2_motor_bridge.egg-info/dependency_links.txt
+writing top-level names to gkv2_motor_bridge.egg-info/top_level.txt
+reading manifest file 'gkv2_motor_bridge.egg-info/SOURCES.txt'
+writing manifest file 'gkv2_motor_bridge.egg-info/SOURCES.txt'
+[ 98%] Built target ament_cmake_python_build_gkv2_motor_bridge_egg
+[01m[K/home/nockorn/robokross_ws/src/gkv2_motor_bridge/src/navigation_fusion_node.cpp:[m[K In member function ‘[01m[Kvoid NavigationFusionNode::[01;32m[Kfusion_loop[m[K()[m[K’:
+[01m[K/home/nockorn/robokross_ws/src/gkv2_motor_bridge/src/navigation_fusion_node.cpp:135:13:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_status_[m[K’ was not declared in this scope; did you mean ‘[01m[Kgnss_status_[m[K’?
+  135 |             [01;31m[Knav_status_[m[K.gnss_satellites = 0;
+      |             [01;31m[K^~~~~~~~~~~[m[K
+      |             [32m[Kgnss_status_[m[K
+gmake[2]: *** [CMakeFiles/navigation_fusion_node.dir/build.make:76: CMakeFiles/navigation_fusion_node.dir/src/navigation_fusion_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:762: CMakeFiles/navigation_fusion_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

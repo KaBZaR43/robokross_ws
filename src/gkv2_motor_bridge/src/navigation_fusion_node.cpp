@@ -103,6 +103,9 @@ private:
 }
     
     void fusion_loop() {
+
+        gkv2_motor_bridge::msg::NavigationStatus status;
+       
         // Проверка доступности ГНСС
         double time_since_gnss = (this->now() - last_gnss_time_).seconds();
         bool gnss_good = gnss_pose_received_ && 
@@ -189,15 +192,14 @@ private:
         fused_odom_pub_->publish(fused_odom);
         
         // Публикация статуса
-        gkv2_motor_bridge::msg::NavigationStatus status;
         status.current_mode = current_mode_;
         status.gnss_available = gnss_available_;
-        status.rtk_fixed = (gnss_status_.rtk_status == 2);
-        status.gnss_satellites = gnss_status_.gps_num_satellites;
-        status.gnss_quality = gnss_quality_;
+        status.rtk_fixed = gnss_good ? (gnss_status_.rtk_status == 2) : false;
+        status.gnss_satellites = gnss_good ? gnss_status_.gps_num_satellites : 0;
+        status.gnss_quality = gnss_good ? gnss_quality_ : 0.0f;
         status.odometry_drift = odometry_drift_;
         status.time_since_gnss = time_since_gnss;
-        
+
         switch (current_mode_) {
             case MODE_GNSS:
                 status.status_message = "GNSS (RTK Fixed)";
@@ -208,14 +210,14 @@ private:
             default:
                 status.status_message = "Unknown";
         }
-        
+
         status_pub_->publish(status);
-        
+
         // Логирование каждые 5 секунд
         RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 5000,
             "Mode: %s | GNSS: %.1f%% | Sats: %d | Drift: %.2f m | Time: %.1f sec",
-            status.status_message.c_str(), gnss_quality_ * 100, 
-            gnss_status_.gps_num_satellites, odometry_drift_, time_since_gnss);
+            status.status_message.c_str(), status.gnss_quality * 100, 
+            status.gnss_satellites, odometry_drift_, time_since_gnss);
     }
     
     // Константы режимов

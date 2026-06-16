@@ -1,0 +1,12 @@
+[01m[K/home/nockorn/robokross_ws/src/gkv2_motor_bridge/src/navigation_fusion_node.cpp:[m[K In member function ‘[01m[Kvoid NavigationFusionNode::[01;32m[Kfusion_loop[m[K()[m[K’:
+[01m[K/home/nockorn/robokross_ws/src/gkv2_motor_bridge/src/navigation_fusion_node.cpp:133:13:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_status_[m[K’ was not declared in this scope; did you mean ‘[01m[Kgnss_status_[m[K’?
+  133 |             [01;31m[Knav_status_[m[K.gnss_satellites = 0;
+      |             [01;31m[K^~~~~~~~~~~[m[K
+      |             [32m[Kgnss_status_[m[K
+[01m[K/home/nockorn/robokross_ws/src/gkv2_motor_bridge/src/navigation_fusion_node.cpp:135:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatus[m[K’ was not declared in this scope; did you mean ‘[01m[Kstatic[m[K’?
+  135 |             [01;31m[Kstatus[m[K.rtk_fixed = false;
+      |             [01;31m[K^~~~~~[m[K
+      |             [32m[Kstatic[m[K
+gmake[2]: *** [CMakeFiles/navigation_fusion_node.dir/build.make:76: CMakeFiles/navigation_fusion_node.dir/src/navigation_fusion_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:762: CMakeFiles/navigation_fusion_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

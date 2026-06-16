@@ -1,0 +1,31 @@
+[  1%] Built target gkv2_motor_bridge__rs
+[  2%] Built target gkv2_motor_bridge__rosidl_generator_type_description
+[  2%] Built target ament_cmake_python_symlink_gkv2_motor_bridge
+[  5%] Built target odometer_node
+[  8%] Built target navigation_controller_node
+[ 11%] Built target gkv2_driver_node
+[ 14%] Built target cmd_vel_bridge_node
+[ 15%] Built target gkv2_motor_bridge__cpp
+[ 31%] Built target gkv2_motor_bridge__rosidl_generator_c
+[ 39%] Built target gkv2_motor_bridge__rosidl_typesupport_c
+[ 46%] Built target gkv2_motor_bridge__rosidl_typesupport_cpp
+[ 53%] Built target gkv2_motor_bridge__rosidl_typesupport_introspection_cpp
+[ 60%] Built target gkv2_motor_bridge__rosidl_typesupport_introspection_c
+[ 68%] Built target gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp
+[ 75%] Built target gkv2_motor_bridge__rosidl_typesupport_fastrtps_c
+[ 75%] Built target gkv2_motor_bridge
+[ 76%] [32mBuilding CXX object CMakeFiles/navigation_fusion_node.dir/src/navigation_fusion_node.cpp.o[0m
+[ 79%] Built target gkv2_config_node
+[ 82%] Built target gkv2_nav_parser_node
+[ 84%] Built target gkv2_motor_bridge__py
+[ 89%] Built target gkv2_motor_bridge__rosidl_generator_py
+[ 92%] Built target gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c
+[ 95%] Built target gkv2_motor_bridge_s__rosidl_typesupport_c
+[ 98%] Built target gkv2_motor_bridge_s__rosidl_typesupport_introspection_c
+running egg_info
+writing gkv2_motor_bridge.egg-info/PKG-INFO
+writing dependency_links to gkv2_motor_bridge.egg-info/dependency_links.txt
+writing top-level names to gkv2_motor_bridge.egg-info/top_level.txt
+reading manifest file 'gkv2_motor_bridge.egg-info/SOURCES.txt'
+writing manifest file 'gkv2_motor_bridge.egg-info/SOURCES.txt'
+[ 98%] Built target ament_cmake_python_build_gkv2_motor_bridge_egg

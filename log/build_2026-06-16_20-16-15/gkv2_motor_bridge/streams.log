@@ -1,0 +1,41 @@
+[0.008s] Invoking command in '/home/nockorn/robokross_ws/build/gkv2_motor_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nockorn/robokross_ws/build/gkv2_motor_bridge -- -j12 -l12
+[0.056s] [  1%] Built target gkv2_motor_bridge__rosidl_generator_type_description
+[0.058s] [  2%] Built target gkv2_motor_bridge__rs
+[0.062s] [  5%] Built target odometer_node
+[0.063s] [  5%] Built target ament_cmake_python_symlink_gkv2_motor_bridge
+[0.065s] [  8%] Built target navigation_controller_node
+[0.070s] [ 11%] Built target gkv2_driver_node
+[0.073s] [ 15%] Built target gkv2_motor_bridge__cpp
+[0.073s] [ 15%] Built target cmd_vel_bridge_node
+[0.074s] [ 31%] Built target gkv2_motor_bridge__rosidl_generator_c
+[0.093s] [ 46%] Built target gkv2_motor_bridge__rosidl_typesupport_c
+[0.093s] [ 46%] Built target gkv2_motor_bridge__rosidl_typesupport_introspection_c
+[0.093s] [ 53%] Built target gkv2_motor_bridge__rosidl_typesupport_fastrtps_cpp
+[0.094s] [ 68%] Built target gkv2_motor_bridge__rosidl_typesupport_fastrtps_c
+[0.094s] [ 68%] Built target gkv2_motor_bridge__rosidl_typesupport_introspection_cpp
+[0.095s] [ 75%] Built target gkv2_motor_bridge__rosidl_typesupport_cpp
+[0.112s] [ 75%] Built target gkv2_motor_bridge
+[0.124s] [ 76%] [32mBuilding CXX object CMakeFiles/navigation_fusion_node.dir/src/navigation_fusion_node.cpp.o[0m
+[0.125s] [ 79%] Built target gkv2_config_node
+[0.125s] [ 82%] Built target gkv2_nav_parser_node
+[0.129s] [ 84%] Built target gkv2_motor_bridge__py
+[0.149s] [ 89%] Built target gkv2_motor_bridge__rosidl_generator_py
+[0.166s] [ 98%] Built target gkv2_motor_bridge_s__rosidl_typesupport_introspection_c
+[0.167s] [ 98%] Built target gkv2_motor_bridge_s__rosidl_typesupport_fastrtps_c
+[0.167s] [ 98%] Built target gkv2_motor_bridge_s__rosidl_typesupport_c
+[0.227s] running egg_info
+[0.243s] writing gkv2_motor_bridge.egg-info/PKG-INFO
+[0.244s] writing dependency_links to gkv2_motor_bridge.egg-info/dependency_links.txt
+[0.244s] writing top-level names to gkv2_motor_bridge.egg-info/top_level.txt
+[0.293s] reading manifest file 'gkv2_motor_bridge.egg-info/SOURCES.txt'
+[0.293s] writing manifest file 'gkv2_motor_bridge.egg-info/SOURCES.txt'
+[0.316s] [ 98%] Built target ament_cmake_python_build_gkv2_motor_bridge_egg
+[1.791s] [01m[K/home/nockorn/robokross_ws/src/gkv2_motor_bridge/src/navigation_fusion_node.cpp:[m[K In member function ‘[01m[Kvoid NavigationFusionNode::[01;32m[Kfusion_loop[m[K()[m[K’:
+[1.791s] [01m[K/home/nockorn/robokross_ws/src/gkv2_motor_bridge/src/navigation_fusion_node.cpp:135:13:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_status_[m[K’ was not declared in this scope; did you mean ‘[01m[Kgnss_status_[m[K’?
+[1.791s]   135 |             [01;31m[Knav_status_[m[K.gnss_satellites = 0;
+[1.791s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[1.791s]       |             [32m[Kgnss_status_[m[K
+[4.406s] gmake[2]: *** [CMakeFiles/navigation_fusion_node.dir/build.make:76: CMakeFiles/navigation_fusion_node.dir/src/navigation_fusion_node.cpp.o] Ошибка 1
+[4.406s] gmake[1]: *** [CMakeFiles/Makefile2:762: CMakeFiles/navigation_fusion_node.dir/all] Ошибка 2
+[4.406s] gmake: *** [Makefile:146: all] Ошибка 2
+[4.409s] Invoked command in '/home/nockorn/robokross_ws/build/gkv2_motor_bridge' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nockorn/robokross_ws/build/gkv2_motor_bridge -- -j12 -l12

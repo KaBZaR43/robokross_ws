@@ -1,0 +1,15 @@
+[INFO] [1781628657.604553896] [navigation_fusion]: Navigation fusion node initialized
+[INFO] [1781628657.604601104] [navigation_fusion]: GNSS timeout: 2.0 sec, Min satellites: 8
+[WARN] [1781628657.623692248] [navigation_fusion]: GNSS lost! Switching to odometry mode (time: 0.0 sec)
+[INFO] [1781628657.623877937] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 0.0% | Sats: 0 | Drift: 0.00 m | Time: 0.0 sec
+[INFO] [1781628661.543667900] [navigation_fusion]: Switching to GNSS mode (quality: 0.93, sats: 15)
+[INFO] [1781628662.643704616] [navigation_fusion]: Mode: GNSS (RTK Fixed) | GNSS: 92.5% | Sats: 15 | Drift: 0.00 m | Time: 0.0 sec
+[INFO] [1781628667.663702290] [navigation_fusion]: Mode: GNSS (RTK Fixed) | GNSS: 92.5% | Sats: 15 | Drift: 0.00 m | Time: 1.5 sec
+[WARN] [1781628668.183667304] [navigation_fusion]: GNSS lost! Switching to odometry mode (time: 2.0 sec)
+[INFO] [1781628672.203664431] [navigation_fusion]: Switching to GNSS mode (quality: 0.93, sats: 15)
+[INFO] [1781628672.663703314] [navigation_fusion]: Mode: GNSS (RTK Fixed) | GNSS: 92.5% | Sats: 15 | Drift: 0.00 m | Time: 0.0 sec
+[INFO] [1781628677.663711944] [navigation_fusion]: Mode: GNSS (RTK Fixed) | GNSS: 92.5% | Sats: 15 | Drift: 0.00 m | Time: 0.0 sec
+[INFO] [1781628682.663754363] [navigation_fusion]: Mode: GNSS (RTK Fixed) | GNSS: 92.5% | Sats: 15 | Drift: 0.00 m | Time: 1.5 sec
+[WARN] [1781628683.183667108] [navigation_fusion]: GNSS lost! Switching to odometry mode (time: 2.0 sec)
+[INFO] [1781628687.683750970] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 92.5% | Sats: 15 | Drift: 2.26 m | Time: 6.5 sec
+[INFO] [1781628689.384522400] [rclcpp]: signal_handler(SIGINT/SIGTERM)

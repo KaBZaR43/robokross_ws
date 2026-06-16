@@ -1,0 +1,18 @@
+[INFO] [1781626763.691261578] [navigation_fusion]: Navigation fusion node initialized
+[INFO] [1781626763.691310320] [navigation_fusion]: GNSS timeout: 2.0 sec, Min satellites: 8
+[WARN] [1781626763.710453861] [navigation_fusion]: GNSS lost! Switching to odometry mode (time: 0.0 sec)
+[INFO] [1781626763.710591961] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 0.0% | Sats: 0 | Drift: 0.00 m | Time: 0.0 sec
+[INFO] [1781626768.730465078] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 0.0% | Sats: 0 | Drift: 2.47 m | Time: 5.0 sec
+[INFO] [1781626773.730481391] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 0.0% | Sats: 0 | Drift: 4.97 m | Time: 10.0 sec
+[INFO] [1781626778.730486053] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 0.0% | Sats: 0 | Drift: 7.47 m | Time: 15.0 sec
+[INFO] [1781626780.470438582] [navigation_fusion]: Switching to GNSS mode (quality: 0.93, sats: 15)
+[INFO] [1781626783.750469961] [navigation_fusion]: Mode: GNSS (RTK Fixed) | GNSS: 92.5% | Sats: 15 | Drift: 0.00 m | Time: 0.0 sec
+[INFO] [1781626788.770456155] [navigation_fusion]: Mode: GNSS (RTK Fixed) | GNSS: 92.5% | Sats: 15 | Drift: 0.00 m | Time: 0.4 sec
+[WARN] [1781626790.390424408] [navigation_fusion]: GNSS lost! Switching to odometry mode (time: 2.0 sec)
+[INFO] [1781626793.790464981] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 92.5% | Sats: 15 | Drift: 1.71 m | Time: 5.4 sec
+[INFO] [1781626794.410431927] [navigation_fusion]: Switching to GNSS mode (quality: 0.93, sats: 15)
+[INFO] [1781626798.790475460] [navigation_fusion]: Mode: GNSS (RTK Fixed) | GNSS: 92.5% | Sats: 15 | Drift: 0.00 m | Time: 0.0 sec
+[INFO] [1781626803.790477054] [navigation_fusion]: Mode: GNSS (RTK Fixed) | GNSS: 92.5% | Sats: 15 | Drift: 0.00 m | Time: 0.4 sec
+[WARN] [1781626805.390434576] [navigation_fusion]: GNSS lost! Switching to odometry mode (time: 2.0 sec)
+[INFO] [1781626808.810466459] [navigation_fusion]: Mode: Odometry (GNSS lost) | GNSS: 92.5% | Sats: 15 | Drift: 1.72 m | Time: 5.4 sec
+[INFO] [1781626812.542515328] [rclcpp]: signal_handler(SIGINT/SIGTERM)
