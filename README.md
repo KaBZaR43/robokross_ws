@@ -5,7 +5,7 @@
 
 ### Корневая структура воркспейса `~/robokross_ws/`
 
-```
+``` markdown
 robokross_ws/
 ├── setup_virtual_ports.sh          # Скрипт создания виртуальных UART-портов через socat
 ├── mock_gkv2_nav.py                # Mock-эмулятор ГКВ2 (отправляет пакет 0x13 на 50 Гц)
@@ -33,9 +33,7 @@ robokross_ws/
             ├── odometer_node.cpp          # Эмулятор одометра (интеграция cmd_vel)
             ├── navigation_fusion_node.cpp # Слияние ГНСС + одометрия (автопереключение)
             └── navigation_controller_node.cpp # Pure Pursuit контроллер по waypoints
-```
 
-```markdown
 # gkv2_motor_bridge
 
 ROS 2 пакет управления мобильной робототехнической системой для соревнований «РобоКросс-2026».
