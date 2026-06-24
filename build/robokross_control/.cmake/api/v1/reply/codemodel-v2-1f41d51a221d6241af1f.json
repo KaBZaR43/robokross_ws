@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-91ddbcde67701a59a28f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "robokross_control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "robokross_control_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robokross_control_uninstall-6a555a529592de54828c.json",
+					"name" : "robokross_control_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stm32_bridge_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stm32_bridge_node-47143e8d34ee7dc9ecd1.json",
+					"name" : "stm32_bridge_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-857c48946c959fa6085a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vehicle_mode_manager_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vehicle_mode_manager_node-3da0a72d61e8b889bc76.json",
+					"name" : "vehicle_mode_manager_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nockorn/robocross_all/robokross_ws/build/robokross_control",
+		"source" : "/home/nockorn/robocross_all/robokross_ws/src/robokross_control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

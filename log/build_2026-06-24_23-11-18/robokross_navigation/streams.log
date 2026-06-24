@@ -1,0 +1,29 @@
+[0.009s] Invoking command in '/home/nockorn/robocross_all/robokross_ws/build/robokross_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nockorn/robocross_all/robokross_ws/build/robokross_navigation -- -j12 -l12
+[0.061s] [ 50%] Built target nav_logger_node
+[0.063s] [100%] Built target nav_parser_udp_node
+[0.072s] Invoked command in '/home/nockorn/robocross_all/robokross_ws/build/robokross_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nockorn/robocross_all/robokross_ws/build/robokross_navigation -- -j12 -l12
+[0.080s] Invoking command in '/home/nockorn/robocross_all/robokross_ws/build/robokross_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nockorn/robocross_all/robokross_ws/build/robokross_navigation
+[0.085s] -- Install configuration: ""
+[0.085s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/lib/robokross_navigation/nav_parser_udp_node
+[0.085s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/lib/robokross_navigation/nav_logger_node
+[0.086s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/logs
+[0.086s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/lib/robokross_navigation/mock_nav_publisher.py
+[0.086s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/lib/robokross_navigation/mock_nav_udp_publisher.py
+[0.086s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/launch
+[0.086s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/launch/nav_test.launch.py
+[0.086s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/ament_index/resource_index/package_run_dependencies/robokross_navigation
+[0.086s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/ament_index/resource_index/parent_prefix_path/robokross_navigation
+[0.086s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/environment/ament_prefix_path.sh
+[0.086s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/environment/ament_prefix_path.dsv
+[0.086s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/environment/path.sh
+[0.086s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/environment/path.dsv
+[0.087s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/local_setup.bash
+[0.087s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/local_setup.sh
+[0.087s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/local_setup.zsh
+[0.087s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/local_setup.dsv
+[0.087s] -- Installing: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/package.dsv
+[0.087s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/ament_index/resource_index/packages/robokross_navigation
+[0.087s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/cmake/robokross_navigationConfig.cmake
+[0.087s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/cmake/robokross_navigationConfig-version.cmake
+[0.087s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/package.xml
+[0.088s] Invoked command in '/home/nockorn/robocross_all/robokross_ws/build/robokross_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nockorn/robocross_all/robokross_ws/build/robokross_navigation

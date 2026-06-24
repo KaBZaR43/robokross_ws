@@ -1,0 +1,16 @@
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/lib/robokross_control/stm32_bridge_node
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/ament_index/resource_index/package_run_dependencies/robokross_control
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/ament_index/resource_index/parent_prefix_path/robokross_control
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/robokross_control/environment/ament_prefix_path.sh
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/robokross_control/environment/ament_prefix_path.dsv
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/robokross_control/environment/path.sh
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/robokross_control/environment/path.dsv
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/robokross_control/local_setup.bash
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/robokross_control/local_setup.sh
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/robokross_control/local_setup.zsh
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/robokross_control/local_setup.dsv
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/robokross_control/package.dsv
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/ament_index/resource_index/packages/robokross_control
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/robokross_control/cmake/robokross_controlConfig.cmake
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/robokross_control/cmake/robokross_controlConfig-version.cmake
+/home/nockorn/robocross_all/robokross_ws/src/robokross_control/install/robokross_control/share/robokross_control/package.xml

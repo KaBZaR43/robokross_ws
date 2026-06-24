@@ -1,0 +1,54 @@
+[0.008s] Invoking command in '/home/nockorn/robocross_all/robokross_ws/build/robokross_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nockorn/robocross_all/robokross_ws/build/robokross_control -- -j12 -l12
+[0.031s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.188s] -- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.209s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.216s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.224s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.234s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.281s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.282s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.336s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.392s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.402s] -- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.418s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.508s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.509s] -- Configured cppcheck include dirs: 
+[0.509s] -- Configured cppcheck exclude dirs and/or files: 
+[0.511s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.511s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.516s] -- Added test 'lint_cmake' to check CMake code style
+[0.519s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.537s] -- Added test 'uncrustify' to check C / C++ code style
+[0.537s] -- Configured uncrustify additional arguments: 
+[0.539s] -- Added test 'xmllint' to check XML markup files
+[0.540s] -- Configuring done (0.5s)
+[0.551s] -- Generating done (0.0s)
+[0.555s] -- Build files have been written to: /home/nockorn/robocross_all/robokross_ws/build/robokross_control
+[0.588s] [ 25%] [32mBuilding CXX object CMakeFiles/vehicle_mode_manager_node.dir/src/vehicle_mode_manager_node.cpp.o[0m
+[0.608s] [ 75%] Built target stm32_bridge_node
+[6.702s] [100%] [32m[1mLinking CXX executable vehicle_mode_manager_node[0m
+[6.910s] [100%] Built target vehicle_mode_manager_node
+[6.919s] Invoked command in '/home/nockorn/robocross_all/robokross_ws/build/robokross_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nockorn/robocross_all/robokross_ws/build/robokross_control -- -j12 -l12
+[6.927s] Invoking command in '/home/nockorn/robocross_all/robokross_ws/build/robokross_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nockorn/robocross_all/robokross_ws/build/robokross_control
+[6.932s] -- Install configuration: ""
+[6.933s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/lib/robokross_control/stm32_bridge_node
+[6.933s] -- Installing: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/lib/robokross_control/vehicle_mode_manager_node
+[6.936s] -- Set non-toolchain portion of runtime path of "/home/nockorn/robocross_all/robokross_ws/install/robokross_control/lib/robokross_control/vehicle_mode_manager_node" to ""
+[6.937s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/launch
+[6.937s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/config
+[6.937s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/ament_index/resource_index/package_run_dependencies/robokross_control
+[6.937s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/ament_index/resource_index/parent_prefix_path/robokross_control
+[6.937s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/environment/ament_prefix_path.sh
+[6.937s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/environment/ament_prefix_path.dsv
+[6.937s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/environment/path.sh
+[6.937s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/environment/path.dsv
+[6.938s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/local_setup.bash
+[6.938s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/local_setup.sh
+[6.938s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/local_setup.zsh
+[6.938s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/local_setup.dsv
+[6.938s] -- Installing: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/package.dsv
+[6.938s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/ament_index/resource_index/packages/robokross_control
+[6.938s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/cmake/robokross_controlConfig.cmake
+[6.939s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/cmake/robokross_controlConfig-version.cmake
+[6.939s] -- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/package.xml
+[6.939s] Invoked command in '/home/nockorn/robocross_all/robokross_ws/build/robokross_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nockorn/robocross_all/robokross_ws/build/robokross_control

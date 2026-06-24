@@ -1,0 +1,25 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/vehicle_mode_manager_node.dir/src/vehicle_mode_manager_node.cpp.o[0m
+[ 75%] Built target stm32_bridge_node
+[32m[1mLinking CXX executable vehicle_mode_manager_node[0m
+Built target vehicle_mode_manager_node
+-- Install configuration: ""
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/lib/robokross_control/stm32_bridge_node
+-- Installing: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/lib/robokross_control/vehicle_mode_manager_node
+-- Set non-toolchain portion of runtime path of "/home/nockorn/robocross_all/robokross_ws/install/robokross_control/lib/robokross_control/vehicle_mode_manager_node" to ""
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/launch
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/config
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/ament_index/resource_index/package_run_dependencies/robokross_control
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/ament_index/resource_index/parent_prefix_path/robokross_control
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/environment/ament_prefix_path.sh
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/environment/path.sh
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/environment/path.dsv
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/local_setup.bash
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/local_setup.sh
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/local_setup.zsh
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/local_setup.dsv
+-- Installing: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/package.dsv
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/ament_index/resource_index/packages/robokross_control
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/cmake/robokross_controlConfig.cmake
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/cmake/robokross_controlConfig-version.cmake
+-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_control/share/robokross_control/package.xml

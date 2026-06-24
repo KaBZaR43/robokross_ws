@@ -1,0 +1,106 @@
+[0.080s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'robokross_navigation']
+[0.081s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['robokross_navigation'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7acfe598c5c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7acfe5a86ba0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7acfe5a86ba0>>, mixin_verb=('build',))
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.109s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.130s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'robokross_navigation'
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.143s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/nockorn/robocross_all/robokross_ws/src/install
+[0.144s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 287 installed packages in /opt/ros/jazzy
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'robokross_navigation' build argument 'cmake_args' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'robokross_navigation' build argument 'cmake_target' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'robokross_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'robokross_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'robokross_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'robokross_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'robokross_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'robokross_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'robokross_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.175s] DEBUG:colcon.colcon_core.verb:Building package 'robokross_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/build/robokross_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation', 'merge_install': False, 'path': '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.175s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.175s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.175s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation' with build type 'ament_cmake'
+[0.175s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation'
+[0.177s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.177s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.177s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.183s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/build/robokross_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nockorn/robocross_all/robokross_ws/src/robokross_navigation -DCMAKE_INSTALL_PREFIX=/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation
+[1.190s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/build/robokross_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nockorn/robocross_all/robokross_ws/src/robokross_navigation -DCMAKE_INSTALL_PREFIX=/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation
+[1.191s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/build/robokross_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/build/robokross_navigation -- -j12 -l12
+[8.554s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/build/robokross_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/build/robokross_navigation -- -j12 -l12
+[8.562s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/build/robokross_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/build/robokross_navigation
+[8.575s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robokross_navigation)
+[8.576s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/build/robokross_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/build/robokross_navigation
+[8.577s] Level 1:colcon.colcon_core.environment:checking '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation' for CMake module files
+[8.577s] Level 1:colcon.colcon_core.environment:checking '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation' for CMake config files
+[8.578s] Level 1:colcon.colcon_core.shell:create_environment_hook('robokross_navigation', 'cmake_prefix_path')
+[8.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/hook/cmake_prefix_path.ps1'
+[8.593s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/hook/cmake_prefix_path.dsv'
+[8.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/hook/cmake_prefix_path.sh'
+[8.606s] Level 1:colcon.colcon_core.environment:checking '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/lib'
+[8.606s] Level 1:colcon.colcon_core.environment:checking '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/bin'
+[8.606s] Level 1:colcon.colcon_core.environment:checking '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/lib/pkgconfig/robokross_navigation.pc'
+[8.606s] Level 1:colcon.colcon_core.environment:checking '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/lib/python3.12/site-packages'
+[8.607s] Level 1:colcon.colcon_core.environment:checking '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/bin'
+[8.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/package.ps1'
+[8.608s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/package.dsv'
+[8.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/package.sh'
+[8.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/package.bash'
+[8.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/package.zsh'
+[8.609s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/colcon-core/packages/robokross_navigation)
+[8.610s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robokross_navigation)
+[8.610s] Level 1:colcon.colcon_core.environment:checking '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation' for CMake module files
+[8.610s] Level 1:colcon.colcon_core.environment:checking '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation' for CMake config files
+[8.610s] Level 1:colcon.colcon_core.shell:create_environment_hook('robokross_navigation', 'cmake_prefix_path')
+[8.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/hook/cmake_prefix_path.ps1'
+[8.611s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/hook/cmake_prefix_path.dsv'
+[8.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/hook/cmake_prefix_path.sh'
+[8.611s] Level 1:colcon.colcon_core.environment:checking '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/lib'
+[8.611s] Level 1:colcon.colcon_core.environment:checking '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/bin'
+[8.611s] Level 1:colcon.colcon_core.environment:checking '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/lib/pkgconfig/robokross_navigation.pc'
+[8.612s] Level 1:colcon.colcon_core.environment:checking '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/lib/python3.12/site-packages'
+[8.612s] Level 1:colcon.colcon_core.environment:checking '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/bin'
+[8.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/package.ps1'
+[8.612s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/package.dsv'
+[8.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/package.sh'
+[8.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/package.bash'
+[8.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/package.zsh'
+[8.613s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/colcon-core/packages/robokross_navigation)
+[8.614s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.614s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.614s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.614s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.618s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.618s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.618s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.632s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.633s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/local_setup.ps1'
+[8.634s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/_local_setup_util_ps1.py'
+[8.635s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/setup.ps1'
+[8.635s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/local_setup.sh'
+[8.636s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/_local_setup_util_sh.py'
+[8.636s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/setup.sh'
+[8.637s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/local_setup.bash'
+[8.637s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/setup.bash'
+[8.637s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/local_setup.zsh'
+[8.638s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/setup.zsh'

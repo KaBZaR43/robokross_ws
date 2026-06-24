@@ -1,0 +1,161 @@
+[0.000000] (-) TimerEvent: {}
+[0.000348] (-) JobUnselected: {'identifier': 'gkv2_motor_bridge'}
+[0.000548] (-) JobUnselected: {'identifier': 'plc_ss_interface'}
+[0.000638] (robokross_navigation) JobQueued: {'identifier': 'robokross_navigation', 'dependencies': OrderedDict()}
+[0.000660] (robokross_navigation) JobStarted: {'identifier': 'robokross_navigation'}
+[0.006476] (robokross_navigation) JobProgress: {'identifier': 'robokross_navigation', 'progress': 'cmake'}
+[0.007019] (robokross_navigation) JobProgress: {'identifier': 'robokross_navigation', 'progress': 'build'}
+[0.007613] (robokross_navigation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nockorn/robocross_all/robokross_ws/build/robokross_navigation', '--', '-j12', '-l12'], 'cwd': '/home/nockorn/robocross_all/robokross_ws/build/robokross_navigation', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'ru_RU:en', 'USER': 'nockorn', 'LC_TIME': 'en_US.UTF-8', 'FONTCONFIG_PATH': '/etc/fonts', 'GIO_MODULE_DIR': '/home/nockorn/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/247/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nockorn', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'TERM_PROGRAM_VERSION': '1.124.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/247/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/nockorn/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/247/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/247/usr/share/code/code', 'MANAGERPID': '2575', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2909', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=384c3a172819d2fdb11c86f86a3bea92', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '122096', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nockorn', 'JOURNAL_STREAM': '9:7967', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'nockorn', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nockorn:@/tmp/.ICE-unix/2909,unix/nockorn:/tmp/.ICE-unix/2909', 'GTK_EXE_PREFIX': '/snap/code/247/usr', 'INVOCATION_ID': '76c8a3e0794d42159bbe4019873594d9', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LOCPATH': '/snap/code/247/usr/lib/locale', 'LANG': 'ru_RU.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_US.UTF-8', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/nockorn/snap/code/247/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-fe330adaba.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/nockorn/snap/code/247/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nockorn/robocross_all/robokross_ws/build/robokross_navigation', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=384c3a172819d2fdb11c86f86a3bea92', 'XDG_DATA_DIRS': '/home/nockorn/snap/code/247/.local/share:/home/nockorn/snap/code/247:/snap/code/247/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.030123] (robokross_navigation) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099840] (-) TimerEvent: {}
+[0.189218] (robokross_navigation) StdoutLine: {'line': b'-- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.199909] (-) TimerEvent: {}
+[0.212244] (robokross_navigation) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.219018] (robokross_navigation) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.227324] (robokross_navigation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.237047] (robokross_navigation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.284023] (robokross_navigation) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.285025] (robokross_navigation) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299990] (-) TimerEvent: {}
+[0.338594] (robokross_navigation) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.395724] (robokross_navigation) StdoutLine: {'line': b'-- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.400066] (-) TimerEvent: {}
+[0.408882] (robokross_navigation) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.420943] (robokross_navigation) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.7 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.442121] (robokross_navigation) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.7 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[0.467785] (robokross_navigation) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.500176] (-) TimerEvent: {}
+[0.568025] (robokross_navigation) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.568281] (robokross_navigation) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/include\n'}
+[0.568377] (robokross_navigation) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.570522] (robokross_navigation) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.570633] (robokross_navigation) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[0.575618] (robokross_navigation) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.578357] (robokross_navigation) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.594527] (robokross_navigation) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.594687] (robokross_navigation) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.596805] (robokross_navigation) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.597557] (robokross_navigation) StdoutLine: {'line': b'-- Configuring done (0.6s)\n'}
+[0.600237] (-) TimerEvent: {}
+[0.616948] (robokross_navigation) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.621471] (robokross_navigation) StdoutLine: {'line': b'-- Build files have been written to: /home/nockorn/robocross_all/robokross_ws/build/robokross_navigation\n'}
+[0.657904] (robokross_navigation) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/nav_logger_node.dir/src/nav_logger_node.cpp.o\x1b[0m\n'}
+[0.680931] (robokross_navigation) StdoutLine: {'line': b'[ 75%] Built target nav_parser_udp_node\n'}
+[0.700322] (-) TimerEvent: {}
+[0.800497] (-) TimerEvent: {}
+[0.900708] (-) TimerEvent: {}
+[1.000944] (-) TimerEvent: {}
+[1.101197] (-) TimerEvent: {}
+[1.201435] (-) TimerEvent: {}
+[1.301694] (-) TimerEvent: {}
+[1.401944] (-) TimerEvent: {}
+[1.502196] (-) TimerEvent: {}
+[1.602431] (-) TimerEvent: {}
+[1.702712] (-) TimerEvent: {}
+[1.802967] (-) TimerEvent: {}
+[1.903202] (-) TimerEvent: {}
+[2.003454] (-) TimerEvent: {}
+[2.103733] (-) TimerEvent: {}
+[2.204042] (-) TimerEvent: {}
+[2.304277] (-) TimerEvent: {}
+[2.404503] (-) TimerEvent: {}
+[2.504892] (-) TimerEvent: {}
+[2.605125] (-) TimerEvent: {}
+[2.705378] (-) TimerEvent: {}
+[2.805638] (-) TimerEvent: {}
+[2.905861] (-) TimerEvent: {}
+[3.006085] (-) TimerEvent: {}
+[3.106304] (-) TimerEvent: {}
+[3.206555] (-) TimerEvent: {}
+[3.306800] (-) TimerEvent: {}
+[3.407030] (-) TimerEvent: {}
+[3.507277] (-) TimerEvent: {}
+[3.607503] (-) TimerEvent: {}
+[3.707721] (-) TimerEvent: {}
+[3.807970] (-) TimerEvent: {}
+[3.908190] (-) TimerEvent: {}
+[4.008427] (-) TimerEvent: {}
+[4.108664] (-) TimerEvent: {}
+[4.208883] (-) TimerEvent: {}
+[4.309106] (-) TimerEvent: {}
+[4.409361] (-) TimerEvent: {}
+[4.509604] (-) TimerEvent: {}
+[4.609820] (-) TimerEvent: {}
+[4.710042] (-) TimerEvent: {}
+[4.810284] (-) TimerEvent: {}
+[4.910511] (-) TimerEvent: {}
+[5.010730] (-) TimerEvent: {}
+[5.110947] (-) TimerEvent: {}
+[5.211170] (-) TimerEvent: {}
+[5.311384] (-) TimerEvent: {}
+[5.411609] (-) TimerEvent: {}
+[5.511815] (-) TimerEvent: {}
+[5.612022] (-) TimerEvent: {}
+[5.712232] (-) TimerEvent: {}
+[5.812451] (-) TimerEvent: {}
+[5.912674] (-) TimerEvent: {}
+[6.012919] (-) TimerEvent: {}
+[6.113156] (-) TimerEvent: {}
+[6.213393] (-) TimerEvent: {}
+[6.313620] (-) TimerEvent: {}
+[6.413856] (-) TimerEvent: {}
+[6.514071] (-) TimerEvent: {}
+[6.614286] (-) TimerEvent: {}
+[6.714516] (-) TimerEvent: {}
+[6.814724] (-) TimerEvent: {}
+[6.914947] (-) TimerEvent: {}
+[7.015175] (-) TimerEvent: {}
+[7.115385] (-) TimerEvent: {}
+[7.215623] (-) TimerEvent: {}
+[7.315848] (-) TimerEvent: {}
+[7.416061] (-) TimerEvent: {}
+[7.516286] (-) TimerEvent: {}
+[7.616505] (-) TimerEvent: {}
+[7.716730] (-) TimerEvent: {}
+[7.816942] (-) TimerEvent: {}
+[7.917152] (-) TimerEvent: {}
+[8.017371] (-) TimerEvent: {}
+[8.117610] (-) TimerEvent: {}
+[8.217819] (-) TimerEvent: {}
+[8.318024] (-) TimerEvent: {}
+[8.418218] (-) TimerEvent: {}
+[8.518403] (-) TimerEvent: {}
+[8.618661] (-) TimerEvent: {}
+[8.718887] (-) TimerEvent: {}
+[8.819098] (-) TimerEvent: {}
+[8.919317] (-) TimerEvent: {}
+[9.019532] (-) TimerEvent: {}
+[9.119748] (-) TimerEvent: {}
+[9.219990] (-) TimerEvent: {}
+[9.301445] (robokross_navigation) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable nav_logger_node\x1b[0m\n'}
+[9.320058] (-) TimerEvent: {}
+[9.420249] (-) TimerEvent: {}
+[9.520477] (-) TimerEvent: {}
+[9.595386] (robokross_navigation) StdoutLine: {'line': b'[100%] Built target nav_logger_node\n'}
+[9.604555] (robokross_navigation) CommandEnded: {'returncode': 0}
+[9.605088] (robokross_navigation) JobProgress: {'identifier': 'robokross_navigation', 'progress': 'install'}
+[9.611666] (robokross_navigation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nockorn/robocross_all/robokross_ws/build/robokross_navigation'], 'cwd': '/home/nockorn/robocross_all/robokross_ws/build/robokross_navigation', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'ru_RU:en', 'USER': 'nockorn', 'LC_TIME': 'en_US.UTF-8', 'FONTCONFIG_PATH': '/etc/fonts', 'GIO_MODULE_DIR': '/home/nockorn/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/247/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nockorn', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'TERM_PROGRAM_VERSION': '1.124.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/247/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/nockorn/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/247/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/247/usr/share/code/code', 'MANAGERPID': '2575', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2909', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=384c3a172819d2fdb11c86f86a3bea92', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '122096', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nockorn', 'JOURNAL_STREAM': '9:7967', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'nockorn', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nockorn:@/tmp/.ICE-unix/2909,unix/nockorn:/tmp/.ICE-unix/2909', 'GTK_EXE_PREFIX': '/snap/code/247/usr', 'INVOCATION_ID': '76c8a3e0794d42159bbe4019873594d9', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LOCPATH': '/snap/code/247/usr/lib/locale', 'LANG': 'ru_RU.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_US.UTF-8', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/nockorn/snap/code/247/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-fe330adaba.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/nockorn/snap/code/247/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nockorn/robocross_all/robokross_ws/build/robokross_navigation', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=384c3a172819d2fdb11c86f86a3bea92', 'XDG_DATA_DIRS': '/home/nockorn/snap/code/247/.local/share:/home/nockorn/snap/code/247:/snap/code/247/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[9.617635] (robokross_navigation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.617931] (robokross_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/lib/robokross_navigation/nav_parser_udp_node\n'}
+[9.618120] (robokross_navigation) StdoutLine: {'line': b'-- Installing: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/lib/robokross_navigation/nav_logger_node\n'}
+[9.620532] (-) TimerEvent: {}
+[9.627455] (robokross_navigation) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/lib/robokross_navigation/nav_logger_node" to ""\n'}
+[9.627651] (robokross_navigation) StdoutLine: {'line': b'-- Installing: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/logs\n'}
+[9.627769] (robokross_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/ament_index/resource_index/package_run_dependencies/robokross_navigation\n'}
+[9.627871] (robokross_navigation) StdoutLine: {'line': b'-- Installing: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/ament_index/resource_index/parent_prefix_path/robokross_navigation\n'}
+[9.627997] (robokross_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/environment/ament_prefix_path.sh\n'}
+[9.628135] (robokross_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/environment/ament_prefix_path.dsv\n'}
+[9.628266] (robokross_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/environment/path.sh\n'}
+[9.628389] (robokross_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/environment/path.dsv\n'}
+[9.628519] (robokross_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/local_setup.bash\n'}
+[9.628622] (robokross_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/local_setup.sh\n'}
+[9.628716] (robokross_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/local_setup.zsh\n'}
+[9.628785] (robokross_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/local_setup.dsv\n'}
+[9.628863] (robokross_navigation) StdoutLine: {'line': b'-- Installing: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/package.dsv\n'}
+[9.628934] (robokross_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/ament_index/resource_index/packages/robokross_navigation\n'}
+[9.628999] (robokross_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/cmake/robokross_navigationConfig.cmake\n'}
+[9.629065] (robokross_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/cmake/robokross_navigationConfig-version.cmake\n'}
+[9.629131] (robokross_navigation) StdoutLine: {'line': b'-- Up-to-date: /home/nockorn/robocross_all/robokross_ws/install/robokross_navigation/share/robokross_navigation/package.xml\n'}
+[9.630224] (robokross_navigation) CommandEnded: {'returncode': 0}
+[9.642128] (robokross_navigation) JobEnded: {'identifier': 'robokross_navigation', 'rc': 0}
+[9.642691] (-) EventReactorShutdown: {}

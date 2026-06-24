@@ -1,0 +1,16 @@
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/lib/robokross_navigation/nav_parser_udp_node
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/ament_index/resource_index/package_run_dependencies/robokross_navigation
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/ament_index/resource_index/parent_prefix_path/robokross_navigation
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/environment/ament_prefix_path.sh
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/environment/ament_prefix_path.dsv
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/environment/path.sh
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/environment/path.dsv
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/local_setup.bash
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/local_setup.sh
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/local_setup.zsh
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/local_setup.dsv
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/package.dsv
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/ament_index/resource_index/packages/robokross_navigation
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/cmake/robokross_navigationConfig.cmake
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/cmake/robokross_navigationConfig-version.cmake
+/home/nockorn/robocross_all/robokross_ws/src/robokross_navigation/install/robokross_navigation/share/robokross_navigation/package.xml

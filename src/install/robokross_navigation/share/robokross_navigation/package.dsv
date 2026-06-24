@@ -1,0 +1,5 @@
+source;share/robokross_navigation/local_setup.bash
+source;share/robokross_navigation/local_setup.dsv
+source;share/robokross_navigation/local_setup.ps1
+source;share/robokross_navigation/local_setup.sh
+source;share/robokross_navigation/local_setup.zsh
